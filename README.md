@@ -46,4 +46,4 @@ You are allowed and encouraged to use this software on the IEEE Very Small Size 
 [glut]: http://freeglut.sourceforge.net/
 [ssl-vision]: https://github.com/RoboCup-SSL/ssl-vision
 [grsim]: https://github.com/mani-monaj/grSim
-[license]: https://github.com/johnfercher/MPP/blob/master/LICENSE
+[license]: https://github.com/johnfercher/MPP/blob/master/LICENSE.txt
