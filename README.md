@@ -1,10 +1,6 @@
 Multiple Path Planning
 ----------------------
 
-* **Aluno:** Johnathan Fercher da Rosa
-* **Instituição:** Instituto Militar de Engenharia - IME-Brasil
-* **Pós-Graduação em Engenharia de Defesa:** Mestrado 
-* **Tema:** Planejamento de Trajetória em Tempo Real de Múltiplos Robôs Terrestres em Ambiente Semi-estruturado.
 
 Requirements
 ------------
