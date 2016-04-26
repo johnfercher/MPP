@@ -13,19 +13,19 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 */
 
-#include "resolver.h"
+#include "offline_planning.h"
 
 vector<Object> objectsStatic;
-Resolver::Resolver(){
+Offline_planning::Offline_planning(){
     
 }
 
-Resolver::Resolver(int argc, char** argv){
+Offline_planning::Offline_planning(int argc, char** argv){
     this->argc = argc;
     this->argv = argv;
 }
 
-vector<ob::PathPtr> Resolver::solvePaths(){
+vector<ob::PathPtr> Offline_planning::solvePaths(){
     objectsStatic = workspace->objects;
 
     ob::StateSpacePtr space(new ob::SE2StateSpace());
@@ -76,7 +76,7 @@ vector<ob::PathPtr> Resolver::solvePaths(){
     return paths;
 }
 
-bool Resolver::isStateValid(const ob::State *state){
+bool Offline_planning::isStateValid(const ob::State *state){
     bool ok = true;
     const ob::SE2StateSpace::StateType* state2D = state->as<ob::SE2StateSpace::StateType>();
     double x = state2D->getX();
@@ -92,24 +92,24 @@ bool Resolver::isStateValid(const ob::State *state){
     return ok;
 }
 
-void Resolver::setBounds(float lowBound, float highBound){
+void Offline_planning::setBounds(float lowBound, float highBound){
     this->lowBound = lowBound;
     this->highBound = highBound;
 }
 
-void Resolver::setPlanner(typePlanner planner){
+void Offline_planning::setPlanner(typePlanner planner){
     this->planner = planner;
 }
 
-void Resolver::setTimeToResolve(float timeToResolve){
+void Offline_planning::setTimeToResolve(float timeToResolve){
     this->timeToResolve = timeToResolve;
 }
 
-void Resolver::setWorkspace(Workspace *workspace){
+void Offline_planning::setWorkspace(Workspace *workspace){
     this->workspace = workspace;
 }
 
-/*ob::PlannerPtr Resolver::allocatePlanner(ob::SpaceInformationPtr si, optimalPlanner plannerType)
+/*ob::PlannerPtr Offline_planning::allocatePlanner(ob::SpaceInformationPtr si, optimalPlanner plannerType)
 {
     switch (plannerType)
     {

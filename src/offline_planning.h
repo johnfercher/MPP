@@ -23,7 +23,7 @@ copies or substantial portions of the Software.
 
 using namespace common;
 
-class Resolver{
+class Offline_planning{
 private:
     int argc;
     char **argv;
@@ -40,8 +40,8 @@ private:
 
     static bool isStateValid(const ob::State *state);
 public:
-    Resolver();  
-    Resolver(int argc, char** argv);
+    Offline_planning();  
+    Offline_planning(int argc, char** argv);
     
     vector<ob::PathPtr> solvePaths();
     

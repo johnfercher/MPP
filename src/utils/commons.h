@@ -30,6 +30,7 @@ copies or substantial portions of the Software.
 using namespace std;
 
 namespace common{
+	enum { INVALID = -1 };
 	struct Pose{
 		float x, y, yaw;
 		Pose(){
@@ -107,6 +108,27 @@ namespace common{
 				objects.at(i).show();
 			}
 		};
+	};
+	struct Command{
+		float vel_tangent, vel_normal, vel_angular;
+		Command(){
+			vel_tangent = 0;
+			vel_normal = 0;
+			vel_angular = 0;
+		};
+		Command(float vel_tangent, float vel_normal, float vel_angular){
+			this->vel_tangent = vel_tangent;
+			this->vel_normal = vel_normal;
+			this->vel_angular = vel_angular;
+		};
+		Command(Command *cmd){
+			vel_tangent = cmd->vel_tangent;
+			vel_normal = cmd->vel_normal;
+			vel_angular = cmd->vel_angular;
+		};
+		void show(){
+			cout << vel_tangent << " : " << vel_normal << " : " << vel_angular << endl;
+		}
 	};
 
 	void clearSS(stringstream &ss);

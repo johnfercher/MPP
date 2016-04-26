@@ -45,9 +45,9 @@ SSL_WrapperPacket Net::receivePacket(){
     udpsocketReceive.readDatagram(datagramReceive.data(), datagramReceive.size());
     packet.ParseFromArray(datagramReceive.data(), datagramReceive.size());
 
-    SSL_DetectionRobot robot;
+    //SSL_DetectionRobot robot;
 
-    robot = packet.detection().robots_blue(0);
+    //robot = packet.detection().robots_blue(0);
     //cout << robot.orientation() << endl;
 
     // debug all

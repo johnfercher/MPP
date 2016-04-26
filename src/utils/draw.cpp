@@ -172,6 +172,7 @@ void Draw::Desenha(void){
 
 	drawPaths();
 
+	usleep(33333);
 	glutSwapBuffers();
 }
 

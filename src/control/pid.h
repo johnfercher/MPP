@@ -13,49 +13,26 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 */
 
-#ifndef GOODRICH_H_
-#define GOODRICH_H_
 
-#include "iostream"
-#include "../utils/includes/ompl.h"
+#ifndef _PID_H_
+#define _PID_H_
+
+#include "math.h"
 #include "../utils/commons.h"
-#include "unistd.h"
 
 using namespace common;
 
-class Goodrich{
+class PID{
 private:
-	float alpha;
-	float beta;
-	float INF;
-	float radiusRobot;
-	float areaRobot;
-
-	vector<ob::PathPtr> *paths;
-	vector<RuntimePath> *runtimePaths;
-	vector<int> idDones, dists;
-	vector<Pose> robots;
-	Workspace *workspace;
-
-	bool done;
-
-	int sign(float signal);
-	void attractiveForce();
-	void repulsiveForceRobotRobot();
-	void repulsiveForceRobotObjects();
-	
+	float proportional_l, integrative_l, derivative_l;
+	float proportional_a, integrative_a, derivative_a;
 
 public:
-	Goodrich();
+	PID();
 
-	void init();
-	void setPaths(vector<ob::PathPtr>*);
-	void setWorkspace(Workspace*);
-	void allocateRuntimePaths(vector<RuntimePath>*);
-	void moveObstacles();
-
+	Command calcCommand(Pose initial, Pose final);
 	float angulation(Pose a, Pose b);
 	float distance(Pose a, Pose b);
 };
 
-#endif
+#endif // _PID_H_

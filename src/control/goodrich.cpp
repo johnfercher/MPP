@@ -38,7 +38,7 @@ void Goodrich::moveObstacles(){
 	int helperTime = 0;
 	srand(time(NULL)+helperTime);
 
-	for(int i = 0 ; i < workspace->objects.size() ; i++){
+	for(int i = 0 ; i < workspace->objects.size() ; ){
 		int moveX, moveY;
 		int direX, direY;
 
@@ -52,8 +52,16 @@ void Goodrich::moveObstacles(){
 
 		helperTime++;
 
-		workspace->objects.at(i).x += (rand()%5)*direX;
-		workspace->objects.at(i).y += (rand()%5)*direY;
+		float x_aux = workspace->objects.at(i).x + (rand()%5)*direX;
+		float y_aux = workspace->objects.at(i).y + (rand()%5)*direY;
+
+		//cout << i << ": " << x_aux << ", " << y_aux << endl;
+		if(x_aux > 0 && x_aux < 1000 && y_aux > 0 && y_aux < 1000){
+			workspace->objects.at(i).x = x_aux;
+			workspace->objects.at(i).y = y_aux;
+			i++;
+		}
+	
 	}
 }
 
@@ -78,16 +86,16 @@ void Goodrich::init(){
 	//runtimePaths->at(0).path.size();
 	usleep(10000000);
 	while(!done){
-		moveObstacles();
+		//moveObstacles();
 		attractiveForce();
-		repulsiveForceRobotRobot();
-		repulsiveForceRobotObjects();
+		//repulsiveForceRobotRobot();
+		//repulsiveForceRobotObjects();
 		usleep(50000);
 	}
 }
 
 void Goodrich::attractiveForce(){
-	double theta;
+	/*double theta;
 	double distances;
 
 	for(int i = 0 ; i < paths->size() ; i++){
@@ -143,7 +151,7 @@ void Goodrich::attractiveForce(){
 
 		robots.at(i) = robotAct; 	
 		runtimePaths->at(i).path.push_back(robotAct);
-	}
+	}*/
 }
 
 
