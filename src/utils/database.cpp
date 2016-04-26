@@ -71,7 +71,7 @@ void Database::transform3in2(){
 }
 
 Workspace Database::loadWorkspace(string name){
-    cout << name << endl;
+    //cout << name << endl;
     Workspace workspace;
     stringstream ss;
     string line, linel;
@@ -145,7 +145,7 @@ Workspace Database::loadWorkspace(string name){
         }
 
     read.close();
-    workspace.show();
+    //workspace.show();
     return workspace;
 }
 

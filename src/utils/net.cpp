@@ -48,7 +48,7 @@ SSL_WrapperPacket Net::receivePacket(){
     SSL_DetectionRobot robot;
 
     robot = packet.detection().robots_blue(0);
-    cout << robot.orientation() << endl;
+    //cout << robot.orientation() << endl;
 
     // debug all
     /*string text_str;
