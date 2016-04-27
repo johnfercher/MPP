@@ -15,9 +15,9 @@ copies or substantial portions of the Software.
 
 #include "draw.h"
 
-vector<ob::PathPtr> pathsStatic;
+vector<Path> pathsStatic;
 vector<Object> *objectsStaticDraw;
-vector<RuntimePath> *runtimePathsStatic;
+vector<Path> *runtimePathsStatic;
 float widthStatic, heightStatic;
 
 Draw::Draw(){
@@ -84,7 +84,7 @@ void Draw::drawSquare(float x, float y){
 
 void Draw::drawPaths(){
 	
-	for(int j = 0 ; j < pathsStatic.size() ; j++){
+	/*for(int j = 0 ; j < pathsStatic.size() ; j++){
 		glLineWidth(2);
 		switch(j){
 			case 0:{
@@ -163,7 +163,7 @@ void Draw::drawPaths(){
 	glColor3d(0.0, 0.0, 0.0);
 	for(int i = 0 ; i < objectsStaticDraw->size() ; i++){
 		drawSphere(objectsStaticDraw->at(i).x, objectsStaticDraw->at(i).y, objectsStaticDraw->at(i).radius);
-	}
+	}*/
 }
 
 void Draw::Desenha(void){
@@ -187,10 +187,10 @@ void Draw::timerHandler(int v){
     glutTimerFunc(5, timerHandler, 0);
 }
 
-void Draw::setPaths(vector<ob::PathPtr> paths){
+void Draw::setPaths(vector<Path> paths){
 	this->paths = paths;
 	pathsStatic = this->paths;
-	cout << paths.size() << " : " << pathsStatic.size() << endl;
+	//cout << paths.size() << " : " << pathsStatic.size() << endl;
 }
 
 void Draw::setObjects(vector<Object> *objects){
@@ -212,7 +212,7 @@ void Draw::setSize(float width, float height){
 	heightStatic = height;
 }
 
-void Draw::allocateRuntimePaths(vector<RuntimePath> *runtimePaths){
+void Draw::allocateRuntimePaths(vector<Path> *runtimePaths){
 	this->runtimePaths = runtimePaths;
 	runtimePathsStatic = runtimePaths;
 }

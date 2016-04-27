@@ -29,8 +29,8 @@ private:
 	int argc;
 	char** argv;
 
-	vector<ob::PathPtr> paths;
-	vector<RuntimePath> *runtimePaths;
+	vector<Path> paths;
+	vector<Path> *runtimePaths;
 	vector<Object> *objects;
 	float width, height;
 
@@ -48,8 +48,8 @@ public:
 	Draw();
 
 	void init(int argc, char** argv);
-	void setPaths(vector<ob::PathPtr>);
-	void allocateRuntimePaths(vector<RuntimePath>*);
+	void setPaths(vector<Path>);
+	void allocateRuntimePaths(vector<Path>*);
 	void setObjects(vector<Object>*);
 	void setSize(float, float);
 };

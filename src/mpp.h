@@ -1,3 +1,18 @@
+/*The MIT License (MIT)
+
+Copyright (c) 2016 Johnathan Fercher
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+*/
+
 #ifndef _MPP_H_
 #define _MPP_H_
 
@@ -29,8 +44,8 @@ private:
 	thread *thread_net;
 	thread *thread_simulation;
 
-	vector<ob::PathPtr> paths;
-	vector<RuntimePath> runtimePaths;
+	vector<Path> offlinePaths;
+	vector<Path> runtimePaths;
 	
 	Workspace workspace;
 	grSim_Packet packet_grSim;
@@ -49,17 +64,21 @@ private:
 	void init_threads();
 	void finalize_threads();
 
+	Path PathPrtToPath(ob::PathPtr);
+	Workspace packetToWorkspace(SSL_WrapperPacket);
+	Pose handlePosition(Pose poseGR);
+	Object handlePosition(Object objectGR);	
+	void findPaths();
+
 public:
 	MPP(int argc, char** argv);
 
 	void init();
 	void simulation_on();
 	void grsim_on();
-	void findPaths();
+	
 
-	Workspace packetToWorkspace(SSL_WrapperPacket);
-	Pose handlePosition(Pose poseGR);
-	Object handlePosition(Object objectGR);	
+	
 };
 
 #endif // _MPP_H_

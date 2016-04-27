@@ -31,8 +31,8 @@ private:
 	float radiusRobot;
 	float areaRobot;
 
-	vector<ob::PathPtr> *paths;
-	vector<RuntimePath> *runtimePaths;
+	vector<Path> *paths;
+	vector<Path> *runtimePaths;
 	vector<int> idDones, dists;
 	vector<Pose> robots;
 	Workspace *workspace;
@@ -49,9 +49,9 @@ public:
 	Goodrich();
 
 	void init();
-	void setPaths(vector<ob::PathPtr>*);
+	void setPaths(vector<Path>*);
 	void setWorkspace(Workspace*);
-	void allocateRuntimePaths(vector<RuntimePath>*);
+	void allocateRuntimePaths(vector<Path>*);
 	void moveObstacles();
 
 	float angulation(Pose a, Pose b);

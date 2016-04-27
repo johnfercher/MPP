@@ -67,7 +67,7 @@ void Goodrich::moveObstacles(){
 
 void Goodrich::init(){
 	for(int i = 0 ; i < paths->size() ; i++){
-		RuntimePath pathRun;
+		Path pathRun;
 		idDones.push_back(0);
 		dists.push_back(999999);
 		robots.push_back(workspace->start.at(i));
@@ -95,7 +95,7 @@ void Goodrich::init(){
 }
 
 void Goodrich::attractiveForce(){
-	double theta;
+	/*double theta;
 	double distances;
 
 	for(int i = 0 ; i < paths->size() ; i++){
@@ -151,11 +151,11 @@ void Goodrich::attractiveForce(){
 
 		robots.at(i) = robotAct; 	
 		runtimePaths->at(i).path.push_back(robotAct);
-	}
+	}*/
 }
 
 
-void Goodrich::setPaths(vector<ob::PathPtr> *paths){
+void Goodrich::setPaths(vector<Path> *paths){
 	this->paths = paths;
 }
 
@@ -163,12 +163,12 @@ void Goodrich::setWorkspace(Workspace *workspace){
 	this->workspace = workspace;
 }
 
-void Goodrich::allocateRuntimePaths(vector<RuntimePath> *runtimePaths){
+void Goodrich::allocateRuntimePaths(vector<Path> *runtimePaths){
 	this->runtimePaths = runtimePaths;
 }
 
 void Goodrich::repulsiveForceRobotRobot(){
-	double theta;
+	/*double theta;
 	double distances;
 	int k;
 
@@ -195,11 +195,11 @@ void Goodrich::repulsiveForceRobotRobot(){
 				}
 			}
 		}
-	}
+	}*/
 }
 
 void Goodrich::repulsiveForceRobotObjects(){
-	double theta;
+	/*double theta;
 	double distances;
 	int k;
 	
@@ -224,7 +224,7 @@ void Goodrich::repulsiveForceRobotObjects(){
 				k++;	
 			}	
 		}
-	}
+	}*/
 }
 
 float Goodrich::angulation(Pose a, Pose b){

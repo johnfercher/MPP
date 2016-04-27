@@ -1,3 +1,18 @@
+/*The MIT License (MIT)
+
+Copyright (c) 2016 Johnathan Fercher
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+*/
+
 #include "mpp.h"
 
 MPP::MPP(int argc, char** argv){
@@ -5,12 +20,13 @@ MPP::MPP(int argc, char** argv){
 	this->argv = argv;
 
 	simulation_on();
+	//grsim_on(); // need grsim on
 	pathWorkspace = "src/data/workspaces/random7";
 }
 
 void MPP::init(){
 	findPaths();
-	
+
 	init_threads();
 	finalize_threads();
 }
@@ -38,7 +54,6 @@ void MPP::finalize_threads(){
 void MPP::findPaths(){
 	if(simulation){
 		workspace = db.loadWorkspace(pathWorkspace);
-		workspace.show();
 	}else{
 		net.setIpPortReceive();   
 	    usleep(1000000);
@@ -47,13 +62,20 @@ void MPP::findPaths(){
 	        workspace = packetToWorkspace(net.receivePacket());
 	    }
 	}
+
+	//workspace.show();
 	
     offline.setBounds(0.0, 1000.0);        // (0, 0) -> (640, 640)
     offline.setTimeToResolve(1);           // 1 segundo no máximo para offline o problema
     offline.setPlanner(PLANNER_RRTSTAR);
     offline.setWorkspace(&workspace);
 
+    vector<ob::PathPtr> paths;
     paths = offline.solvePaths();
+
+    for(int i = 0 ; i < paths.size() ; i++){
+    	offlinePaths.push_back(PathPrtToPath(paths.at(i)));
+    }
 }
 
 void MPP::simulation_on(){
@@ -67,7 +89,7 @@ void MPP::grsim_on(){
 }
 
 void MPP::draw_thread(){
-	draw.setPaths(paths);
+	draw.setPaths(offlinePaths);
     draw.allocateRuntimePaths(&runtimePaths);
     draw.setObjects(&workspace.objects);
     draw.setSize(1000.0, 1000.0); // pode dar problema
@@ -79,20 +101,66 @@ void MPP::net_thread(){
 }
 
 void MPP::simulation_thread(){
-    goodrich.setPaths(&paths);
+    goodrich.setPaths(&offlinePaths);
     goodrich.setWorkspace(&workspace);
     goodrich.allocateRuntimePaths(&runtimePaths);
     goodrich.init();
 }
 
-Workspace MPP::packetToWorkspace(SSL_WrapperPacket){
+Workspace MPP::packetToWorkspace(SSL_WrapperPacket packet){
+	Workspace ws;
 
+    Pose start(packet.detection().robots_blue(0).x(), packet.detection().robots_blue(0).y(), packet.detection().robots_blue(0).orientation());
+    Pose goal(packet.detection().balls(0).x(), packet.detection().balls(0).y(), packet.detection().robots_blue(0).orientation());
+
+    ws.start.push_back(handlePosition(start));
+    ws.goal.push_back(handlePosition(goal));
+
+    for(int i = 1 ; i < 6 ; i++){ // i = 1
+        Object object(packet.detection().robots_blue(i).x(), packet.detection().robots_blue(i).y(), 20);
+        ws.objects.push_back(handlePosition(object));
+    }
+
+    for(int i = 0 ; i < 6 ; i++){ // i = 0
+        Object object(packet.detection().robots_yellow(i).x(), packet.detection().robots_yellow(i).y(), 20);
+        ws.objects.push_back(handlePosition(object));
+    }
+
+    //ws.show();
+
+    return ws;
 }
 
 Pose MPP::handlePosition(Pose poseGR){
+	Pose poseMPP;
+    
+    poseMPP.x = (poseGR.x + 3000)/6.0;
+    poseMPP.y = (poseGR.y + 2000)/6.0;
+    poseMPP.yaw = poseGR.yaw;
 
+    return poseMPP;
 }
 
 Object MPP::handlePosition(Object objectGR){
+	Object objectMPP;
 
+    objectMPP.x = (objectGR.x + 3000)/6.0;
+    objectMPP.y = (objectGR.y + 2000)/6.0;
+    objectMPP.radius = objectGR.radius;
+
+    return objectMPP;
+}
+
+Path MPP::PathPrtToPath(ob::PathPtr pathPtr){
+	Path path;
+
+	vector<ob::State*> states = boost::static_pointer_cast<og::PathGeometric>(pathPtr)->getStates();
+
+	for(int i = 0 ; i < states.size() ; i++){
+		ob::SE2StateSpace::StateType* state = states.at(i)->as<ob::SE2StateSpace::StateType>();
+		Pose p(state->getX(), state->getY(), state->getYaw());
+		path.path.push_back(p);
+	}
+
+	return path;
 }

@@ -50,13 +50,13 @@ namespace common{
 			cout << "Pose(" << x << ", " << y << ", " << yaw << ")" << endl;
 		};
 	};
-	struct RuntimePath{
+	struct Path{
 		vector<Pose> path;
-		RuntimePath(){};
-		RuntimePath(vector<Pose> path){
+		Path(){};
+		Path(vector<Pose> path){
 			this->path = path;
 		};
-		RuntimePath(RuntimePath *p){
+		Path(Path *p){
 			path = p->path;
 		};
 		void show(){
