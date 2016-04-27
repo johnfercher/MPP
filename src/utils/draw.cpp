@@ -190,6 +190,7 @@ void Draw::timerHandler(int v){
 void Draw::setPaths(vector<ob::PathPtr> paths){
 	this->paths = paths;
 	pathsStatic = this->paths;
+	cout << paths.size() << " : " << pathsStatic.size() << endl;
 }
 
 void Draw::setObjects(vector<Object> *objects){

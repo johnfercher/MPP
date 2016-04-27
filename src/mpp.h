@@ -3,6 +3,7 @@
 
 #include "iostream"
 #include "sstream"
+#include "thread"
 #include "utils/includes/boost.h"
 #include "utils/includes/ompl.h"
 #include "utils/commons.h"
@@ -18,11 +19,15 @@ using namespace std;
 class MPP{
 private:
 	Draw draw;
+	Database db;
+	Offline_planning offline;
 	Net net;
 	Goodrich goodrich;
 	PID pid;
 
-	pthread_t thread[4];
+	thread *thread_draw;
+	thread *thread_net;
+	thread *thread_simulation;
 
 	vector<ob::PathPtr> paths;
 	vector<RuntimePath> runtimePaths;
@@ -31,23 +36,30 @@ private:
 	grSim_Packet packet_grSim;
 	Command command;
 
+	bool simulation, grsim;
+	string pathWorkspace;
+
 	int idDone;
 	int argc;
-	char** argv;
-	
+	char **argv;
+
+	void draw_thread();
+	void net_thread();
+	void simulation_thread();
+	void init_threads();
+	void finalize_threads();
+
 public:
-	MPP();
+	MPP(int argc, char** argv);
 
-	void init(int argc, char** argv);
-
-	void *draw_thread(void *arg);
-	void *exec_thread(void *arg);
-	void *receive_thread(void *arg);
-	void *send_thread(void *arg);
+	void init();
+	void simulation_on();
+	void grsim_on();
+	void findPaths();
 
 	Workspace packetToWorkspace(SSL_WrapperPacket);
 	Pose handlePosition(Pose poseGR);
 	Object handlePosition(Object objectGR);	
 };
 
-#define // _MPP_H_
+#endif // _MPP_H_

@@ -88,14 +88,14 @@ void Goodrich::init(){
 	while(!done){
 		//moveObstacles();
 		attractiveForce();
-		//repulsiveForceRobotRobot();
-		//repulsiveForceRobotObjects();
+		repulsiveForceRobotRobot();
+		repulsiveForceRobotObjects();
 		usleep(50000);
 	}
 }
 
 void Goodrich::attractiveForce(){
-	/*double theta;
+	double theta;
 	double distances;
 
 	for(int i = 0 ; i < paths->size() ; i++){
@@ -151,7 +151,7 @@ void Goodrich::attractiveForce(){
 
 		robots.at(i) = robotAct; 	
 		runtimePaths->at(i).path.push_back(robotAct);
-	}*/
+	}
 }
 
 

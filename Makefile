@@ -14,7 +14,7 @@
 #
 
 
-CCX = g++ -w
+CCX = g++ -std=c++11 -w
 
 
 

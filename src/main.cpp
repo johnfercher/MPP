@@ -23,6 +23,7 @@ copies or substantial portions of the Software.
 #include "control/goodrich.h"
 #include "control/pid.h"
 #include "offline_planning.h"
+#include "mpp.h"
 #include "pthread.h"
 
 using namespace std;
@@ -50,7 +51,9 @@ Object handlePosition(Object objectGR);
 bool argParse(int argc, char** argv, std::string *outputFilePtr);
 
 int main(int argc, char** argv){
-    Offline_planning offline(argc, argv);
+    MPP mpp(argc, argv);
+    mpp.init();
+    /*Offline_planning offline(argc, argv);
     Database db;
     
     argcG = argc;
@@ -80,7 +83,7 @@ int main(int argc, char** argv){
     pthread_join(thread[0], NULL);
     //pthread_join(thread[1], NULL);
     pthread_join(thread[2], NULL);
-    //pthread_join(thread[3], NULL);
+    //pthread_join(thread[3], NULL);*/
 
     return 0;   
 }
