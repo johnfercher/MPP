@@ -24,8 +24,6 @@ License
 
 This code is licensed under the [MIT LICENSE][mit], of which a textual copy is available at [LICENSE.txt][license].
 
-You are allowed and encouraged to use this software on the IEEE Very Small Size Soccer competitions.  If you do, please let us know.
-
 [mit]: https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE
 [protobuf]: https://developers.google.com/protocol-buffers/
 [travis]: https://travis-ci.org/SIRLab/VSS-Vision

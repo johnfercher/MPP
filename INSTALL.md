@@ -13,18 +13,22 @@ Git
 Gnuplot
 OMPL
 Freeglut
+Qt
+Protobuf
 ```
 
 Install (Debian 8)
 ------------------
-
+```
+$ sudo apt-get update && apt-get upgrade
+$ sudo apt-get install build-essential pkg-config git cmake
+$ sudo apt-get install gnuplot libqt4-core libqt4-dev protobuf-compiler libprotobuf-dev freeglut3 freeglut3-dev
+```
 
 License
 -------
 
 This code is licensed under the [MIT LICENSE][mit], of which a textual copy is available at [LICENSE.txt][license].
-
-You are allowed and encouraged to use this software on the IEEE Very Small Size Soccer competitions.  If you do, please let us know.
 
 [mit]: https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE
 [protobuf]: https://developers.google.com/protocol-buffers/
