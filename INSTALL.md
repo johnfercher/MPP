@@ -13,7 +13,7 @@ $ sudo apt-get install build-essential pkg-config git cmake
 $ sudo apt-get install gnuplot libqt4-core libqt4-dev protobuf-compiler libprotobuf-dev freeglut3 freeglut3-dev libompl-dev libboost-all-dev
 ```
 
-**grSim Install**
+**grSim Install** [original][grsim-install]
 ```
 $ sudo apt-get install libode1 libode-dev
 
