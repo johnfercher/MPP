@@ -31,29 +31,22 @@ private:
 	float radiusRobot;
 	float areaRobot;
 
-	vector<Path> *paths;
-	vector<Path> *runtimePaths;
-	vector<int> idDones, dists;
-	vector<Pose> robots;
 	Workspace *workspace;
-
-	bool done;
+	vector<Path> *runtimePaths;
+	Pose goal, result;
+	int id;
 
 	int sign(float signal);
 	void attractiveForce();
 	void repulsiveForceRobotRobot();
 	void repulsiveForceRobotObjects();
-	
 
 public:
 	Goodrich();
 
-	void init();
-	void setPaths(vector<Path>*);
+	Pose calcResult(int, Pose);
 	void setWorkspace(Workspace*);
-	void allocateRuntimePaths(vector<Path>*);
-	void moveObstacles();
-
+	void setRuntimePaths(vector<Path>*);
 	float angulation(Pose a, Pose b);
 	float distance(Pose a, Pose b);
 };

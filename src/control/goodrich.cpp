@@ -21,7 +21,6 @@ Goodrich::Goodrich(){
 	INF = 0.4; //20
 	radiusRobot = 15;
 	areaRobot = 20;
-	done = false;
 }
 
 int Goodrich::sign(float signal){
@@ -34,198 +33,111 @@ int Goodrich::sign(float signal){
 	}
 }
 
-void Goodrich::moveObstacles(){
-	int helperTime = 0;
-	srand(time(NULL)+helperTime);
-
-	for(int i = 0 ; i < workspace->objects.size() ; ){
-		int moveX, moveY;
-		int direX, direY;
-
-		if(rand() % 2 == 0)	direX = 1;
-		else				direX = -1;
-
-		helperTime++;
-
-		if(rand() % 2 == 0)	direY = 1;
-		else				direY = -1;
-
-		helperTime++;
-
-		float x_aux = workspace->objects.at(i).x + (rand()%5)*direX;
-		float y_aux = workspace->objects.at(i).y + (rand()%5)*direY;
-
-		//cout << i << ": " << x_aux << ", " << y_aux << endl;
-		if(x_aux > 0 && x_aux < 1000 && y_aux > 0 && y_aux < 1000){
-			workspace->objects.at(i).x = x_aux;
-			workspace->objects.at(i).y = y_aux;
-			i++;
-		}
+Pose Goodrich::calcResult(int id, Pose goal){
+	this->id = id;
+	this->goal = goal;
+	result = Pose(0, 0, 0);
 	
-	}
-}
+	attractiveForce();
+	//repulsiveForceRobotObjects();
+	//repulsiveForceRobotRobot();
 
-void Goodrich::init(){
-	for(int i = 0 ; i < paths->size() ; i++){
-		Path pathRun;
-		idDones.push_back(0);
-		dists.push_back(999999);
-		robots.push_back(workspace->start.at(i));
-		pathRun.path.push_back(robots.at(i));
-		runtimePaths->push_back(pathRun);
-	}
-
-	//runtimePaths->at(0).path.at(0).show();
-	//distance(
-		//Pose p1 = runtimePaths->at(0).path.at(runtimePaths->at(0).path.size()-1);
-		//Pose p2 = runtimePaths->at(0).path.at(idDones.at(0));
-		//);
-	//distance(p1, p2);
-		//p1.show();
-		//p2.show();
-	//runtimePaths->at(0).path.size();
-	usleep(10000000);
-	while(!done){
-		//moveObstacles();
-		attractiveForce();
-		repulsiveForceRobotRobot();
-		repulsiveForceRobotObjects();
-		usleep(50000);
-	}
+	return result;
 }
 
 void Goodrich::attractiveForce(){
-	/*double theta;
-	double distances;
+	double theta, distances;
 
-	for(int i = 0 ; i < paths->size() ; i++){
-		float x, y, yaw;
-		vector<ob::State*> path = boost::static_pointer_cast<og::PathGeometric>(paths->at(i))->getStates();
-		
-		//cout << "a" << idDones.at(i) << endl;
-		ob::SE2StateSpace::StateType* state2D = path.at(idDones.at(i))->as<ob::SE2StateSpace::StateType>();
-		//cout << "b" << idDones.at(i) << endl;
-
-		x = state2D->getX();
-		y = state2D->getY();
-		yaw = state2D->getYaw();
+	theta = angulation(runtimePaths->at(id).path.at(runtimePaths->at(id).path.size()-1), goal);
+	distances = distance(runtimePaths->at(id).path.at(runtimePaths->at(id).path.size()-1), goal);
+	cout << distances << endl;
 	
-		Pose p(x, y, yaw);
+	if(distances < radiusRobot){
+		result.x += 0;
+		result.y += 0;
+	}
+	else if(distances <= (radiusRobot + areaRobot)){
+		result.x += -alpha*(distances - radiusRobot)*cos(theta/180.0*M_PI); 
+		result.y += -alpha*(distances - radiusRobot)*sin(theta/180.0*M_PI);
+	}else{
+		result.x += -alpha*areaRobot*cos(theta/180.0*M_PI); 
+		result.y += -alpha*areaRobot*sin(theta/180.0*M_PI);
+	}
 
-		Pose robotAct = robots.at(i);
-		//robotAct.show();
-
-		theta = angulation(robotAct, p);
-		distances = distance(robotAct, p);
-
-		if(distances < 20.0 && idDones.at(i) < path.size()-1){
-			idDones.at(i) += 1;
-			//cout << idDones.at(i) << endl;
-			//cout << path.size()-1 << endl;
-			
-			if(idDones.at(i) == path.size()){
-				done = true;
-			}
-
-			state2D = path.at(idDones.at(i))->as<ob::SE2StateSpace::StateType>();
-
-			p.x = state2D->getX();
-			p.y = state2D->getY();
-			p.yaw = state2D->getYaw();
-		
-			theta = angulation(robotAct, p);
-			distances = distance(robotAct, p);
-		}	
-
-		if(distances < radiusRobot){
-			robotAct.x += 0;
-			robotAct.y += 0;
-		}
-		else if(distances <= (radiusRobot + areaRobot)){
-			robotAct.x += -alpha*(distances - radiusRobot)*cos(theta/180.0*M_PI); 
-			robotAct.y += -alpha*(distances - radiusRobot)*sin(theta/180.0*M_PI);
-		}else{
-			robotAct.x += -alpha*areaRobot*cos(theta/180.0*M_PI); 
-			robotAct.y += -alpha*areaRobot*sin(theta/180.0*M_PI);
-		}
-
-		robots.at(i) = robotAct; 	
-		runtimePaths->at(i).path.push_back(robotAct);
-	}*/
+	//cout << "atrativo" << endl;
+	//result.show();
 }
 
+void Goodrich::repulsiveForceRobotRobot(){
+	double theta;
+	double distances;
+	int k;
 
-void Goodrich::setPaths(vector<Path> *paths){
-	this->paths = paths;
+	for(int j = 0 ; j < workspace->start.size() ; j++){
+		if(id != j){
+			theta = angulation(workspace->start.at(id), workspace->start.at(j));
+			distances = distance(workspace->start.at(id), workspace->start.at(j));
+
+			if(distances <= radiusRobot){
+				//se esta escostado no obstaculo, recebe um vetor maximo 
+				result.x += sign(cos(theta))*INF;
+				result.y += sign(sin(theta))*INF;
+
+			}else if(distances <= (radiusRobot + areaRobot)){
+				//se esta dentro da area de influencia
+				result.x += beta*(areaRobot + radiusRobot - distances)*cos(theta/180.0*M_PI); 
+				result.y += beta*(areaRobot + radiusRobot - distances)*sin(theta/180.0*M_PI);
+
+				result.x += rand() % 3;
+				k++;
+				result.y += rand() % 3;
+				k++;	
+			}
+		}
+	}
+
+	//cout << "atrativo" << endl;
+	//result.show();
+}
+
+void Goodrich::repulsiveForceRobotObjects(){
+	double theta;
+	double distances;
+	int k;
+	
+	for(int j = 0 ; j < workspace->objects.size() ; j++){
+		theta = angulation(workspace->start.at(id), Pose(workspace->objects.at(j).x, workspace->objects.at(j).y, 0));
+		distances = distance(workspace->start.at(id), Pose(workspace->objects.at(j).x, workspace->objects.at(j).y, 0));
+
+		if(distances <= workspace->objects.at(j).radius){
+			//se esta escostado no obstaculo, recebe um vetor maximo 
+			result.x += sign(cos(theta))*INF;
+			result.y += sign(sin(theta))*INF;
+
+		}else if(distances <= (workspace->objects.at(j).radius + areaRobot)){
+			//se esta dentro da area de influencia
+			result.x += beta*(areaRobot + workspace->objects.at(j).radius - distances)*cos(theta/180.0*M_PI); 
+			result.y += beta*(areaRobot + workspace->objects.at(j).radius - distances)*sin(theta/180.0*M_PI);
+
+			result.x += rand() % 3;
+			k++;
+			result.y += rand() % 3;
+			k++;	
+		}	
+	}
+
+	//cout << "repulsivo" << endl;
+	//result.show();
 }
 
 void Goodrich::setWorkspace(Workspace *workspace){
 	this->workspace = workspace;
 }
 
-void Goodrich::allocateRuntimePaths(vector<Path> *runtimePaths){
+void Goodrich::setRuntimePaths(vector<Path>* runtimePaths){
 	this->runtimePaths = runtimePaths;
 }
 
-void Goodrich::repulsiveForceRobotRobot(){
-	/*double theta;
-	double distances;
-	int k;
-
-	for(int i = 0 ; i < robots.size() ; i++){
-		for(int j = 0 ; j < robots.size() ; j++){
-			if(i != j){
-				theta = angulation(robots.at(i), robots.at(j));
-				distances = distance(robots.at(i), robots.at(j));
-
-				if(distances <= radiusRobot){
-					//se esta escostado no obstaculo, recebe um vetor maximo 
-					robots.at(i).x += sign(cos(theta))*INF;
-					robots.at(i).y += sign(sin(theta))*INF;
-
-				}else if(distances <= (radiusRobot + areaRobot)){
-					//se esta dentro da area de influencia
-					robots.at(i).x += beta*(areaRobot + radiusRobot - distances)*cos(theta/180.0*M_PI); 
-					robots.at(i).y += beta*(areaRobot + radiusRobot - distances)*sin(theta/180.0*M_PI);
-
-					robots.at(i).x += rand()%3;
-					k++;
-					robots.at(i).y += rand()%3;
-					k++;	
-				}
-			}
-		}
-	}*/
-}
-
-void Goodrich::repulsiveForceRobotObjects(){
-	/*double theta;
-	double distances;
-	int k;
-	
-	for(int i = 0 ; i < robots.size() ; i++){
-		for(int j = 0 ; j < workspace->objects.size() ; j++){
-			theta = angulation(robots.at(i), Pose(workspace->objects.at(j).x, workspace->objects.at(j).y, 0));
-			distances = distance(robots.at(i), Pose(workspace->objects.at(j).x, workspace->objects.at(j).y, 0));
-
-			if(distances <= workspace->objects.at(j).radius){
-				//se esta escostado no obstaculo, recebe um vetor maximo 
-				robots.at(i).x += sign(cos(theta))*INF;
-				robots.at(i).y += sign(sin(theta))*INF;
-
-			}else if(distances <= (workspace->objects.at(j).radius + areaRobot)){
-				//se esta dentro da area de influencia
-				robots.at(i).x += beta*(areaRobot + workspace->objects.at(j).radius - distances)*cos(theta/180.0*M_PI); 
-				robots.at(i).y += beta*(areaRobot + workspace->objects.at(j).radius - distances)*sin(theta/180.0*M_PI);
-
-				robots.at(i).x += rand()%3;
-				k++;
-				robots.at(i).y += rand()%3;
-				k++;	
-			}	
-		}
-	}*/
-}
 
 float Goodrich::angulation(Pose a, Pose b){
 	return (atan2(a.y - b.y, a.x - b.x) * (180/M_PI));

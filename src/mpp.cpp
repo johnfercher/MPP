@@ -21,11 +21,23 @@ MPP::MPP(int argc, char** argv){
 
 	simulation_on();
 	//grsim_on(); // need grsim on
-	pathWorkspace = "src/data/workspaces/random7";
+	pathWorkspace = "src/data/workspaces/default";
 }
 
 void MPP::init(){
 	findPaths();
+
+	goodrich.setWorkspace(&workspace);
+
+	for(int i = 0 ; i < workspace.start.size() ; i++){
+		Path p;
+		p.path.push_back(workspace.start.at(i));
+		runtimePaths.push_back(p);
+
+		idDone.push_back(1); // cause the robot start on position(0) of path and should go position(i)
+	}
+
+	goodrich.setRuntimePaths(&runtimePaths);
 
 	init_threads();
 	finalize_threads();
@@ -101,10 +113,30 @@ void MPP::net_thread(){
 }
 
 void MPP::simulation_thread(){
-    goodrich.setPaths(&offlinePaths);
-    goodrich.setWorkspace(&workspace);
-    goodrich.allocateRuntimePaths(&runtimePaths);
-    goodrich.init();
+    while(1){
+    	for(int i = 0 ; i < runtimePaths.size() ; i++){
+    		Pose result;
+    		float dist = distance(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), offlinePaths.at(i).path.at(idDone.at(i)));
+
+    		if(dist > 20){
+    			result = goodrich.calcResult(i, offlinePaths.at(i).path.at(idDone.at(i)));
+    			cout << "teste" << endl;
+    			runtimePaths.at(i).path.push_back(
+	    			sum(
+	    				runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1),
+	    				result
+	    				)
+	    			);
+    		}else{
+    			cout << offlinePaths.at(i).path.size() << endl;
+    			if(idDone.at(i) < offlinePaths.at(i).path.size()-1){
+    				idDone.at(i)++;
+    			}
+    		}
+
+    		usleep(25000);
+    	}
+    }
 }
 
 Workspace MPP::packetToWorkspace(SSL_WrapperPacket packet){
@@ -163,4 +195,16 @@ Path MPP::PathPrtToPath(ob::PathPtr pathPtr){
 	}
 
 	return path;
+}
+
+Pose MPP::sum(Pose a, Pose b){
+	return Pose(a.x + b.x, a.y + b.y, a.yaw + b.yaw);
+}
+
+float MPP::angulation(Pose a, Pose b){
+	return (atan2(a.y - b.y, a.x - b.x) * (180/M_PI));
+}
+
+float MPP::distance(Pose a, Pose b){
+	return sqrt(((a.x - b.x)*(a.x - b.x)) + ((a.y - b.y)*(a.y - b.y)));
 }

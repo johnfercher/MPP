@@ -46,6 +46,7 @@ private:
 
 	vector<Path> offlinePaths;
 	vector<Path> runtimePaths;
+	vector<int> idDone;
 	
 	Workspace workspace;
 	grSim_Packet packet_grSim;
@@ -54,7 +55,6 @@ private:
 	bool simulation, grsim;
 	string pathWorkspace;
 
-	int idDone;
 	int argc;
 	char **argv;
 
@@ -76,9 +76,9 @@ public:
 	void init();
 	void simulation_on();
 	void grsim_on();
-	
-
-	
+	Pose sum(Pose, Pose);
+	float angulation(Pose a, Pose b);
+	float distance(Pose a, Pose b);
 };
 
 #endif // _MPP_H_
