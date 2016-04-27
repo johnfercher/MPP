@@ -7,7 +7,6 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -49,16 +48,16 @@ void protobuf_AssignDesc_messages_5frobocup_5fssl_5fdetection_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionBall, pixel_y_),
   };
   SSL_DetectionBall_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       SSL_DetectionBall_descriptor_,
       SSL_DetectionBall::default_instance_,
       SSL_DetectionBall_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionBall, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionBall, _unknown_fields_),
       -1,
-      -1,
-      sizeof(SSL_DetectionBall),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionBall, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(SSL_DetectionBall));
   SSL_DetectionRobot_descriptor_ = file->message_type(1);
   static const int SSL_DetectionRobot_offsets_[8] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionRobot, confidence_),
@@ -71,16 +70,16 @@ void protobuf_AssignDesc_messages_5frobocup_5fssl_5fdetection_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionRobot, height_),
   };
   SSL_DetectionRobot_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       SSL_DetectionRobot_descriptor_,
       SSL_DetectionRobot::default_instance_,
       SSL_DetectionRobot_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionRobot, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionRobot, _unknown_fields_),
       -1,
-      -1,
-      sizeof(SSL_DetectionRobot),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionRobot, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(SSL_DetectionRobot));
   SSL_DetectionFrame_descriptor_ = file->message_type(2);
   static const int SSL_DetectionFrame_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionFrame, frame_number_),
@@ -92,16 +91,16 @@ void protobuf_AssignDesc_messages_5frobocup_5fssl_5fdetection_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionFrame, robots_blue_),
   };
   SSL_DetectionFrame_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       SSL_DetectionFrame_descriptor_,
       SSL_DetectionFrame::default_instance_,
       SSL_DetectionFrame_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionFrame, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionFrame, _unknown_fields_),
       -1,
-      -1,
-      sizeof(SSL_DetectionFrame),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_DetectionFrame, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(SSL_DetectionFrame));
 }
 
 namespace {
@@ -115,11 +114,11 @@ inline void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SSL_DetectionBall_descriptor_, &SSL_DetectionBall::default_instance());
+    SSL_DetectionBall_descriptor_, &SSL_DetectionBall::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SSL_DetectionRobot_descriptor_, &SSL_DetectionRobot::default_instance());
+    SSL_DetectionRobot_descriptor_, &SSL_DetectionRobot::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SSL_DetectionFrame_descriptor_, &SSL_DetectionFrame::default_instance());
+    SSL_DetectionFrame_descriptor_, &SSL_DetectionFrame::default_instance());
 }
 
 }  // namespace
@@ -172,19 +171,9 @@ struct StaticDescriptorInitializer_messages_5frobocup_5fssl_5fdetection_2eproto 
   }
 } static_descriptor_initializer_messages_5frobocup_5fssl_5fdetection_2eproto_;
 
-namespace {
-
-static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD;
-static void MergeFromFail(int line) {
-  GOOGLE_CHECK(false) << __FILE__ << ":" << line;
-}
-
-}  // namespace
-
-
 // ===================================================================
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int SSL_DetectionBall::kConfidenceFieldNumber;
 const int SSL_DetectionBall::kAreaFieldNumber;
 const int SSL_DetectionBall::kXFieldNumber;
@@ -192,10 +181,10 @@ const int SSL_DetectionBall::kYFieldNumber;
 const int SSL_DetectionBall::kZFieldNumber;
 const int SSL_DetectionBall::kPixelXFieldNumber;
 const int SSL_DetectionBall::kPixelYFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 SSL_DetectionBall::SSL_DetectionBall()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:SSL_DetectionBall)
 }
@@ -204,8 +193,7 @@ void SSL_DetectionBall::InitAsDefaultInstance() {
 }
 
 SSL_DetectionBall::SSL_DetectionBall(const SSL_DetectionBall& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:SSL_DetectionBall)
@@ -250,34 +238,30 @@ const SSL_DetectionBall& SSL_DetectionBall::default_instance() {
 
 SSL_DetectionBall* SSL_DetectionBall::default_instance_ = NULL;
 
-SSL_DetectionBall* SSL_DetectionBall::New(::google::protobuf::Arena* arena) const {
-  SSL_DetectionBall* n = new SSL_DetectionBall;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+SSL_DetectionBall* SSL_DetectionBall::New() const {
+  return new SSL_DetectionBall;
 }
 
 void SSL_DetectionBall::Clear() {
-#define ZR_HELPER_(f) reinterpret_cast<char*>(\
-  &reinterpret_cast<SSL_DetectionBall*>(16)->f)
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<SSL_DetectionBall*>(16)->f) - \
+   reinterpret_cast<char*>(16))
 
-#define ZR_(first, last) do {\
-  ::memset(&first, 0,\
-           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
-} while (0)
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
 
-  if (_has_bits_[0 / 32] & 127u) {
+  if (_has_bits_[0 / 32] & 127) {
     ZR_(confidence_, pixel_y_);
   }
 
-#undef ZR_HELPER_
+#undef OFFSET_OF_FIELD_
 #undef ZR_
 
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool SSL_DetectionBall::MergePartialFromCodedStream(
@@ -454,7 +438,7 @@ void SSL_DetectionBall::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(7, this->pixel_y(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
@@ -499,7 +483,7 @@ void SSL_DetectionBall::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(7, this->pixel_y(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
@@ -507,59 +491,15 @@ void SSL_DetectionBall::SerializeWithCachedSizes(
   return target;
 }
 
-int SSL_DetectionBall::RequiredFieldsByteSizeFallback() const {
-  int total_size = 0;
-
-  if (has_confidence()) {
-    // required float confidence = 1;
-    total_size += 1 + 4;
-  }
-
-  if (has_x()) {
-    // required float x = 3;
-    total_size += 1 + 4;
-  }
-
-  if (has_y()) {
-    // required float y = 4;
-    total_size += 1 + 4;
-  }
-
-  if (has_pixel_x()) {
-    // required float pixel_x = 6;
-    total_size += 1 + 4;
-  }
-
-  if (has_pixel_y()) {
-    // required float pixel_y = 7;
-    total_size += 1 + 4;
-  }
-
-  return total_size;
-}
 int SSL_DetectionBall::ByteSize() const {
   int total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000006d) ^ 0x0000006d) == 0) {  // All required fields are present.
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // required float confidence = 1;
-    total_size += 1 + 4;
+    if (has_confidence()) {
+      total_size += 1 + 4;
+    }
 
-    // required float x = 3;
-    total_size += 1 + 4;
-
-    // required float y = 4;
-    total_size += 1 + 4;
-
-    // required float pixel_x = 6;
-    total_size += 1 + 4;
-
-    // required float pixel_y = 7;
-    total_size += 1 + 4;
-
-  } else {
-    total_size += RequiredFieldsByteSizeFallback();
-  }
-  if (_has_bits_[1 / 32] & 18u) {
     // optional uint32 area = 2;
     if (has_area()) {
       total_size += 1 +
@@ -567,13 +507,33 @@ int SSL_DetectionBall::ByteSize() const {
           this->area());
     }
 
+    // required float x = 3;
+    if (has_x()) {
+      total_size += 1 + 4;
+    }
+
+    // required float y = 4;
+    if (has_y()) {
+      total_size += 1 + 4;
+    }
+
     // optional float z = 5;
     if (has_z()) {
       total_size += 1 + 4;
     }
 
+    // required float pixel_x = 6;
+    if (has_pixel_x()) {
+      total_size += 1 + 4;
+    }
+
+    // required float pixel_y = 7;
+    if (has_pixel_y()) {
+      total_size += 1 + 4;
+    }
+
   }
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -585,10 +545,10 @@ int SSL_DetectionBall::ByteSize() const {
 }
 
 void SSL_DetectionBall::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
-  const SSL_DetectionBall* source = 
-      ::google::protobuf::internal::DynamicCastToGenerated<const SSL_DetectionBall>(
-          &from);
+  GOOGLE_CHECK_NE(&from, this);
+  const SSL_DetectionBall* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const SSL_DetectionBall*>(
+      &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -597,7 +557,7 @@ void SSL_DetectionBall::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void SSL_DetectionBall::MergeFrom(const SSL_DetectionBall& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_confidence()) {
       set_confidence(from.confidence());
@@ -621,9 +581,7 @@ void SSL_DetectionBall::MergeFrom(const SSL_DetectionBall& from) {
       set_pixel_y(from.pixel_y());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void SSL_DetectionBall::CopyFrom(const ::google::protobuf::Message& from) {
@@ -645,20 +603,18 @@ bool SSL_DetectionBall::IsInitialized() const {
 }
 
 void SSL_DetectionBall::Swap(SSL_DetectionBall* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void SSL_DetectionBall::InternalSwap(SSL_DetectionBall* other) {
-  std::swap(confidence_, other->confidence_);
-  std::swap(area_, other->area_);
-  std::swap(x_, other->x_);
-  std::swap(y_, other->y_);
-  std::swap(z_, other->z_);
-  std::swap(pixel_x_, other->pixel_x_);
-  std::swap(pixel_y_, other->pixel_y_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(confidence_, other->confidence_);
+    std::swap(area_, other->area_);
+    std::swap(x_, other->x_);
+    std::swap(y_, other->y_);
+    std::swap(z_, other->z_);
+    std::swap(pixel_x_, other->pixel_x_);
+    std::swap(pixel_y_, other->pixel_y_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata SSL_DetectionBall::GetMetadata() const {
@@ -669,182 +625,10 @@ void SSL_DetectionBall::InternalSwap(SSL_DetectionBall* other) {
   return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// SSL_DetectionBall
-
-// required float confidence = 1;
-bool SSL_DetectionBall::has_confidence() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void SSL_DetectionBall::set_has_confidence() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void SSL_DetectionBall::clear_has_confidence() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void SSL_DetectionBall::clear_confidence() {
-  confidence_ = 0;
-  clear_has_confidence();
-}
- float SSL_DetectionBall::confidence() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionBall.confidence)
-  return confidence_;
-}
- void SSL_DetectionBall::set_confidence(float value) {
-  set_has_confidence();
-  confidence_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionBall.confidence)
-}
-
-// optional uint32 area = 2;
-bool SSL_DetectionBall::has_area() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-void SSL_DetectionBall::set_has_area() {
-  _has_bits_[0] |= 0x00000002u;
-}
-void SSL_DetectionBall::clear_has_area() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-void SSL_DetectionBall::clear_area() {
-  area_ = 0u;
-  clear_has_area();
-}
- ::google::protobuf::uint32 SSL_DetectionBall::area() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionBall.area)
-  return area_;
-}
- void SSL_DetectionBall::set_area(::google::protobuf::uint32 value) {
-  set_has_area();
-  area_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionBall.area)
-}
-
-// required float x = 3;
-bool SSL_DetectionBall::has_x() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-void SSL_DetectionBall::set_has_x() {
-  _has_bits_[0] |= 0x00000004u;
-}
-void SSL_DetectionBall::clear_has_x() {
-  _has_bits_[0] &= ~0x00000004u;
-}
-void SSL_DetectionBall::clear_x() {
-  x_ = 0;
-  clear_has_x();
-}
- float SSL_DetectionBall::x() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionBall.x)
-  return x_;
-}
- void SSL_DetectionBall::set_x(float value) {
-  set_has_x();
-  x_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionBall.x)
-}
-
-// required float y = 4;
-bool SSL_DetectionBall::has_y() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-void SSL_DetectionBall::set_has_y() {
-  _has_bits_[0] |= 0x00000008u;
-}
-void SSL_DetectionBall::clear_has_y() {
-  _has_bits_[0] &= ~0x00000008u;
-}
-void SSL_DetectionBall::clear_y() {
-  y_ = 0;
-  clear_has_y();
-}
- float SSL_DetectionBall::y() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionBall.y)
-  return y_;
-}
- void SSL_DetectionBall::set_y(float value) {
-  set_has_y();
-  y_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionBall.y)
-}
-
-// optional float z = 5;
-bool SSL_DetectionBall::has_z() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
-}
-void SSL_DetectionBall::set_has_z() {
-  _has_bits_[0] |= 0x00000010u;
-}
-void SSL_DetectionBall::clear_has_z() {
-  _has_bits_[0] &= ~0x00000010u;
-}
-void SSL_DetectionBall::clear_z() {
-  z_ = 0;
-  clear_has_z();
-}
- float SSL_DetectionBall::z() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionBall.z)
-  return z_;
-}
- void SSL_DetectionBall::set_z(float value) {
-  set_has_z();
-  z_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionBall.z)
-}
-
-// required float pixel_x = 6;
-bool SSL_DetectionBall::has_pixel_x() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
-}
-void SSL_DetectionBall::set_has_pixel_x() {
-  _has_bits_[0] |= 0x00000020u;
-}
-void SSL_DetectionBall::clear_has_pixel_x() {
-  _has_bits_[0] &= ~0x00000020u;
-}
-void SSL_DetectionBall::clear_pixel_x() {
-  pixel_x_ = 0;
-  clear_has_pixel_x();
-}
- float SSL_DetectionBall::pixel_x() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionBall.pixel_x)
-  return pixel_x_;
-}
- void SSL_DetectionBall::set_pixel_x(float value) {
-  set_has_pixel_x();
-  pixel_x_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionBall.pixel_x)
-}
-
-// required float pixel_y = 7;
-bool SSL_DetectionBall::has_pixel_y() const {
-  return (_has_bits_[0] & 0x00000040u) != 0;
-}
-void SSL_DetectionBall::set_has_pixel_y() {
-  _has_bits_[0] |= 0x00000040u;
-}
-void SSL_DetectionBall::clear_has_pixel_y() {
-  _has_bits_[0] &= ~0x00000040u;
-}
-void SSL_DetectionBall::clear_pixel_y() {
-  pixel_y_ = 0;
-  clear_has_pixel_y();
-}
- float SSL_DetectionBall::pixel_y() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionBall.pixel_y)
-  return pixel_y_;
-}
- void SSL_DetectionBall::set_pixel_y(float value) {
-  set_has_pixel_y();
-  pixel_y_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionBall.pixel_y)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int SSL_DetectionRobot::kConfidenceFieldNumber;
 const int SSL_DetectionRobot::kRobotIdFieldNumber;
 const int SSL_DetectionRobot::kXFieldNumber;
@@ -853,10 +637,10 @@ const int SSL_DetectionRobot::kOrientationFieldNumber;
 const int SSL_DetectionRobot::kPixelXFieldNumber;
 const int SSL_DetectionRobot::kPixelYFieldNumber;
 const int SSL_DetectionRobot::kHeightFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 SSL_DetectionRobot::SSL_DetectionRobot()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:SSL_DetectionRobot)
 }
@@ -865,8 +649,7 @@ void SSL_DetectionRobot::InitAsDefaultInstance() {
 }
 
 SSL_DetectionRobot::SSL_DetectionRobot(const SSL_DetectionRobot& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:SSL_DetectionRobot)
@@ -912,34 +695,30 @@ const SSL_DetectionRobot& SSL_DetectionRobot::default_instance() {
 
 SSL_DetectionRobot* SSL_DetectionRobot::default_instance_ = NULL;
 
-SSL_DetectionRobot* SSL_DetectionRobot::New(::google::protobuf::Arena* arena) const {
-  SSL_DetectionRobot* n = new SSL_DetectionRobot;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+SSL_DetectionRobot* SSL_DetectionRobot::New() const {
+  return new SSL_DetectionRobot;
 }
 
 void SSL_DetectionRobot::Clear() {
-#define ZR_HELPER_(f) reinterpret_cast<char*>(\
-  &reinterpret_cast<SSL_DetectionRobot*>(16)->f)
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<SSL_DetectionRobot*>(16)->f) - \
+   reinterpret_cast<char*>(16))
 
-#define ZR_(first, last) do {\
-  ::memset(&first, 0,\
-           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
-} while (0)
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
 
-  if (_has_bits_[0 / 32] & 255u) {
+  if (_has_bits_[0 / 32] & 255) {
     ZR_(confidence_, height_);
   }
 
-#undef ZR_HELPER_
+#undef OFFSET_OF_FIELD_
 #undef ZR_
 
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool SSL_DetectionRobot::MergePartialFromCodedStream(
@@ -1136,7 +915,7 @@ void SSL_DetectionRobot::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(8, this->height(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
@@ -1186,7 +965,7 @@ void SSL_DetectionRobot::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(8, this->height(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
@@ -1194,59 +973,15 @@ void SSL_DetectionRobot::SerializeWithCachedSizes(
   return target;
 }
 
-int SSL_DetectionRobot::RequiredFieldsByteSizeFallback() const {
-  int total_size = 0;
-
-  if (has_confidence()) {
-    // required float confidence = 1;
-    total_size += 1 + 4;
-  }
-
-  if (has_x()) {
-    // required float x = 3;
-    total_size += 1 + 4;
-  }
-
-  if (has_y()) {
-    // required float y = 4;
-    total_size += 1 + 4;
-  }
-
-  if (has_pixel_x()) {
-    // required float pixel_x = 6;
-    total_size += 1 + 4;
-  }
-
-  if (has_pixel_y()) {
-    // required float pixel_y = 7;
-    total_size += 1 + 4;
-  }
-
-  return total_size;
-}
 int SSL_DetectionRobot::ByteSize() const {
   int total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000006d) ^ 0x0000006d) == 0) {  // All required fields are present.
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // required float confidence = 1;
-    total_size += 1 + 4;
+    if (has_confidence()) {
+      total_size += 1 + 4;
+    }
 
-    // required float x = 3;
-    total_size += 1 + 4;
-
-    // required float y = 4;
-    total_size += 1 + 4;
-
-    // required float pixel_x = 6;
-    total_size += 1 + 4;
-
-    // required float pixel_y = 7;
-    total_size += 1 + 4;
-
-  } else {
-    total_size += RequiredFieldsByteSizeFallback();
-  }
-  if (_has_bits_[1 / 32] & 146u) {
     // optional uint32 robot_id = 2;
     if (has_robot_id()) {
       total_size += 1 +
@@ -1254,8 +989,28 @@ int SSL_DetectionRobot::ByteSize() const {
           this->robot_id());
     }
 
+    // required float x = 3;
+    if (has_x()) {
+      total_size += 1 + 4;
+    }
+
+    // required float y = 4;
+    if (has_y()) {
+      total_size += 1 + 4;
+    }
+
     // optional float orientation = 5;
     if (has_orientation()) {
+      total_size += 1 + 4;
+    }
+
+    // required float pixel_x = 6;
+    if (has_pixel_x()) {
+      total_size += 1 + 4;
+    }
+
+    // required float pixel_y = 7;
+    if (has_pixel_y()) {
       total_size += 1 + 4;
     }
 
@@ -1265,7 +1020,7 @@ int SSL_DetectionRobot::ByteSize() const {
     }
 
   }
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1277,10 +1032,10 @@ int SSL_DetectionRobot::ByteSize() const {
 }
 
 void SSL_DetectionRobot::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
-  const SSL_DetectionRobot* source = 
-      ::google::protobuf::internal::DynamicCastToGenerated<const SSL_DetectionRobot>(
-          &from);
+  GOOGLE_CHECK_NE(&from, this);
+  const SSL_DetectionRobot* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const SSL_DetectionRobot*>(
+      &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1289,7 +1044,7 @@ void SSL_DetectionRobot::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void SSL_DetectionRobot::MergeFrom(const SSL_DetectionRobot& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_confidence()) {
       set_confidence(from.confidence());
@@ -1316,9 +1071,7 @@ void SSL_DetectionRobot::MergeFrom(const SSL_DetectionRobot& from) {
       set_height(from.height());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void SSL_DetectionRobot::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1340,21 +1093,19 @@ bool SSL_DetectionRobot::IsInitialized() const {
 }
 
 void SSL_DetectionRobot::Swap(SSL_DetectionRobot* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void SSL_DetectionRobot::InternalSwap(SSL_DetectionRobot* other) {
-  std::swap(confidence_, other->confidence_);
-  std::swap(robot_id_, other->robot_id_);
-  std::swap(x_, other->x_);
-  std::swap(y_, other->y_);
-  std::swap(orientation_, other->orientation_);
-  std::swap(pixel_x_, other->pixel_x_);
-  std::swap(pixel_y_, other->pixel_y_);
-  std::swap(height_, other->height_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(confidence_, other->confidence_);
+    std::swap(robot_id_, other->robot_id_);
+    std::swap(x_, other->x_);
+    std::swap(y_, other->y_);
+    std::swap(orientation_, other->orientation_);
+    std::swap(pixel_x_, other->pixel_x_);
+    std::swap(pixel_y_, other->pixel_y_);
+    std::swap(height_, other->height_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata SSL_DetectionRobot::GetMetadata() const {
@@ -1365,206 +1116,10 @@ void SSL_DetectionRobot::InternalSwap(SSL_DetectionRobot* other) {
   return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// SSL_DetectionRobot
-
-// required float confidence = 1;
-bool SSL_DetectionRobot::has_confidence() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void SSL_DetectionRobot::set_has_confidence() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void SSL_DetectionRobot::clear_has_confidence() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void SSL_DetectionRobot::clear_confidence() {
-  confidence_ = 0;
-  clear_has_confidence();
-}
- float SSL_DetectionRobot::confidence() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionRobot.confidence)
-  return confidence_;
-}
- void SSL_DetectionRobot::set_confidence(float value) {
-  set_has_confidence();
-  confidence_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionRobot.confidence)
-}
-
-// optional uint32 robot_id = 2;
-bool SSL_DetectionRobot::has_robot_id() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-void SSL_DetectionRobot::set_has_robot_id() {
-  _has_bits_[0] |= 0x00000002u;
-}
-void SSL_DetectionRobot::clear_has_robot_id() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-void SSL_DetectionRobot::clear_robot_id() {
-  robot_id_ = 0u;
-  clear_has_robot_id();
-}
- ::google::protobuf::uint32 SSL_DetectionRobot::robot_id() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionRobot.robot_id)
-  return robot_id_;
-}
- void SSL_DetectionRobot::set_robot_id(::google::protobuf::uint32 value) {
-  set_has_robot_id();
-  robot_id_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionRobot.robot_id)
-}
-
-// required float x = 3;
-bool SSL_DetectionRobot::has_x() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-void SSL_DetectionRobot::set_has_x() {
-  _has_bits_[0] |= 0x00000004u;
-}
-void SSL_DetectionRobot::clear_has_x() {
-  _has_bits_[0] &= ~0x00000004u;
-}
-void SSL_DetectionRobot::clear_x() {
-  x_ = 0;
-  clear_has_x();
-}
- float SSL_DetectionRobot::x() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionRobot.x)
-  return x_;
-}
- void SSL_DetectionRobot::set_x(float value) {
-  set_has_x();
-  x_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionRobot.x)
-}
-
-// required float y = 4;
-bool SSL_DetectionRobot::has_y() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-void SSL_DetectionRobot::set_has_y() {
-  _has_bits_[0] |= 0x00000008u;
-}
-void SSL_DetectionRobot::clear_has_y() {
-  _has_bits_[0] &= ~0x00000008u;
-}
-void SSL_DetectionRobot::clear_y() {
-  y_ = 0;
-  clear_has_y();
-}
- float SSL_DetectionRobot::y() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionRobot.y)
-  return y_;
-}
- void SSL_DetectionRobot::set_y(float value) {
-  set_has_y();
-  y_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionRobot.y)
-}
-
-// optional float orientation = 5;
-bool SSL_DetectionRobot::has_orientation() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
-}
-void SSL_DetectionRobot::set_has_orientation() {
-  _has_bits_[0] |= 0x00000010u;
-}
-void SSL_DetectionRobot::clear_has_orientation() {
-  _has_bits_[0] &= ~0x00000010u;
-}
-void SSL_DetectionRobot::clear_orientation() {
-  orientation_ = 0;
-  clear_has_orientation();
-}
- float SSL_DetectionRobot::orientation() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionRobot.orientation)
-  return orientation_;
-}
- void SSL_DetectionRobot::set_orientation(float value) {
-  set_has_orientation();
-  orientation_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionRobot.orientation)
-}
-
-// required float pixel_x = 6;
-bool SSL_DetectionRobot::has_pixel_x() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
-}
-void SSL_DetectionRobot::set_has_pixel_x() {
-  _has_bits_[0] |= 0x00000020u;
-}
-void SSL_DetectionRobot::clear_has_pixel_x() {
-  _has_bits_[0] &= ~0x00000020u;
-}
-void SSL_DetectionRobot::clear_pixel_x() {
-  pixel_x_ = 0;
-  clear_has_pixel_x();
-}
- float SSL_DetectionRobot::pixel_x() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionRobot.pixel_x)
-  return pixel_x_;
-}
- void SSL_DetectionRobot::set_pixel_x(float value) {
-  set_has_pixel_x();
-  pixel_x_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionRobot.pixel_x)
-}
-
-// required float pixel_y = 7;
-bool SSL_DetectionRobot::has_pixel_y() const {
-  return (_has_bits_[0] & 0x00000040u) != 0;
-}
-void SSL_DetectionRobot::set_has_pixel_y() {
-  _has_bits_[0] |= 0x00000040u;
-}
-void SSL_DetectionRobot::clear_has_pixel_y() {
-  _has_bits_[0] &= ~0x00000040u;
-}
-void SSL_DetectionRobot::clear_pixel_y() {
-  pixel_y_ = 0;
-  clear_has_pixel_y();
-}
- float SSL_DetectionRobot::pixel_y() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionRobot.pixel_y)
-  return pixel_y_;
-}
- void SSL_DetectionRobot::set_pixel_y(float value) {
-  set_has_pixel_y();
-  pixel_y_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionRobot.pixel_y)
-}
-
-// optional float height = 8;
-bool SSL_DetectionRobot::has_height() const {
-  return (_has_bits_[0] & 0x00000080u) != 0;
-}
-void SSL_DetectionRobot::set_has_height() {
-  _has_bits_[0] |= 0x00000080u;
-}
-void SSL_DetectionRobot::clear_has_height() {
-  _has_bits_[0] &= ~0x00000080u;
-}
-void SSL_DetectionRobot::clear_height() {
-  height_ = 0;
-  clear_has_height();
-}
- float SSL_DetectionRobot::height() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionRobot.height)
-  return height_;
-}
- void SSL_DetectionRobot::set_height(float value) {
-  set_has_height();
-  height_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionRobot.height)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int SSL_DetectionFrame::kFrameNumberFieldNumber;
 const int SSL_DetectionFrame::kTCaptureFieldNumber;
 const int SSL_DetectionFrame::kTSentFieldNumber;
@@ -1572,10 +1127,10 @@ const int SSL_DetectionFrame::kCameraIdFieldNumber;
 const int SSL_DetectionFrame::kBallsFieldNumber;
 const int SSL_DetectionFrame::kRobotsYellowFieldNumber;
 const int SSL_DetectionFrame::kRobotsBlueFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 SSL_DetectionFrame::SSL_DetectionFrame()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:SSL_DetectionFrame)
 }
@@ -1584,8 +1139,7 @@ void SSL_DetectionFrame::InitAsDefaultInstance() {
 }
 
 SSL_DetectionFrame::SSL_DetectionFrame(const SSL_DetectionFrame& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:SSL_DetectionFrame)
@@ -1627,35 +1181,31 @@ const SSL_DetectionFrame& SSL_DetectionFrame::default_instance() {
 
 SSL_DetectionFrame* SSL_DetectionFrame::default_instance_ = NULL;
 
-SSL_DetectionFrame* SSL_DetectionFrame::New(::google::protobuf::Arena* arena) const {
-  SSL_DetectionFrame* n = new SSL_DetectionFrame;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+SSL_DetectionFrame* SSL_DetectionFrame::New() const {
+  return new SSL_DetectionFrame;
 }
 
 void SSL_DetectionFrame::Clear() {
-#define ZR_HELPER_(f) reinterpret_cast<char*>(\
-  &reinterpret_cast<SSL_DetectionFrame*>(16)->f)
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<SSL_DetectionFrame*>(16)->f) - \
+   reinterpret_cast<char*>(16))
 
-#define ZR_(first, last) do {\
-  ::memset(&first, 0,\
-           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
-} while (0)
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
 
   ZR_(t_capture_, t_sent_);
 
-#undef ZR_HELPER_
+#undef OFFSET_OF_FIELD_
 #undef ZR_
 
   balls_.Clear();
   robots_yellow_.Clear();
   robots_blue_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool SSL_DetectionFrame::MergePartialFromCodedStream(
@@ -1731,47 +1281,40 @@ bool SSL_DetectionFrame::MergePartialFromCodedStream(
       case 5: {
         if (tag == 42) {
          parse_balls:
-          DO_(input->IncrementRecursionDepth());
-         parse_loop_balls:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                 input, add_balls()));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(42)) goto parse_loop_balls;
-        if (input->ExpectTag(50)) goto parse_loop_robots_yellow;
-        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(42)) goto parse_balls;
+        if (input->ExpectTag(50)) goto parse_robots_yellow;
         break;
       }
 
       // repeated .SSL_DetectionRobot robots_yellow = 6;
       case 6: {
         if (tag == 50) {
-          DO_(input->IncrementRecursionDepth());
-         parse_loop_robots_yellow:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
+         parse_robots_yellow:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                 input, add_robots_yellow()));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(50)) goto parse_loop_robots_yellow;
-        if (input->ExpectTag(58)) goto parse_loop_robots_blue;
-        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(50)) goto parse_robots_yellow;
+        if (input->ExpectTag(58)) goto parse_robots_blue;
         break;
       }
 
       // repeated .SSL_DetectionRobot robots_blue = 7;
       case 7: {
         if (tag == 58) {
-          DO_(input->IncrementRecursionDepth());
-         parse_loop_robots_blue:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
+         parse_robots_blue:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                 input, add_robots_blue()));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(58)) goto parse_loop_robots_blue;
-        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(58)) goto parse_robots_blue;
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -1822,24 +1365,24 @@ void SSL_DetectionFrame::SerializeWithCachedSizes(
   }
 
   // repeated .SSL_DetectionBall balls = 5;
-  for (unsigned int i = 0, n = this->balls_size(); i < n; i++) {
+  for (int i = 0; i < this->balls_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, this->balls(i), output);
   }
 
   // repeated .SSL_DetectionRobot robots_yellow = 6;
-  for (unsigned int i = 0, n = this->robots_yellow_size(); i < n; i++) {
+  for (int i = 0; i < this->robots_yellow_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       6, this->robots_yellow(i), output);
   }
 
   // repeated .SSL_DetectionRobot robots_blue = 7;
-  for (unsigned int i = 0, n = this->robots_blue_size(); i < n; i++) {
+  for (int i = 0; i < this->robots_blue_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       7, this->robots_blue(i), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
@@ -1870,27 +1413,27 @@ void SSL_DetectionFrame::SerializeWithCachedSizes(
   }
 
   // repeated .SSL_DetectionBall balls = 5;
-  for (unsigned int i = 0, n = this->balls_size(); i < n; i++) {
+  for (int i = 0; i < this->balls_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         5, this->balls(i), target);
   }
 
   // repeated .SSL_DetectionRobot robots_yellow = 6;
-  for (unsigned int i = 0, n = this->robots_yellow_size(); i < n; i++) {
+  for (int i = 0; i < this->robots_yellow_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         6, this->robots_yellow(i), target);
   }
 
   // repeated .SSL_DetectionRobot robots_blue = 7;
-  for (unsigned int i = 0, n = this->robots_blue_size(); i < n; i++) {
+  for (int i = 0; i < this->robots_blue_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         7, this->robots_blue(i), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
@@ -1898,57 +1441,34 @@ void SSL_DetectionFrame::SerializeWithCachedSizes(
   return target;
 }
 
-int SSL_DetectionFrame::RequiredFieldsByteSizeFallback() const {
-  int total_size = 0;
-
-  if (has_frame_number()) {
-    // required uint32 frame_number = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->frame_number());
-  }
-
-  if (has_t_capture()) {
-    // required double t_capture = 2;
-    total_size += 1 + 8;
-  }
-
-  if (has_t_sent()) {
-    // required double t_sent = 3;
-    total_size += 1 + 8;
-  }
-
-  if (has_camera_id()) {
-    // required uint32 camera_id = 4;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->camera_id());
-  }
-
-  return total_size;
-}
 int SSL_DetectionFrame::ByteSize() const {
   int total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000000f) ^ 0x0000000f) == 0) {  // All required fields are present.
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // required uint32 frame_number = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->frame_number());
+    if (has_frame_number()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->frame_number());
+    }
 
     // required double t_capture = 2;
-    total_size += 1 + 8;
+    if (has_t_capture()) {
+      total_size += 1 + 8;
+    }
 
     // required double t_sent = 3;
-    total_size += 1 + 8;
+    if (has_t_sent()) {
+      total_size += 1 + 8;
+    }
 
     // required uint32 camera_id = 4;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->camera_id());
+    if (has_camera_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->camera_id());
+    }
 
-  } else {
-    total_size += RequiredFieldsByteSizeFallback();
   }
   // repeated .SSL_DetectionBall balls = 5;
   total_size += 1 * this->balls_size();
@@ -1974,7 +1494,7 @@ int SSL_DetectionFrame::ByteSize() const {
         this->robots_blue(i));
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1986,10 +1506,10 @@ int SSL_DetectionFrame::ByteSize() const {
 }
 
 void SSL_DetectionFrame::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
-  const SSL_DetectionFrame* source = 
-      ::google::protobuf::internal::DynamicCastToGenerated<const SSL_DetectionFrame>(
-          &from);
+  GOOGLE_CHECK_NE(&from, this);
+  const SSL_DetectionFrame* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const SSL_DetectionFrame*>(
+      &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1998,7 +1518,7 @@ void SSL_DetectionFrame::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void SSL_DetectionFrame::MergeFrom(const SSL_DetectionFrame& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   balls_.MergeFrom(from.balls_);
   robots_yellow_.MergeFrom(from.robots_yellow_);
   robots_blue_.MergeFrom(from.robots_blue_);
@@ -2016,9 +1536,7 @@ void SSL_DetectionFrame::MergeFrom(const SSL_DetectionFrame& from) {
       set_camera_id(from.camera_id());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void SSL_DetectionFrame::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2043,20 +1561,18 @@ bool SSL_DetectionFrame::IsInitialized() const {
 }
 
 void SSL_DetectionFrame::Swap(SSL_DetectionFrame* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void SSL_DetectionFrame::InternalSwap(SSL_DetectionFrame* other) {
-  std::swap(frame_number_, other->frame_number_);
-  std::swap(t_capture_, other->t_capture_);
-  std::swap(t_sent_, other->t_sent_);
-  std::swap(camera_id_, other->camera_id_);
-  balls_.UnsafeArenaSwap(&other->balls_);
-  robots_yellow_.UnsafeArenaSwap(&other->robots_yellow_);
-  robots_blue_.UnsafeArenaSwap(&other->robots_blue_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(frame_number_, other->frame_number_);
+    std::swap(t_capture_, other->t_capture_);
+    std::swap(t_sent_, other->t_sent_);
+    std::swap(camera_id_, other->camera_id_);
+    balls_.Swap(&other->balls_);
+    robots_yellow_.Swap(&other->robots_yellow_);
+    robots_blue_.Swap(&other->robots_blue_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata SSL_DetectionFrame::GetMetadata() const {
@@ -2067,196 +1583,6 @@ void SSL_DetectionFrame::InternalSwap(SSL_DetectionFrame* other) {
   return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// SSL_DetectionFrame
-
-// required uint32 frame_number = 1;
-bool SSL_DetectionFrame::has_frame_number() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void SSL_DetectionFrame::set_has_frame_number() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void SSL_DetectionFrame::clear_has_frame_number() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void SSL_DetectionFrame::clear_frame_number() {
-  frame_number_ = 0u;
-  clear_has_frame_number();
-}
- ::google::protobuf::uint32 SSL_DetectionFrame::frame_number() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionFrame.frame_number)
-  return frame_number_;
-}
- void SSL_DetectionFrame::set_frame_number(::google::protobuf::uint32 value) {
-  set_has_frame_number();
-  frame_number_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionFrame.frame_number)
-}
-
-// required double t_capture = 2;
-bool SSL_DetectionFrame::has_t_capture() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-void SSL_DetectionFrame::set_has_t_capture() {
-  _has_bits_[0] |= 0x00000002u;
-}
-void SSL_DetectionFrame::clear_has_t_capture() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-void SSL_DetectionFrame::clear_t_capture() {
-  t_capture_ = 0;
-  clear_has_t_capture();
-}
- double SSL_DetectionFrame::t_capture() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionFrame.t_capture)
-  return t_capture_;
-}
- void SSL_DetectionFrame::set_t_capture(double value) {
-  set_has_t_capture();
-  t_capture_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionFrame.t_capture)
-}
-
-// required double t_sent = 3;
-bool SSL_DetectionFrame::has_t_sent() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-void SSL_DetectionFrame::set_has_t_sent() {
-  _has_bits_[0] |= 0x00000004u;
-}
-void SSL_DetectionFrame::clear_has_t_sent() {
-  _has_bits_[0] &= ~0x00000004u;
-}
-void SSL_DetectionFrame::clear_t_sent() {
-  t_sent_ = 0;
-  clear_has_t_sent();
-}
- double SSL_DetectionFrame::t_sent() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionFrame.t_sent)
-  return t_sent_;
-}
- void SSL_DetectionFrame::set_t_sent(double value) {
-  set_has_t_sent();
-  t_sent_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionFrame.t_sent)
-}
-
-// required uint32 camera_id = 4;
-bool SSL_DetectionFrame::has_camera_id() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-void SSL_DetectionFrame::set_has_camera_id() {
-  _has_bits_[0] |= 0x00000008u;
-}
-void SSL_DetectionFrame::clear_has_camera_id() {
-  _has_bits_[0] &= ~0x00000008u;
-}
-void SSL_DetectionFrame::clear_camera_id() {
-  camera_id_ = 0u;
-  clear_has_camera_id();
-}
- ::google::protobuf::uint32 SSL_DetectionFrame::camera_id() const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionFrame.camera_id)
-  return camera_id_;
-}
- void SSL_DetectionFrame::set_camera_id(::google::protobuf::uint32 value) {
-  set_has_camera_id();
-  camera_id_ = value;
-  // @@protoc_insertion_point(field_set:SSL_DetectionFrame.camera_id)
-}
-
-// repeated .SSL_DetectionBall balls = 5;
-int SSL_DetectionFrame::balls_size() const {
-  return balls_.size();
-}
-void SSL_DetectionFrame::clear_balls() {
-  balls_.Clear();
-}
-const ::SSL_DetectionBall& SSL_DetectionFrame::balls(int index) const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionFrame.balls)
-  return balls_.Get(index);
-}
-::SSL_DetectionBall* SSL_DetectionFrame::mutable_balls(int index) {
-  // @@protoc_insertion_point(field_mutable:SSL_DetectionFrame.balls)
-  return balls_.Mutable(index);
-}
-::SSL_DetectionBall* SSL_DetectionFrame::add_balls() {
-  // @@protoc_insertion_point(field_add:SSL_DetectionFrame.balls)
-  return balls_.Add();
-}
-::google::protobuf::RepeatedPtrField< ::SSL_DetectionBall >*
-SSL_DetectionFrame::mutable_balls() {
-  // @@protoc_insertion_point(field_mutable_list:SSL_DetectionFrame.balls)
-  return &balls_;
-}
-const ::google::protobuf::RepeatedPtrField< ::SSL_DetectionBall >&
-SSL_DetectionFrame::balls() const {
-  // @@protoc_insertion_point(field_list:SSL_DetectionFrame.balls)
-  return balls_;
-}
-
-// repeated .SSL_DetectionRobot robots_yellow = 6;
-int SSL_DetectionFrame::robots_yellow_size() const {
-  return robots_yellow_.size();
-}
-void SSL_DetectionFrame::clear_robots_yellow() {
-  robots_yellow_.Clear();
-}
-const ::SSL_DetectionRobot& SSL_DetectionFrame::robots_yellow(int index) const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionFrame.robots_yellow)
-  return robots_yellow_.Get(index);
-}
-::SSL_DetectionRobot* SSL_DetectionFrame::mutable_robots_yellow(int index) {
-  // @@protoc_insertion_point(field_mutable:SSL_DetectionFrame.robots_yellow)
-  return robots_yellow_.Mutable(index);
-}
-::SSL_DetectionRobot* SSL_DetectionFrame::add_robots_yellow() {
-  // @@protoc_insertion_point(field_add:SSL_DetectionFrame.robots_yellow)
-  return robots_yellow_.Add();
-}
-::google::protobuf::RepeatedPtrField< ::SSL_DetectionRobot >*
-SSL_DetectionFrame::mutable_robots_yellow() {
-  // @@protoc_insertion_point(field_mutable_list:SSL_DetectionFrame.robots_yellow)
-  return &robots_yellow_;
-}
-const ::google::protobuf::RepeatedPtrField< ::SSL_DetectionRobot >&
-SSL_DetectionFrame::robots_yellow() const {
-  // @@protoc_insertion_point(field_list:SSL_DetectionFrame.robots_yellow)
-  return robots_yellow_;
-}
-
-// repeated .SSL_DetectionRobot robots_blue = 7;
-int SSL_DetectionFrame::robots_blue_size() const {
-  return robots_blue_.size();
-}
-void SSL_DetectionFrame::clear_robots_blue() {
-  robots_blue_.Clear();
-}
-const ::SSL_DetectionRobot& SSL_DetectionFrame::robots_blue(int index) const {
-  // @@protoc_insertion_point(field_get:SSL_DetectionFrame.robots_blue)
-  return robots_blue_.Get(index);
-}
-::SSL_DetectionRobot* SSL_DetectionFrame::mutable_robots_blue(int index) {
-  // @@protoc_insertion_point(field_mutable:SSL_DetectionFrame.robots_blue)
-  return robots_blue_.Mutable(index);
-}
-::SSL_DetectionRobot* SSL_DetectionFrame::add_robots_blue() {
-  // @@protoc_insertion_point(field_add:SSL_DetectionFrame.robots_blue)
-  return robots_blue_.Add();
-}
-::google::protobuf::RepeatedPtrField< ::SSL_DetectionRobot >*
-SSL_DetectionFrame::mutable_robots_blue() {
-  // @@protoc_insertion_point(field_mutable_list:SSL_DetectionFrame.robots_blue)
-  return &robots_blue_;
-}
-const ::google::protobuf::RepeatedPtrField< ::SSL_DetectionRobot >&
-SSL_DetectionFrame::robots_blue() const {
-  // @@protoc_insertion_point(field_list:SSL_DetectionFrame.robots_blue)
-  return robots_blue_;
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

@@ -15,6 +15,7 @@ OMPL
 Freeglut
 Qt
 Protobuf
+Libboost
 ```
 
 Install (Debian 8)
@@ -22,7 +23,7 @@ Install (Debian 8)
 ```
 $ sudo apt-get update && apt-get upgrade
 $ sudo apt-get install build-essential pkg-config git cmake
-$ sudo apt-get install gnuplot libqt4-core libqt4-dev protobuf-compiler libprotobuf-dev freeglut3 freeglut3-dev
+$ sudo apt-get install gnuplot libqt4-core libqt4-dev protobuf-compiler libprotobuf-dev freeglut3 freeglut3-dev libompl-dev libboost-all-dev
 ```
 
 License
