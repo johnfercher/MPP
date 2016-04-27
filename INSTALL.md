@@ -1,23 +1,23 @@
-Multiple Path Planning
+Installation Multiple Path Planning
 ----------------------
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)][mit]
 
-
-Installation
-------------------------------
-[INSTALL][install]
-
-Release
--------
+Requirements
+------------
 
 ```
-* OMPL funcionando, gnuplot salvando caminhos em txt e png e início da arquitetura.
-* Arquitetura quase pronta, verifica colisão entre múltiplos obstáculos.
-* Salvando configurações de espaço, Draw adicionado, imprime caminhos e workspace.
-* Programa simulando a execução de um caminho de vários robôs com campos potenciais
-* Programa conversando com o simulador grSim. Obtendo estado do espaço de trabalho e enviando comandos
+G++
+Cmake
+Git
+Gnuplot
+OMPL
+Freeglut
 ```
+
+Install (Debian 8)
+------------------
+
 
 License
 -------
@@ -35,4 +35,3 @@ You are allowed and encouraged to use this software on the IEEE Very Small Size 
 [ssl-vision]: https://github.com/RoboCup-SSL/ssl-vision
 [grsim]: https://github.com/mani-monaj/grSim
 [license]: https://github.com/johnfercher/MPP/blob/master/LICENSE.txt
-[install]: https://github.com/johnfercher/MPP/blob/master/INSTALL.md
