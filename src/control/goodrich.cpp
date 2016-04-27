@@ -50,7 +50,7 @@ void Goodrich::attractiveForce(){
 
 	theta = angulation(runtimePaths->at(id).path.at(runtimePaths->at(id).path.size()-1), goal);
 	distances = distance(runtimePaths->at(id).path.at(runtimePaths->at(id).path.size()-1), goal);
-	cout << distances << endl;
+	//cout << distances << endl;
 	
 	if(distances < radiusRobot){
 		result.x += 0;

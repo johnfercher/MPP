@@ -21,7 +21,7 @@ MPP::MPP(int argc, char** argv){
 
 	simulation_on();
 	//grsim_on(); // need grsim on
-	pathWorkspace = "src/data/workspaces/default";
+	pathWorkspace = "src/data/workspaces/random7";
 }
 
 void MPP::init(){
@@ -120,7 +120,7 @@ void MPP::simulation_thread(){
 
     		if(dist > 20){
     			result = goodrich.calcResult(i, offlinePaths.at(i).path.at(idDone.at(i)));
-    			cout << "teste" << endl;
+    			//cout << "teste" << endl;
     			runtimePaths.at(i).path.push_back(
 	    			sum(
 	    				runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1),
@@ -128,7 +128,7 @@ void MPP::simulation_thread(){
 	    				)
 	    			);
     		}else{
-    			cout << offlinePaths.at(i).path.size() << endl;
+    			//cout << offlinePaths.at(i).path.size() << endl;
     			if(idDone.at(i) < offlinePaths.at(i).path.size()-1){
     				idDone.at(i)++;
     			}
