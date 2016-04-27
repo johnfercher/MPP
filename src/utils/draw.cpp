@@ -84,7 +84,7 @@ void Draw::drawSquare(float x, float y){
 
 void Draw::drawPaths(){
 	
-	/*for(int j = 0 ; j < pathsStatic.size() ; j++){
+	for(int j = 0 ; j < pathsStatic.size() ; j++){
 		glLineWidth(2);
 		switch(j){
 			case 0:{
@@ -101,29 +101,26 @@ void Draw::drawPaths(){
 			}break;
 		}
 
-		for(int i = 0 ; i < boost::static_pointer_cast<og::PathGeometric>(pathsStatic.at(j))->getStateCount() ; i++){
-			vector<ob::State*> path = boost::static_pointer_cast<og::PathGeometric>(pathsStatic.at(j))->getStates();
+		for(int i = 0 ; i < pathsStatic.size() ; i++){
 			double xAnte, yAnte;
 
-			const ob::SE2StateSpace::StateType* state2D = path.at(0)->as<ob::SE2StateSpace::StateType>();
-			xAnte = state2D->getX();
-			yAnte = state2D->getY();
+			xAnte = pathsStatic.at(j).path.at(0).x;
+			yAnte = pathsStatic.at(j).path.at(0).y;
 
 			drawSphere(xAnte, yAnte, 15);
 
-			for(int k = 1 ; k < path.size() ; k++){
-				const ob::SE2StateSpace::StateType* state2D = path.at(k)->as<ob::SE2StateSpace::StateType>();
+			for(int k = 1 ; k < pathsStatic.at(j).path.size() ; k++){
     			
     			glBegin(GL_LINES);
     				glVertex3f((xAnte/25.0)-20, (yAnte/25.0)-20, 0);
-					glVertex3f((state2D->getX()/25.0)-20, (state2D->getY()/25.0)-20, 0);
+					glVertex3f((pathsStatic.at(j).path.at(k).x/25.0)-20, (pathsStatic.at(j).path.at(k).y/25.0)-20, 0);
 				glEnd();
 
-				xAnte = state2D->getX();
-				yAnte = state2D->getY();
+				xAnte = pathsStatic.at(j).path.at(k).x;
+				yAnte = pathsStatic.at(j).path.at(k).y;
 
 				drawSquare(xAnte, yAnte);
-			}	
+			}
 		}
 	}
 
@@ -163,7 +160,7 @@ void Draw::drawPaths(){
 	glColor3d(0.0, 0.0, 0.0);
 	for(int i = 0 ; i < objectsStaticDraw->size() ; i++){
 		drawSphere(objectsStaticDraw->at(i).x, objectsStaticDraw->at(i).y, objectsStaticDraw->at(i).radius);
-	}*/
+	}
 }
 
 void Draw::Desenha(void){
