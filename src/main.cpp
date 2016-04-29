@@ -14,32 +14,15 @@ copies or substantial portions of the Software.
 */
 
 #include "iostream"
-#include "sstream"
-#include "utils/includes/boost.h"
-#include "utils/includes/ompl.h"
-#include "utils/commons.h"
-#include "utils/net.h"
-
-#include "control/goodrich.h"
-#include "control/pid.h"
-#include "offline_planning.h"
 #include "mpp.h"
-#include "pthread.h"
 
 using namespace std;
 using namespace common;
 
-pthread_t thread[4];
-vector<Path> runtimePaths;
-Draw draw;
-Net net;
-Workspace workspace;
-grSim_Packet packet_grSim;
-int idDone;
 
-void *receive_thread(void *arg);
+//void *receive_thread(void *arg);
 
-bool argParse(int argc, char** argv, std::string *outputFilePtr);
+//bool argParse(int argc, char** argv, std::string *outputFilePtr);
 
 int main(int argc, char** argv){
     MPP mpp(argc, argv);
@@ -50,7 +33,7 @@ int main(int argc, char** argv){
 
 
 
-void *receive_thread(void *arg){
+/*void *receive_thread(void *arg){
     idDone = 0;
     Net net2;
     PID pid;
@@ -113,7 +96,7 @@ void *receive_thread(void *arg){
             command->set_kickspeedz(0);
             command->set_spinner(false);
 
-            net2.sendPacket(packet_grSim);*/
+            net2.sendPacket(packet_grSim);
         }
     }
-}
+}*/

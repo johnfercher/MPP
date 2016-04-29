@@ -7,6 +7,7 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -55,16 +56,16 @@ void protobuf_AssignDesc_messages_5frobocup_5fssl_5fgeometry_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryFieldSize, penalty_line_from_spot_dist_),
   };
   SSL_GeometryFieldSize_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SSL_GeometryFieldSize_descriptor_,
       SSL_GeometryFieldSize::default_instance_,
       SSL_GeometryFieldSize_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryFieldSize, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryFieldSize, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SSL_GeometryFieldSize));
+      -1,
+      sizeof(SSL_GeometryFieldSize),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryFieldSize, _internal_metadata_),
+      -1);
   SSL_GeometryCameraCalibration_descriptor_ = file->message_type(1);
   static const int SSL_GeometryCameraCalibration_offsets_[15] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryCameraCalibration, camera_id_),
@@ -84,32 +85,32 @@ void protobuf_AssignDesc_messages_5frobocup_5fssl_5fgeometry_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryCameraCalibration, derived_camera_world_tz_),
   };
   SSL_GeometryCameraCalibration_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SSL_GeometryCameraCalibration_descriptor_,
       SSL_GeometryCameraCalibration::default_instance_,
       SSL_GeometryCameraCalibration_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryCameraCalibration, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryCameraCalibration, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SSL_GeometryCameraCalibration));
+      -1,
+      sizeof(SSL_GeometryCameraCalibration),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryCameraCalibration, _internal_metadata_),
+      -1);
   SSL_GeometryData_descriptor_ = file->message_type(2);
   static const int SSL_GeometryData_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryData, field_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryData, calib_),
   };
   SSL_GeometryData_reflection_ =
-    new ::google::protobuf::internal::GeneratedMessageReflection(
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SSL_GeometryData_descriptor_,
       SSL_GeometryData::default_instance_,
       SSL_GeometryData_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryData, _has_bits_[0]),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryData, _unknown_fields_),
       -1,
-      ::google::protobuf::DescriptorPool::generated_pool(),
-      ::google::protobuf::MessageFactory::generated_factory(),
-      sizeof(SSL_GeometryData));
+      -1,
+      sizeof(SSL_GeometryData),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SSL_GeometryData, _internal_metadata_),
+      -1);
 }
 
 namespace {
@@ -123,11 +124,11 @@ inline void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SSL_GeometryFieldSize_descriptor_, &SSL_GeometryFieldSize::default_instance());
+      SSL_GeometryFieldSize_descriptor_, &SSL_GeometryFieldSize::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SSL_GeometryCameraCalibration_descriptor_, &SSL_GeometryCameraCalibration::default_instance());
+      SSL_GeometryCameraCalibration_descriptor_, &SSL_GeometryCameraCalibration::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-    SSL_GeometryData_descriptor_, &SSL_GeometryData::default_instance());
+      SSL_GeometryData_descriptor_, &SSL_GeometryData::default_instance());
 }
 
 }  // namespace
@@ -188,9 +189,19 @@ struct StaticDescriptorInitializer_messages_5frobocup_5fssl_5fgeometry_2eproto {
   }
 } static_descriptor_initializer_messages_5frobocup_5fssl_5fgeometry_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD;
+static void MergeFromFail(int line) {
+  GOOGLE_CHECK(false) << __FILE__ << ":" << line;
+}
+
+}  // namespace
+
+
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SSL_GeometryFieldSize::kLineWidthFieldNumber;
 const int SSL_GeometryFieldSize::kFieldLengthFieldNumber;
 const int SSL_GeometryFieldSize::kFieldWidthFieldNumber;
@@ -205,10 +216,10 @@ const int SSL_GeometryFieldSize::kDefenseStretchFieldNumber;
 const int SSL_GeometryFieldSize::kFreeKickFromDefenseDistFieldNumber;
 const int SSL_GeometryFieldSize::kPenaltySpotFromFieldLineDistFieldNumber;
 const int SSL_GeometryFieldSize::kPenaltyLineFromSpotDistFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SSL_GeometryFieldSize::SSL_GeometryFieldSize()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:SSL_GeometryFieldSize)
 }
@@ -217,7 +228,8 @@ void SSL_GeometryFieldSize::InitAsDefaultInstance() {
 }
 
 SSL_GeometryFieldSize::SSL_GeometryFieldSize(const SSL_GeometryFieldSize& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:SSL_GeometryFieldSize)
@@ -269,33 +281,37 @@ const SSL_GeometryFieldSize& SSL_GeometryFieldSize::default_instance() {
 
 SSL_GeometryFieldSize* SSL_GeometryFieldSize::default_instance_ = NULL;
 
-SSL_GeometryFieldSize* SSL_GeometryFieldSize::New() const {
-  return new SSL_GeometryFieldSize;
+SSL_GeometryFieldSize* SSL_GeometryFieldSize::New(::google::protobuf::Arena* arena) const {
+  SSL_GeometryFieldSize* n = new SSL_GeometryFieldSize;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SSL_GeometryFieldSize::Clear() {
-#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
-  &reinterpret_cast<SSL_GeometryFieldSize*>(16)->f) - \
-   reinterpret_cast<char*>(16))
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<SSL_GeometryFieldSize*>(16)->f)
 
-#define ZR_(first, last) do {                              \
-    size_t f = OFFSET_OF_FIELD_(first);                    \
-    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
-    ::memset(&first, 0, n);                                \
-  } while (0)
+#define ZR_(first, last) do {\
+  ::memset(&first, 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
 
-  if (_has_bits_[0 / 32] & 255) {
+  if (_has_bits_[0 / 32] & 255u) {
     ZR_(line_width_, goal_wall_width_);
   }
-  if (_has_bits_[8 / 32] & 16128) {
+  if (_has_bits_[8 / 32] & 16128u) {
     ZR_(center_circle_radius_, penalty_line_from_spot_dist_);
   }
 
-#undef OFFSET_OF_FIELD_
+#undef ZR_HELPER_
 #undef ZR_
 
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool SSL_GeometryFieldSize::MergePartialFromCodedStream(
@@ -612,7 +628,7 @@ void SSL_GeometryFieldSize::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(14, this->penalty_line_from_spot_dist(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
@@ -692,7 +708,7 @@ void SSL_GeometryFieldSize::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(14, this->penalty_line_from_spot_dist(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
@@ -700,112 +716,187 @@ void SSL_GeometryFieldSize::SerializeWithCachedSizes(
   return target;
 }
 
+int SSL_GeometryFieldSize::RequiredFieldsByteSizeFallback() const {
+  int total_size = 0;
+
+  if (has_line_width()) {
+    // required int32 line_width = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->line_width());
+  }
+
+  if (has_field_length()) {
+    // required int32 field_length = 2;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->field_length());
+  }
+
+  if (has_field_width()) {
+    // required int32 field_width = 3;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->field_width());
+  }
+
+  if (has_boundary_width()) {
+    // required int32 boundary_width = 4;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->boundary_width());
+  }
+
+  if (has_referee_width()) {
+    // required int32 referee_width = 5;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->referee_width());
+  }
+
+  if (has_goal_width()) {
+    // required int32 goal_width = 6;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->goal_width());
+  }
+
+  if (has_goal_depth()) {
+    // required int32 goal_depth = 7;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->goal_depth());
+  }
+
+  if (has_goal_wall_width()) {
+    // required int32 goal_wall_width = 8;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->goal_wall_width());
+  }
+
+  if (has_center_circle_radius()) {
+    // required int32 center_circle_radius = 9;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->center_circle_radius());
+  }
+
+  if (has_defense_radius()) {
+    // required int32 defense_radius = 10;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->defense_radius());
+  }
+
+  if (has_defense_stretch()) {
+    // required int32 defense_stretch = 11;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->defense_stretch());
+  }
+
+  if (has_free_kick_from_defense_dist()) {
+    // required int32 free_kick_from_defense_dist = 12;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->free_kick_from_defense_dist());
+  }
+
+  if (has_penalty_spot_from_field_line_dist()) {
+    // required int32 penalty_spot_from_field_line_dist = 13;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->penalty_spot_from_field_line_dist());
+  }
+
+  if (has_penalty_line_from_spot_dist()) {
+    // required int32 penalty_line_from_spot_dist = 14;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->penalty_line_from_spot_dist());
+  }
+
+  return total_size;
+}
 int SSL_GeometryFieldSize::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (((_has_bits_[0] & 0x00003fff) ^ 0x00003fff) == 0) {  // All required fields are present.
     // required int32 line_width = 1;
-    if (has_line_width()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->line_width());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->line_width());
 
     // required int32 field_length = 2;
-    if (has_field_length()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->field_length());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->field_length());
 
     // required int32 field_width = 3;
-    if (has_field_width()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->field_width());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->field_width());
 
     // required int32 boundary_width = 4;
-    if (has_boundary_width()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->boundary_width());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->boundary_width());
 
     // required int32 referee_width = 5;
-    if (has_referee_width()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->referee_width());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->referee_width());
 
     // required int32 goal_width = 6;
-    if (has_goal_width()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->goal_width());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->goal_width());
 
     // required int32 goal_depth = 7;
-    if (has_goal_depth()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->goal_depth());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->goal_depth());
 
     // required int32 goal_wall_width = 8;
-    if (has_goal_wall_width()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->goal_wall_width());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->goal_wall_width());
 
-  }
-  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
     // required int32 center_circle_radius = 9;
-    if (has_center_circle_radius()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->center_circle_radius());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->center_circle_radius());
 
     // required int32 defense_radius = 10;
-    if (has_defense_radius()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->defense_radius());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->defense_radius());
 
     // required int32 defense_stretch = 11;
-    if (has_defense_stretch()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->defense_stretch());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->defense_stretch());
 
     // required int32 free_kick_from_defense_dist = 12;
-    if (has_free_kick_from_defense_dist()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->free_kick_from_defense_dist());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->free_kick_from_defense_dist());
 
     // required int32 penalty_spot_from_field_line_dist = 13;
-    if (has_penalty_spot_from_field_line_dist()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->penalty_spot_from_field_line_dist());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->penalty_spot_from_field_line_dist());
 
     // required int32 penalty_line_from_spot_dist = 14;
-    if (has_penalty_line_from_spot_dist()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(
-          this->penalty_line_from_spot_dist());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->penalty_line_from_spot_dist());
 
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
   }
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -817,10 +908,10 @@ int SSL_GeometryFieldSize::ByteSize() const {
 }
 
 void SSL_GeometryFieldSize::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const SSL_GeometryFieldSize* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SSL_GeometryFieldSize*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SSL_GeometryFieldSize* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const SSL_GeometryFieldSize>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -829,7 +920,7 @@ void SSL_GeometryFieldSize::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void SSL_GeometryFieldSize::MergeFrom(const SSL_GeometryFieldSize& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_line_width()) {
       set_line_width(from.line_width());
@@ -876,7 +967,9 @@ void SSL_GeometryFieldSize::MergeFrom(const SSL_GeometryFieldSize& from) {
       set_penalty_line_from_spot_dist(from.penalty_line_from_spot_dist());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void SSL_GeometryFieldSize::CopyFrom(const ::google::protobuf::Message& from) {
@@ -898,25 +991,27 @@ bool SSL_GeometryFieldSize::IsInitialized() const {
 }
 
 void SSL_GeometryFieldSize::Swap(SSL_GeometryFieldSize* other) {
-  if (other != this) {
-    std::swap(line_width_, other->line_width_);
-    std::swap(field_length_, other->field_length_);
-    std::swap(field_width_, other->field_width_);
-    std::swap(boundary_width_, other->boundary_width_);
-    std::swap(referee_width_, other->referee_width_);
-    std::swap(goal_width_, other->goal_width_);
-    std::swap(goal_depth_, other->goal_depth_);
-    std::swap(goal_wall_width_, other->goal_wall_width_);
-    std::swap(center_circle_radius_, other->center_circle_radius_);
-    std::swap(defense_radius_, other->defense_radius_);
-    std::swap(defense_stretch_, other->defense_stretch_);
-    std::swap(free_kick_from_defense_dist_, other->free_kick_from_defense_dist_);
-    std::swap(penalty_spot_from_field_line_dist_, other->penalty_spot_from_field_line_dist_);
-    std::swap(penalty_line_from_spot_dist_, other->penalty_line_from_spot_dist_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SSL_GeometryFieldSize::InternalSwap(SSL_GeometryFieldSize* other) {
+  std::swap(line_width_, other->line_width_);
+  std::swap(field_length_, other->field_length_);
+  std::swap(field_width_, other->field_width_);
+  std::swap(boundary_width_, other->boundary_width_);
+  std::swap(referee_width_, other->referee_width_);
+  std::swap(goal_width_, other->goal_width_);
+  std::swap(goal_depth_, other->goal_depth_);
+  std::swap(goal_wall_width_, other->goal_wall_width_);
+  std::swap(center_circle_radius_, other->center_circle_radius_);
+  std::swap(defense_radius_, other->defense_radius_);
+  std::swap(defense_stretch_, other->defense_stretch_);
+  std::swap(free_kick_from_defense_dist_, other->free_kick_from_defense_dist_);
+  std::swap(penalty_spot_from_field_line_dist_, other->penalty_spot_from_field_line_dist_);
+  std::swap(penalty_line_from_spot_dist_, other->penalty_line_from_spot_dist_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SSL_GeometryFieldSize::GetMetadata() const {
@@ -927,10 +1022,350 @@ void SSL_GeometryFieldSize::Swap(SSL_GeometryFieldSize* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SSL_GeometryFieldSize
+
+// required int32 line_width = 1;
+bool SSL_GeometryFieldSize::has_line_width() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_line_width() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void SSL_GeometryFieldSize::clear_has_line_width() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void SSL_GeometryFieldSize::clear_line_width() {
+  line_width_ = 0;
+  clear_has_line_width();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::line_width() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.line_width)
+  return line_width_;
+}
+ void SSL_GeometryFieldSize::set_line_width(::google::protobuf::int32 value) {
+  set_has_line_width();
+  line_width_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.line_width)
+}
+
+// required int32 field_length = 2;
+bool SSL_GeometryFieldSize::has_field_length() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_field_length() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void SSL_GeometryFieldSize::clear_has_field_length() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void SSL_GeometryFieldSize::clear_field_length() {
+  field_length_ = 0;
+  clear_has_field_length();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::field_length() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.field_length)
+  return field_length_;
+}
+ void SSL_GeometryFieldSize::set_field_length(::google::protobuf::int32 value) {
+  set_has_field_length();
+  field_length_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.field_length)
+}
+
+// required int32 field_width = 3;
+bool SSL_GeometryFieldSize::has_field_width() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_field_width() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void SSL_GeometryFieldSize::clear_has_field_width() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void SSL_GeometryFieldSize::clear_field_width() {
+  field_width_ = 0;
+  clear_has_field_width();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::field_width() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.field_width)
+  return field_width_;
+}
+ void SSL_GeometryFieldSize::set_field_width(::google::protobuf::int32 value) {
+  set_has_field_width();
+  field_width_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.field_width)
+}
+
+// required int32 boundary_width = 4;
+bool SSL_GeometryFieldSize::has_boundary_width() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_boundary_width() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void SSL_GeometryFieldSize::clear_has_boundary_width() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void SSL_GeometryFieldSize::clear_boundary_width() {
+  boundary_width_ = 0;
+  clear_has_boundary_width();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::boundary_width() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.boundary_width)
+  return boundary_width_;
+}
+ void SSL_GeometryFieldSize::set_boundary_width(::google::protobuf::int32 value) {
+  set_has_boundary_width();
+  boundary_width_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.boundary_width)
+}
+
+// required int32 referee_width = 5;
+bool SSL_GeometryFieldSize::has_referee_width() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_referee_width() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void SSL_GeometryFieldSize::clear_has_referee_width() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void SSL_GeometryFieldSize::clear_referee_width() {
+  referee_width_ = 0;
+  clear_has_referee_width();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::referee_width() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.referee_width)
+  return referee_width_;
+}
+ void SSL_GeometryFieldSize::set_referee_width(::google::protobuf::int32 value) {
+  set_has_referee_width();
+  referee_width_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.referee_width)
+}
+
+// required int32 goal_width = 6;
+bool SSL_GeometryFieldSize::has_goal_width() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_goal_width() {
+  _has_bits_[0] |= 0x00000020u;
+}
+void SSL_GeometryFieldSize::clear_has_goal_width() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+void SSL_GeometryFieldSize::clear_goal_width() {
+  goal_width_ = 0;
+  clear_has_goal_width();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::goal_width() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.goal_width)
+  return goal_width_;
+}
+ void SSL_GeometryFieldSize::set_goal_width(::google::protobuf::int32 value) {
+  set_has_goal_width();
+  goal_width_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.goal_width)
+}
+
+// required int32 goal_depth = 7;
+bool SSL_GeometryFieldSize::has_goal_depth() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_goal_depth() {
+  _has_bits_[0] |= 0x00000040u;
+}
+void SSL_GeometryFieldSize::clear_has_goal_depth() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+void SSL_GeometryFieldSize::clear_goal_depth() {
+  goal_depth_ = 0;
+  clear_has_goal_depth();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::goal_depth() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.goal_depth)
+  return goal_depth_;
+}
+ void SSL_GeometryFieldSize::set_goal_depth(::google::protobuf::int32 value) {
+  set_has_goal_depth();
+  goal_depth_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.goal_depth)
+}
+
+// required int32 goal_wall_width = 8;
+bool SSL_GeometryFieldSize::has_goal_wall_width() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_goal_wall_width() {
+  _has_bits_[0] |= 0x00000080u;
+}
+void SSL_GeometryFieldSize::clear_has_goal_wall_width() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+void SSL_GeometryFieldSize::clear_goal_wall_width() {
+  goal_wall_width_ = 0;
+  clear_has_goal_wall_width();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::goal_wall_width() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.goal_wall_width)
+  return goal_wall_width_;
+}
+ void SSL_GeometryFieldSize::set_goal_wall_width(::google::protobuf::int32 value) {
+  set_has_goal_wall_width();
+  goal_wall_width_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.goal_wall_width)
+}
+
+// required int32 center_circle_radius = 9;
+bool SSL_GeometryFieldSize::has_center_circle_radius() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_center_circle_radius() {
+  _has_bits_[0] |= 0x00000100u;
+}
+void SSL_GeometryFieldSize::clear_has_center_circle_radius() {
+  _has_bits_[0] &= ~0x00000100u;
+}
+void SSL_GeometryFieldSize::clear_center_circle_radius() {
+  center_circle_radius_ = 0;
+  clear_has_center_circle_radius();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::center_circle_radius() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.center_circle_radius)
+  return center_circle_radius_;
+}
+ void SSL_GeometryFieldSize::set_center_circle_radius(::google::protobuf::int32 value) {
+  set_has_center_circle_radius();
+  center_circle_radius_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.center_circle_radius)
+}
+
+// required int32 defense_radius = 10;
+bool SSL_GeometryFieldSize::has_defense_radius() const {
+  return (_has_bits_[0] & 0x00000200u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_defense_radius() {
+  _has_bits_[0] |= 0x00000200u;
+}
+void SSL_GeometryFieldSize::clear_has_defense_radius() {
+  _has_bits_[0] &= ~0x00000200u;
+}
+void SSL_GeometryFieldSize::clear_defense_radius() {
+  defense_radius_ = 0;
+  clear_has_defense_radius();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::defense_radius() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.defense_radius)
+  return defense_radius_;
+}
+ void SSL_GeometryFieldSize::set_defense_radius(::google::protobuf::int32 value) {
+  set_has_defense_radius();
+  defense_radius_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.defense_radius)
+}
+
+// required int32 defense_stretch = 11;
+bool SSL_GeometryFieldSize::has_defense_stretch() const {
+  return (_has_bits_[0] & 0x00000400u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_defense_stretch() {
+  _has_bits_[0] |= 0x00000400u;
+}
+void SSL_GeometryFieldSize::clear_has_defense_stretch() {
+  _has_bits_[0] &= ~0x00000400u;
+}
+void SSL_GeometryFieldSize::clear_defense_stretch() {
+  defense_stretch_ = 0;
+  clear_has_defense_stretch();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::defense_stretch() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.defense_stretch)
+  return defense_stretch_;
+}
+ void SSL_GeometryFieldSize::set_defense_stretch(::google::protobuf::int32 value) {
+  set_has_defense_stretch();
+  defense_stretch_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.defense_stretch)
+}
+
+// required int32 free_kick_from_defense_dist = 12;
+bool SSL_GeometryFieldSize::has_free_kick_from_defense_dist() const {
+  return (_has_bits_[0] & 0x00000800u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_free_kick_from_defense_dist() {
+  _has_bits_[0] |= 0x00000800u;
+}
+void SSL_GeometryFieldSize::clear_has_free_kick_from_defense_dist() {
+  _has_bits_[0] &= ~0x00000800u;
+}
+void SSL_GeometryFieldSize::clear_free_kick_from_defense_dist() {
+  free_kick_from_defense_dist_ = 0;
+  clear_has_free_kick_from_defense_dist();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::free_kick_from_defense_dist() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.free_kick_from_defense_dist)
+  return free_kick_from_defense_dist_;
+}
+ void SSL_GeometryFieldSize::set_free_kick_from_defense_dist(::google::protobuf::int32 value) {
+  set_has_free_kick_from_defense_dist();
+  free_kick_from_defense_dist_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.free_kick_from_defense_dist)
+}
+
+// required int32 penalty_spot_from_field_line_dist = 13;
+bool SSL_GeometryFieldSize::has_penalty_spot_from_field_line_dist() const {
+  return (_has_bits_[0] & 0x00001000u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_penalty_spot_from_field_line_dist() {
+  _has_bits_[0] |= 0x00001000u;
+}
+void SSL_GeometryFieldSize::clear_has_penalty_spot_from_field_line_dist() {
+  _has_bits_[0] &= ~0x00001000u;
+}
+void SSL_GeometryFieldSize::clear_penalty_spot_from_field_line_dist() {
+  penalty_spot_from_field_line_dist_ = 0;
+  clear_has_penalty_spot_from_field_line_dist();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::penalty_spot_from_field_line_dist() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.penalty_spot_from_field_line_dist)
+  return penalty_spot_from_field_line_dist_;
+}
+ void SSL_GeometryFieldSize::set_penalty_spot_from_field_line_dist(::google::protobuf::int32 value) {
+  set_has_penalty_spot_from_field_line_dist();
+  penalty_spot_from_field_line_dist_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.penalty_spot_from_field_line_dist)
+}
+
+// required int32 penalty_line_from_spot_dist = 14;
+bool SSL_GeometryFieldSize::has_penalty_line_from_spot_dist() const {
+  return (_has_bits_[0] & 0x00002000u) != 0;
+}
+void SSL_GeometryFieldSize::set_has_penalty_line_from_spot_dist() {
+  _has_bits_[0] |= 0x00002000u;
+}
+void SSL_GeometryFieldSize::clear_has_penalty_line_from_spot_dist() {
+  _has_bits_[0] &= ~0x00002000u;
+}
+void SSL_GeometryFieldSize::clear_penalty_line_from_spot_dist() {
+  penalty_line_from_spot_dist_ = 0;
+  clear_has_penalty_line_from_spot_dist();
+}
+ ::google::protobuf::int32 SSL_GeometryFieldSize::penalty_line_from_spot_dist() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryFieldSize.penalty_line_from_spot_dist)
+  return penalty_line_from_spot_dist_;
+}
+ void SSL_GeometryFieldSize::set_penalty_line_from_spot_dist(::google::protobuf::int32 value) {
+  set_has_penalty_line_from_spot_dist();
+  penalty_line_from_spot_dist_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryFieldSize.penalty_line_from_spot_dist)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SSL_GeometryCameraCalibration::kCameraIdFieldNumber;
 const int SSL_GeometryCameraCalibration::kFocalLengthFieldNumber;
 const int SSL_GeometryCameraCalibration::kPrincipalPointXFieldNumber;
@@ -946,10 +1381,10 @@ const int SSL_GeometryCameraCalibration::kTzFieldNumber;
 const int SSL_GeometryCameraCalibration::kDerivedCameraWorldTxFieldNumber;
 const int SSL_GeometryCameraCalibration::kDerivedCameraWorldTyFieldNumber;
 const int SSL_GeometryCameraCalibration::kDerivedCameraWorldTzFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SSL_GeometryCameraCalibration::SSL_GeometryCameraCalibration()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:SSL_GeometryCameraCalibration)
 }
@@ -958,7 +1393,8 @@ void SSL_GeometryCameraCalibration::InitAsDefaultInstance() {
 }
 
 SSL_GeometryCameraCalibration::SSL_GeometryCameraCalibration(const SSL_GeometryCameraCalibration& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:SSL_GeometryCameraCalibration)
@@ -1011,33 +1447,37 @@ const SSL_GeometryCameraCalibration& SSL_GeometryCameraCalibration::default_inst
 
 SSL_GeometryCameraCalibration* SSL_GeometryCameraCalibration::default_instance_ = NULL;
 
-SSL_GeometryCameraCalibration* SSL_GeometryCameraCalibration::New() const {
-  return new SSL_GeometryCameraCalibration;
+SSL_GeometryCameraCalibration* SSL_GeometryCameraCalibration::New(::google::protobuf::Arena* arena) const {
+  SSL_GeometryCameraCalibration* n = new SSL_GeometryCameraCalibration;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SSL_GeometryCameraCalibration::Clear() {
-#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
-  &reinterpret_cast<SSL_GeometryCameraCalibration*>(16)->f) - \
-   reinterpret_cast<char*>(16))
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<SSL_GeometryCameraCalibration*>(16)->f)
 
-#define ZR_(first, last) do {                              \
-    size_t f = OFFSET_OF_FIELD_(first);                    \
-    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
-    ::memset(&first, 0, n);                                \
-  } while (0)
+#define ZR_(first, last) do {\
+  ::memset(&first, 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
 
-  if (_has_bits_[0 / 32] & 255) {
+  if (_has_bits_[0 / 32] & 255u) {
     ZR_(camera_id_, q2_);
   }
-  if (_has_bits_[8 / 32] & 32512) {
+  if (_has_bits_[8 / 32] & 32512u) {
     ZR_(q3_, derived_camera_world_tz_);
   }
 
-#undef OFFSET_OF_FIELD_
+#undef ZR_HELPER_
 #undef ZR_
 
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool SSL_GeometryCameraCalibration::MergePartialFromCodedStream(
@@ -1374,7 +1814,7 @@ void SSL_GeometryCameraCalibration::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(15, this->derived_camera_world_tz(), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
@@ -1459,7 +1899,7 @@ void SSL_GeometryCameraCalibration::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(15, this->derived_camera_world_tz(), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
@@ -1467,74 +1907,119 @@ void SSL_GeometryCameraCalibration::SerializeWithCachedSizes(
   return target;
 }
 
+int SSL_GeometryCameraCalibration::RequiredFieldsByteSizeFallback() const {
+  int total_size = 0;
+
+  if (has_camera_id()) {
+    // required uint32 camera_id = 1;
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->camera_id());
+  }
+
+  if (has_focal_length()) {
+    // required float focal_length = 2;
+    total_size += 1 + 4;
+  }
+
+  if (has_principal_point_x()) {
+    // required float principal_point_x = 3;
+    total_size += 1 + 4;
+  }
+
+  if (has_principal_point_y()) {
+    // required float principal_point_y = 4;
+    total_size += 1 + 4;
+  }
+
+  if (has_distortion()) {
+    // required float distortion = 5;
+    total_size += 1 + 4;
+  }
+
+  if (has_q0()) {
+    // required float q0 = 6;
+    total_size += 1 + 4;
+  }
+
+  if (has_q1()) {
+    // required float q1 = 7;
+    total_size += 1 + 4;
+  }
+
+  if (has_q2()) {
+    // required float q2 = 8;
+    total_size += 1 + 4;
+  }
+
+  if (has_q3()) {
+    // required float q3 = 9;
+    total_size += 1 + 4;
+  }
+
+  if (has_tx()) {
+    // required float tx = 10;
+    total_size += 1 + 4;
+  }
+
+  if (has_ty()) {
+    // required float ty = 11;
+    total_size += 1 + 4;
+  }
+
+  if (has_tz()) {
+    // required float tz = 12;
+    total_size += 1 + 4;
+  }
+
+  return total_size;
+}
 int SSL_GeometryCameraCalibration::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+  if (((_has_bits_[0] & 0x00000fff) ^ 0x00000fff) == 0) {  // All required fields are present.
     // required uint32 camera_id = 1;
-    if (has_camera_id()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::UInt32Size(
-          this->camera_id());
-    }
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::UInt32Size(
+        this->camera_id());
 
     // required float focal_length = 2;
-    if (has_focal_length()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float principal_point_x = 3;
-    if (has_principal_point_x()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float principal_point_y = 4;
-    if (has_principal_point_y()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float distortion = 5;
-    if (has_distortion()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float q0 = 6;
-    if (has_q0()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float q1 = 7;
-    if (has_q1()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float q2 = 8;
-    if (has_q2()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
-  }
-  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
     // required float q3 = 9;
-    if (has_q3()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float tx = 10;
-    if (has_tx()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float ty = 11;
-    if (has_ty()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
     // required float tz = 12;
-    if (has_tz()) {
-      total_size += 1 + 4;
-    }
+    total_size += 1 + 4;
 
+  } else {
+    total_size += RequiredFieldsByteSizeFallback();
+  }
+  if (_has_bits_[12 / 32] & 28672u) {
     // optional float derived_camera_world_tx = 13;
     if (has_derived_camera_world_tx()) {
       total_size += 1 + 4;
@@ -1551,7 +2036,7 @@ int SSL_GeometryCameraCalibration::ByteSize() const {
     }
 
   }
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1563,10 +2048,10 @@ int SSL_GeometryCameraCalibration::ByteSize() const {
 }
 
 void SSL_GeometryCameraCalibration::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const SSL_GeometryCameraCalibration* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SSL_GeometryCameraCalibration*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SSL_GeometryCameraCalibration* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const SSL_GeometryCameraCalibration>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1575,7 +2060,7 @@ void SSL_GeometryCameraCalibration::MergeFrom(const ::google::protobuf::Message&
 }
 
 void SSL_GeometryCameraCalibration::MergeFrom(const SSL_GeometryCameraCalibration& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_camera_id()) {
       set_camera_id(from.camera_id());
@@ -1625,7 +2110,9 @@ void SSL_GeometryCameraCalibration::MergeFrom(const SSL_GeometryCameraCalibratio
       set_derived_camera_world_tz(from.derived_camera_world_tz());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void SSL_GeometryCameraCalibration::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1647,26 +2134,28 @@ bool SSL_GeometryCameraCalibration::IsInitialized() const {
 }
 
 void SSL_GeometryCameraCalibration::Swap(SSL_GeometryCameraCalibration* other) {
-  if (other != this) {
-    std::swap(camera_id_, other->camera_id_);
-    std::swap(focal_length_, other->focal_length_);
-    std::swap(principal_point_x_, other->principal_point_x_);
-    std::swap(principal_point_y_, other->principal_point_y_);
-    std::swap(distortion_, other->distortion_);
-    std::swap(q0_, other->q0_);
-    std::swap(q1_, other->q1_);
-    std::swap(q2_, other->q2_);
-    std::swap(q3_, other->q3_);
-    std::swap(tx_, other->tx_);
-    std::swap(ty_, other->ty_);
-    std::swap(tz_, other->tz_);
-    std::swap(derived_camera_world_tx_, other->derived_camera_world_tx_);
-    std::swap(derived_camera_world_ty_, other->derived_camera_world_ty_);
-    std::swap(derived_camera_world_tz_, other->derived_camera_world_tz_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SSL_GeometryCameraCalibration::InternalSwap(SSL_GeometryCameraCalibration* other) {
+  std::swap(camera_id_, other->camera_id_);
+  std::swap(focal_length_, other->focal_length_);
+  std::swap(principal_point_x_, other->principal_point_x_);
+  std::swap(principal_point_y_, other->principal_point_y_);
+  std::swap(distortion_, other->distortion_);
+  std::swap(q0_, other->q0_);
+  std::swap(q1_, other->q1_);
+  std::swap(q2_, other->q2_);
+  std::swap(q3_, other->q3_);
+  std::swap(tx_, other->tx_);
+  std::swap(ty_, other->ty_);
+  std::swap(tz_, other->tz_);
+  std::swap(derived_camera_world_tx_, other->derived_camera_world_tx_);
+  std::swap(derived_camera_world_ty_, other->derived_camera_world_ty_);
+  std::swap(derived_camera_world_tz_, other->derived_camera_world_tz_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SSL_GeometryCameraCalibration::GetMetadata() const {
@@ -1677,16 +2166,380 @@ void SSL_GeometryCameraCalibration::Swap(SSL_GeometryCameraCalibration* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SSL_GeometryCameraCalibration
+
+// required uint32 camera_id = 1;
+bool SSL_GeometryCameraCalibration::has_camera_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_camera_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void SSL_GeometryCameraCalibration::clear_has_camera_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void SSL_GeometryCameraCalibration::clear_camera_id() {
+  camera_id_ = 0u;
+  clear_has_camera_id();
+}
+ ::google::protobuf::uint32 SSL_GeometryCameraCalibration::camera_id() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.camera_id)
+  return camera_id_;
+}
+ void SSL_GeometryCameraCalibration::set_camera_id(::google::protobuf::uint32 value) {
+  set_has_camera_id();
+  camera_id_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.camera_id)
+}
+
+// required float focal_length = 2;
+bool SSL_GeometryCameraCalibration::has_focal_length() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_focal_length() {
+  _has_bits_[0] |= 0x00000002u;
+}
+void SSL_GeometryCameraCalibration::clear_has_focal_length() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+void SSL_GeometryCameraCalibration::clear_focal_length() {
+  focal_length_ = 0;
+  clear_has_focal_length();
+}
+ float SSL_GeometryCameraCalibration::focal_length() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.focal_length)
+  return focal_length_;
+}
+ void SSL_GeometryCameraCalibration::set_focal_length(float value) {
+  set_has_focal_length();
+  focal_length_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.focal_length)
+}
+
+// required float principal_point_x = 3;
+bool SSL_GeometryCameraCalibration::has_principal_point_x() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_principal_point_x() {
+  _has_bits_[0] |= 0x00000004u;
+}
+void SSL_GeometryCameraCalibration::clear_has_principal_point_x() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+void SSL_GeometryCameraCalibration::clear_principal_point_x() {
+  principal_point_x_ = 0;
+  clear_has_principal_point_x();
+}
+ float SSL_GeometryCameraCalibration::principal_point_x() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.principal_point_x)
+  return principal_point_x_;
+}
+ void SSL_GeometryCameraCalibration::set_principal_point_x(float value) {
+  set_has_principal_point_x();
+  principal_point_x_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.principal_point_x)
+}
+
+// required float principal_point_y = 4;
+bool SSL_GeometryCameraCalibration::has_principal_point_y() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_principal_point_y() {
+  _has_bits_[0] |= 0x00000008u;
+}
+void SSL_GeometryCameraCalibration::clear_has_principal_point_y() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+void SSL_GeometryCameraCalibration::clear_principal_point_y() {
+  principal_point_y_ = 0;
+  clear_has_principal_point_y();
+}
+ float SSL_GeometryCameraCalibration::principal_point_y() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.principal_point_y)
+  return principal_point_y_;
+}
+ void SSL_GeometryCameraCalibration::set_principal_point_y(float value) {
+  set_has_principal_point_y();
+  principal_point_y_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.principal_point_y)
+}
+
+// required float distortion = 5;
+bool SSL_GeometryCameraCalibration::has_distortion() const {
+  return (_has_bits_[0] & 0x00000010u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_distortion() {
+  _has_bits_[0] |= 0x00000010u;
+}
+void SSL_GeometryCameraCalibration::clear_has_distortion() {
+  _has_bits_[0] &= ~0x00000010u;
+}
+void SSL_GeometryCameraCalibration::clear_distortion() {
+  distortion_ = 0;
+  clear_has_distortion();
+}
+ float SSL_GeometryCameraCalibration::distortion() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.distortion)
+  return distortion_;
+}
+ void SSL_GeometryCameraCalibration::set_distortion(float value) {
+  set_has_distortion();
+  distortion_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.distortion)
+}
+
+// required float q0 = 6;
+bool SSL_GeometryCameraCalibration::has_q0() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_q0() {
+  _has_bits_[0] |= 0x00000020u;
+}
+void SSL_GeometryCameraCalibration::clear_has_q0() {
+  _has_bits_[0] &= ~0x00000020u;
+}
+void SSL_GeometryCameraCalibration::clear_q0() {
+  q0_ = 0;
+  clear_has_q0();
+}
+ float SSL_GeometryCameraCalibration::q0() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.q0)
+  return q0_;
+}
+ void SSL_GeometryCameraCalibration::set_q0(float value) {
+  set_has_q0();
+  q0_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.q0)
+}
+
+// required float q1 = 7;
+bool SSL_GeometryCameraCalibration::has_q1() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_q1() {
+  _has_bits_[0] |= 0x00000040u;
+}
+void SSL_GeometryCameraCalibration::clear_has_q1() {
+  _has_bits_[0] &= ~0x00000040u;
+}
+void SSL_GeometryCameraCalibration::clear_q1() {
+  q1_ = 0;
+  clear_has_q1();
+}
+ float SSL_GeometryCameraCalibration::q1() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.q1)
+  return q1_;
+}
+ void SSL_GeometryCameraCalibration::set_q1(float value) {
+  set_has_q1();
+  q1_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.q1)
+}
+
+// required float q2 = 8;
+bool SSL_GeometryCameraCalibration::has_q2() const {
+  return (_has_bits_[0] & 0x00000080u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_q2() {
+  _has_bits_[0] |= 0x00000080u;
+}
+void SSL_GeometryCameraCalibration::clear_has_q2() {
+  _has_bits_[0] &= ~0x00000080u;
+}
+void SSL_GeometryCameraCalibration::clear_q2() {
+  q2_ = 0;
+  clear_has_q2();
+}
+ float SSL_GeometryCameraCalibration::q2() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.q2)
+  return q2_;
+}
+ void SSL_GeometryCameraCalibration::set_q2(float value) {
+  set_has_q2();
+  q2_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.q2)
+}
+
+// required float q3 = 9;
+bool SSL_GeometryCameraCalibration::has_q3() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_q3() {
+  _has_bits_[0] |= 0x00000100u;
+}
+void SSL_GeometryCameraCalibration::clear_has_q3() {
+  _has_bits_[0] &= ~0x00000100u;
+}
+void SSL_GeometryCameraCalibration::clear_q3() {
+  q3_ = 0;
+  clear_has_q3();
+}
+ float SSL_GeometryCameraCalibration::q3() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.q3)
+  return q3_;
+}
+ void SSL_GeometryCameraCalibration::set_q3(float value) {
+  set_has_q3();
+  q3_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.q3)
+}
+
+// required float tx = 10;
+bool SSL_GeometryCameraCalibration::has_tx() const {
+  return (_has_bits_[0] & 0x00000200u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_tx() {
+  _has_bits_[0] |= 0x00000200u;
+}
+void SSL_GeometryCameraCalibration::clear_has_tx() {
+  _has_bits_[0] &= ~0x00000200u;
+}
+void SSL_GeometryCameraCalibration::clear_tx() {
+  tx_ = 0;
+  clear_has_tx();
+}
+ float SSL_GeometryCameraCalibration::tx() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.tx)
+  return tx_;
+}
+ void SSL_GeometryCameraCalibration::set_tx(float value) {
+  set_has_tx();
+  tx_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.tx)
+}
+
+// required float ty = 11;
+bool SSL_GeometryCameraCalibration::has_ty() const {
+  return (_has_bits_[0] & 0x00000400u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_ty() {
+  _has_bits_[0] |= 0x00000400u;
+}
+void SSL_GeometryCameraCalibration::clear_has_ty() {
+  _has_bits_[0] &= ~0x00000400u;
+}
+void SSL_GeometryCameraCalibration::clear_ty() {
+  ty_ = 0;
+  clear_has_ty();
+}
+ float SSL_GeometryCameraCalibration::ty() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.ty)
+  return ty_;
+}
+ void SSL_GeometryCameraCalibration::set_ty(float value) {
+  set_has_ty();
+  ty_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.ty)
+}
+
+// required float tz = 12;
+bool SSL_GeometryCameraCalibration::has_tz() const {
+  return (_has_bits_[0] & 0x00000800u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_tz() {
+  _has_bits_[0] |= 0x00000800u;
+}
+void SSL_GeometryCameraCalibration::clear_has_tz() {
+  _has_bits_[0] &= ~0x00000800u;
+}
+void SSL_GeometryCameraCalibration::clear_tz() {
+  tz_ = 0;
+  clear_has_tz();
+}
+ float SSL_GeometryCameraCalibration::tz() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.tz)
+  return tz_;
+}
+ void SSL_GeometryCameraCalibration::set_tz(float value) {
+  set_has_tz();
+  tz_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.tz)
+}
+
+// optional float derived_camera_world_tx = 13;
+bool SSL_GeometryCameraCalibration::has_derived_camera_world_tx() const {
+  return (_has_bits_[0] & 0x00001000u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_derived_camera_world_tx() {
+  _has_bits_[0] |= 0x00001000u;
+}
+void SSL_GeometryCameraCalibration::clear_has_derived_camera_world_tx() {
+  _has_bits_[0] &= ~0x00001000u;
+}
+void SSL_GeometryCameraCalibration::clear_derived_camera_world_tx() {
+  derived_camera_world_tx_ = 0;
+  clear_has_derived_camera_world_tx();
+}
+ float SSL_GeometryCameraCalibration::derived_camera_world_tx() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.derived_camera_world_tx)
+  return derived_camera_world_tx_;
+}
+ void SSL_GeometryCameraCalibration::set_derived_camera_world_tx(float value) {
+  set_has_derived_camera_world_tx();
+  derived_camera_world_tx_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.derived_camera_world_tx)
+}
+
+// optional float derived_camera_world_ty = 14;
+bool SSL_GeometryCameraCalibration::has_derived_camera_world_ty() const {
+  return (_has_bits_[0] & 0x00002000u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_derived_camera_world_ty() {
+  _has_bits_[0] |= 0x00002000u;
+}
+void SSL_GeometryCameraCalibration::clear_has_derived_camera_world_ty() {
+  _has_bits_[0] &= ~0x00002000u;
+}
+void SSL_GeometryCameraCalibration::clear_derived_camera_world_ty() {
+  derived_camera_world_ty_ = 0;
+  clear_has_derived_camera_world_ty();
+}
+ float SSL_GeometryCameraCalibration::derived_camera_world_ty() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.derived_camera_world_ty)
+  return derived_camera_world_ty_;
+}
+ void SSL_GeometryCameraCalibration::set_derived_camera_world_ty(float value) {
+  set_has_derived_camera_world_ty();
+  derived_camera_world_ty_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.derived_camera_world_ty)
+}
+
+// optional float derived_camera_world_tz = 15;
+bool SSL_GeometryCameraCalibration::has_derived_camera_world_tz() const {
+  return (_has_bits_[0] & 0x00004000u) != 0;
+}
+void SSL_GeometryCameraCalibration::set_has_derived_camera_world_tz() {
+  _has_bits_[0] |= 0x00004000u;
+}
+void SSL_GeometryCameraCalibration::clear_has_derived_camera_world_tz() {
+  _has_bits_[0] &= ~0x00004000u;
+}
+void SSL_GeometryCameraCalibration::clear_derived_camera_world_tz() {
+  derived_camera_world_tz_ = 0;
+  clear_has_derived_camera_world_tz();
+}
+ float SSL_GeometryCameraCalibration::derived_camera_world_tz() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryCameraCalibration.derived_camera_world_tz)
+  return derived_camera_world_tz_;
+}
+ void SSL_GeometryCameraCalibration::set_derived_camera_world_tz(float value) {
+  set_has_derived_camera_world_tz();
+  derived_camera_world_tz_ = value;
+  // @@protoc_insertion_point(field_set:SSL_GeometryCameraCalibration.derived_camera_world_tz)
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SSL_GeometryData::kFieldFieldNumber;
 const int SSL_GeometryData::kCalibFieldNumber;
-#endif  // !_MSC_VER
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SSL_GeometryData::SSL_GeometryData()
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:SSL_GeometryData)
 }
@@ -1696,7 +2549,8 @@ void SSL_GeometryData::InitAsDefaultInstance() {
 }
 
 SSL_GeometryData::SSL_GeometryData(const SSL_GeometryData& from)
-  : ::google::protobuf::Message() {
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
   SharedCtor();
   MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:SSL_GeometryData)
@@ -1736,8 +2590,12 @@ const SSL_GeometryData& SSL_GeometryData::default_instance() {
 
 SSL_GeometryData* SSL_GeometryData::default_instance_ = NULL;
 
-SSL_GeometryData* SSL_GeometryData::New() const {
-  return new SSL_GeometryData;
+SSL_GeometryData* SSL_GeometryData::New(::google::protobuf::Arena* arena) const {
+  SSL_GeometryData* n = new SSL_GeometryData;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
 }
 
 void SSL_GeometryData::Clear() {
@@ -1746,7 +2604,9 @@ void SSL_GeometryData::Clear() {
   }
   calib_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  mutable_unknown_fields()->Clear();
+  if (_internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->Clear();
+  }
 }
 
 bool SSL_GeometryData::MergePartialFromCodedStream(
@@ -1775,12 +2635,15 @@ bool SSL_GeometryData::MergePartialFromCodedStream(
       case 2: {
         if (tag == 18) {
          parse_calib:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_calib:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_calib()));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_calib;
+        if (input->ExpectTag(18)) goto parse_loop_calib;
+        input->UnsafeDecrementRecursionDepth();
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -1813,16 +2676,16 @@ void SSL_GeometryData::SerializeWithCachedSizes(
   // required .SSL_GeometryFieldSize field = 1;
   if (has_field()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->field(), output);
+      1, *this->field_, output);
   }
 
   // repeated .SSL_GeometryCameraCalibration calib = 2;
-  for (int i = 0; i < this->calib_size(); i++) {
+  for (unsigned int i = 0, n = this->calib_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, this->calib(i), output);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
@@ -1836,17 +2699,17 @@ void SSL_GeometryData::SerializeWithCachedSizes(
   if (has_field()) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
-        1, this->field(), target);
+        1, *this->field_, target);
   }
 
   // repeated .SSL_GeometryCameraCalibration calib = 2;
-  for (int i = 0; i < this->calib_size(); i++) {
+  for (unsigned int i = 0, n = this->calib_size(); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         2, this->calib(i), target);
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
@@ -1857,14 +2720,11 @@ void SSL_GeometryData::SerializeWithCachedSizes(
 int SSL_GeometryData::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
-    // required .SSL_GeometryFieldSize field = 1;
-    if (has_field()) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->field());
-    }
-
+  // required .SSL_GeometryFieldSize field = 1;
+  if (has_field()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->field_);
   }
   // repeated .SSL_GeometryCameraCalibration calib = 2;
   total_size += 1 * this->calib_size();
@@ -1874,7 +2734,7 @@ int SSL_GeometryData::ByteSize() const {
         this->calib(i));
   }
 
-  if (!unknown_fields().empty()) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1886,10 +2746,10 @@ int SSL_GeometryData::ByteSize() const {
 }
 
 void SSL_GeometryData::MergeFrom(const ::google::protobuf::Message& from) {
-  GOOGLE_CHECK_NE(&from, this);
-  const SSL_GeometryData* source =
-    ::google::protobuf::internal::dynamic_cast_if_available<const SSL_GeometryData*>(
-      &from);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SSL_GeometryData* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const SSL_GeometryData>(
+          &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1898,14 +2758,16 @@ void SSL_GeometryData::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void SSL_GeometryData::MergeFrom(const SSL_GeometryData& from) {
-  GOOGLE_CHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   calib_.MergeFrom(from.calib_);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_field()) {
       mutable_field()->::SSL_GeometryFieldSize::MergeFrom(from.field());
     }
   }
-  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  if (from._internal_metadata_.have_unknown_fields()) {
+    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+  }
 }
 
 void SSL_GeometryData::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1924,20 +2786,22 @@ bool SSL_GeometryData::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
 
   if (has_field()) {
-    if (!this->field().IsInitialized()) return false;
+    if (!this->field_->IsInitialized()) return false;
   }
   if (!::google::protobuf::internal::AllAreInitialized(this->calib())) return false;
   return true;
 }
 
 void SSL_GeometryData::Swap(SSL_GeometryData* other) {
-  if (other != this) {
-    std::swap(field_, other->field_);
-    calib_.Swap(&other->calib_);
-    std::swap(_has_bits_[0], other->_has_bits_[0]);
-    _unknown_fields_.Swap(&other->_unknown_fields_);
-    std::swap(_cached_size_, other->_cached_size_);
-  }
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SSL_GeometryData::InternalSwap(SSL_GeometryData* other) {
+  std::swap(field_, other->field_);
+  calib_.UnsafeArenaSwap(&other->calib_);
+  std::swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SSL_GeometryData::GetMetadata() const {
@@ -1948,6 +2812,83 @@ void SSL_GeometryData::Swap(SSL_GeometryData* other) {
   return metadata;
 }
 
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// SSL_GeometryData
+
+// required .SSL_GeometryFieldSize field = 1;
+bool SSL_GeometryData::has_field() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+void SSL_GeometryData::set_has_field() {
+  _has_bits_[0] |= 0x00000001u;
+}
+void SSL_GeometryData::clear_has_field() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+void SSL_GeometryData::clear_field() {
+  if (field_ != NULL) field_->::SSL_GeometryFieldSize::Clear();
+  clear_has_field();
+}
+const ::SSL_GeometryFieldSize& SSL_GeometryData::field() const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryData.field)
+  return field_ != NULL ? *field_ : *default_instance_->field_;
+}
+::SSL_GeometryFieldSize* SSL_GeometryData::mutable_field() {
+  set_has_field();
+  if (field_ == NULL) {
+    field_ = new ::SSL_GeometryFieldSize;
+  }
+  // @@protoc_insertion_point(field_mutable:SSL_GeometryData.field)
+  return field_;
+}
+::SSL_GeometryFieldSize* SSL_GeometryData::release_field() {
+  clear_has_field();
+  ::SSL_GeometryFieldSize* temp = field_;
+  field_ = NULL;
+  return temp;
+}
+void SSL_GeometryData::set_allocated_field(::SSL_GeometryFieldSize* field) {
+  delete field_;
+  field_ = field;
+  if (field) {
+    set_has_field();
+  } else {
+    clear_has_field();
+  }
+  // @@protoc_insertion_point(field_set_allocated:SSL_GeometryData.field)
+}
+
+// repeated .SSL_GeometryCameraCalibration calib = 2;
+int SSL_GeometryData::calib_size() const {
+  return calib_.size();
+}
+void SSL_GeometryData::clear_calib() {
+  calib_.Clear();
+}
+const ::SSL_GeometryCameraCalibration& SSL_GeometryData::calib(int index) const {
+  // @@protoc_insertion_point(field_get:SSL_GeometryData.calib)
+  return calib_.Get(index);
+}
+::SSL_GeometryCameraCalibration* SSL_GeometryData::mutable_calib(int index) {
+  // @@protoc_insertion_point(field_mutable:SSL_GeometryData.calib)
+  return calib_.Mutable(index);
+}
+::SSL_GeometryCameraCalibration* SSL_GeometryData::add_calib() {
+  // @@protoc_insertion_point(field_add:SSL_GeometryData.calib)
+  return calib_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::SSL_GeometryCameraCalibration >*
+SSL_GeometryData::mutable_calib() {
+  // @@protoc_insertion_point(field_mutable_list:SSL_GeometryData.calib)
+  return &calib_;
+}
+const ::google::protobuf::RepeatedPtrField< ::SSL_GeometryCameraCalibration >&
+SSL_GeometryData::calib() const {
+  // @@protoc_insertion_point(field_list:SSL_GeometryData.calib)
+  return calib_;
+}
+
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 
