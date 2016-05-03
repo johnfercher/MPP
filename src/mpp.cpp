@@ -134,7 +134,7 @@ void MPP::simulation_thread(){
     			}
     		}
 
-    		usleep(25000);
+    		usleep(10000);
     	}
     }
 }

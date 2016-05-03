@@ -39,8 +39,8 @@ Pose Goodrich::calcResult(int id, Pose goal){
 	result = Pose(0, 0, 0);
 	
 	attractiveForce();
-	//repulsiveForceRobotObjects();
-	//repulsiveForceRobotRobot();
+	repulsiveForceRobotObjects();
+	repulsiveForceRobotRobot();
 
 	return result;
 }
@@ -73,10 +73,11 @@ void Goodrich::repulsiveForceRobotRobot(){
 	double distances;
 	int k;
 
-	for(int j = 0 ; j < workspace->start.size() ; j++){
+	for(int j = 0 ; j < runtimePaths->size() ; j++){
 		if(id != j){
-			theta = angulation(workspace->start.at(id), workspace->start.at(j));
-			distances = distance(workspace->start.at(id), workspace->start.at(j));
+			// Distancia entre o ponto atual de cada robô em runtimePaths
+			theta = angulation(runtimePaths->at(id).path.at(runtimePaths->at(id).path.size() - 1), runtimePaths->at(j).path.at(runtimePaths->at(j).path.size() - 1));
+			distances = distance(runtimePaths->at(id).path.at(runtimePaths->at(id).path.size() - 1), runtimePaths->at(j).path.at(runtimePaths->at(j).path.size() - 1));
 
 			if(distances <= radiusRobot){
 				//se esta escostado no obstaculo, recebe um vetor maximo 
@@ -106,8 +107,8 @@ void Goodrich::repulsiveForceRobotObjects(){
 	int k;
 	
 	for(int j = 0 ; j < workspace->objects.size() ; j++){
-		theta = angulation(workspace->start.at(id), Pose(workspace->objects.at(j).x, workspace->objects.at(j).y, 0));
-		distances = distance(workspace->start.at(id), Pose(workspace->objects.at(j).x, workspace->objects.at(j).y, 0));
+		theta = angulation(runtimePaths->at(id).path.at(runtimePaths->at(id).path.size() - 1), Pose(workspace->objects.at(j).x, workspace->objects.at(j).y, 0));
+		distances = distance(runtimePaths->at(id).path.at(runtimePaths->at(id).path.size() - 1), Pose(workspace->objects.at(j).x, workspace->objects.at(j).y, 0));
 
 		if(distances <= workspace->objects.at(j).radius){
 			//se esta escostado no obstaculo, recebe um vetor maximo 
@@ -123,7 +124,7 @@ void Goodrich::repulsiveForceRobotObjects(){
 			k++;
 			result.y += rand() % 3;
 			k++;	
-		}	
+		}
 	}
 
 	//cout << "repulsivo" << endl;
