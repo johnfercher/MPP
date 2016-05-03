@@ -16,8 +16,8 @@ copies or substantial portions of the Software.
 #include "pid.h"
 
 PID::PID(){
-	proportional_l = 0.0040;
-	proportional_a = 0.8000;
+	proportional_l = 0.0500;
+	proportional_a = 1.0000;
 }
 
 Command PID::calcCommand(Pose initial, Pose final){

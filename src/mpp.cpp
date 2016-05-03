@@ -19,9 +19,9 @@ MPP::MPP(int argc, char** argv){
 	this->argc = argc;
 	this->argv = argv;
 
-	simulation_on();
-	//grsim_on(); // need grsim on
-	pathWorkspace = "src/data/workspaces/random7";
+	//simulation_on();
+	grsim_on();
+	pathWorkspace = "src/data/workspaces/random1";
 }
 
 void MPP::init(){
@@ -45,21 +45,21 @@ void MPP::init(){
 
 void MPP::init_threads(){
 	if(simulation){
-		thread_draw = new thread(bind(&MPP::draw_thread, this));
 		thread_simulation = new thread(bind(&MPP::simulation_thread, this));
-	}else{
 		thread_draw = new thread(bind(&MPP::draw_thread, this));
+	}else{
 		thread_net = new thread(bind(&MPP::net_thread, this));
+		thread_draw = new thread(bind(&MPP::draw_thread, this));
 	}
 }
 
 void MPP::finalize_threads(){
 	if(simulation){
-		thread_draw->join();
 		thread_simulation->join();
-	}else{
 		thread_draw->join();
+	}else{
 		thread_net->join();
+		thread_draw->join();
 	}
 }
 
@@ -75,8 +75,6 @@ void MPP::findPaths(){
 	    }
 	}
 
-	//workspace.show();
-	
     offline.setBounds(0.0, 1000.0);        // (0, 0) -> (640, 640)
     offline.setTimeToResolve(1);           // 1 segundo no máximo para offline o problema
     offline.setPlanner(PLANNER_RRTSTAR);
@@ -109,7 +107,133 @@ void MPP::draw_thread(){
 }
 
 void MPP::net_thread(){
+    Net net2;
+    PID pid;
 
+    net2.setIpPortSend();        // with default values
+    net2.setIpPortReceive();     // with default values
+
+    while(1){
+        if(net2.hasNewPacket()){
+            Command cmd[5];
+
+        	Workspace resp = packetToWorkspace(net2.receivePacket()); 
+        	workspace.objects = resp.objects;
+
+        	for(int i = 0 ; i < resp.start.size() ; i++){
+        		runtimePaths.at(i).path.push_back(resp.start.at(i));
+        	}
+
+        	//cout << "MPP: " << runtimePaths.size() << endl;
+        	for(int i = 0 ; i < runtimePaths.size() ; i++){
+        		cout << i << ": " << runtimePaths.at(i).path.size() << endl;
+	    		Pose result;
+	    		float dist = distance(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), offlinePaths.at(i).path.at(idDone.at(i)));
+
+	    		if(dist > 20){
+	    			result = goodrich.calcResult(i, offlinePaths.at(i).path.at(idDone.at(i)));
+
+	    			Pose newPoint = sum(
+			    				runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1),
+			    				result
+			    			);
+
+	    			cmd[i] = pid.calcCommand(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), newPoint);
+	    		}else{
+	    			if(idDone.at(i) < offlinePaths.at(i).path.size()-1){
+	    				idDone.at(i)++;
+	    			}
+
+	    			cmd[i] = Command(0, 0, 0);
+	    		}
+
+	    		//cmd[i].show();
+	    	}
+
+	    	packet_grSim = grSim_Packet();
+
+            packet_grSim.mutable_commands()->set_isteamyellow(false);
+            packet_grSim.mutable_commands()->set_timestamp(0.0);
+
+            for(int i = 0 ; i < runtimePaths.size() ; i++){
+	            grSim_Robot_Command* command = packet_grSim.mutable_commands()->add_robot_commands();
+	            command->set_id(0);
+
+	            command->set_wheelsspeed(0);
+	            command->set_wheel1(0);
+	            command->set_wheel2(0);
+	            command->set_wheel3(0);
+	            command->set_wheel4(0);
+	            command->set_veltangent(cmd[i].vel_tangent);
+	            command->set_velnormal(cmd[i].vel_normal);
+	            command->set_velangular(cmd[i].vel_angular);
+
+	            command->set_kickspeedx(0);
+	            command->set_kickspeedz(0);
+	            command->set_spinner(false);
+            }
+
+            net2.sendPacket(packet_grSim);
+
+	    	usleep(40000);
+
+        	//workspace = packetToWorkspace(net.receivePacket());
+
+            /*float x, y, yaw;
+            Command cmd;
+            //workspace = packetToWorkspace(net2.receivePacket());
+            //cout << paths.size() << endl;
+            vector<ob::State*> path = boost::static_pointer_cast<og::PathGeometric>(paths.at(0))->getStates();
+            cout << path.size() << endl;
+            ob::SE2StateSpace::StateType* state2D = path.at(idDone)->as<ob::SE2StateSpace::StateType>();
+            
+            x = state2D->getX();
+	        y = state2D->getY();
+	        yaw = state2D->getYaw();
+    
+
+            Pose p(x, y, yaw);
+            if(goodrich.distance(workspace.start.at(0), p) < 20 && idDone < path.size()-1){
+                idDone += 1;
+
+                state2D = path.at(idDone)->as<ob::SE2StateSpace::StateType>();
+            
+                p.x = state2D->getX();
+                p.y = state2D->getY();
+                p.yaw = state2D->getYaw();
+            }
+
+            cout << "idDone " << idDone << endl; 
+
+            cmd = pid.calcCommand(workspace.start.at(0), p);
+            cmd.show();
+
+            usleep(10000);
+            // planning
+            bool yellow = false;
+
+            packet_grSim.mutable_commands()->set_isteamyellow(yellow);
+            packet_grSim.mutable_commands()->set_timestamp(0.0);
+
+            grSim_Robot_Command* command = packet_grSim.mutable_commands()->add_robot_commands();
+            command->set_id(0);
+
+            command->set_wheelsspeed(0);
+            command->set_wheel1(0);
+            command->set_wheel2(0);
+            command->set_wheel3(0);
+            command->set_wheel4(0);
+            command->set_veltangent(cmd.vel_tangent);
+            command->set_velnormal(cmd.vel_normal);
+            command->set_velangular(cmd.vel_angular);
+
+            command->set_kickspeedx(0);
+            command->set_kickspeedz(0);
+            command->set_spinner(false);
+
+            net2.sendPacket(packet_grSim);*/
+        }
+    }
 }
 
 void MPP::simulation_thread(){
@@ -133,9 +257,8 @@ void MPP::simulation_thread(){
     				idDone.at(i)++;
     			}
     		}
-
-    		usleep(10000);
     	}
+    	usleep(40000);
     }
 }
 
@@ -148,7 +271,13 @@ Workspace MPP::packetToWorkspace(SSL_WrapperPacket packet){
     ws.start.push_back(handlePosition(start));
     ws.goal.push_back(handlePosition(goal));
 
-    for(int i = 1 ; i < 6 ; i++){ // i = 1
+    start = Pose(packet.detection().robots_blue(1).x(), packet.detection().robots_blue(1).y(), packet.detection().robots_blue(1).orientation());
+    goal = Pose(0, 0, 0);
+
+    ws.start.push_back(handlePosition(start));
+    ws.goal.push_back(handlePosition(goal));
+
+    for(int i = 2 ; i < 6 ; i++){ // i = 2
         Object object(packet.detection().robots_blue(i).x(), packet.detection().robots_blue(i).y(), 20);
         ws.objects.push_back(handlePosition(object));
     }

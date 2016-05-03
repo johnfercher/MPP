@@ -39,8 +39,8 @@ Pose Goodrich::calcResult(int id, Pose goal){
 	result = Pose(0, 0, 0);
 	
 	attractiveForce();
-	repulsiveForceRobotObjects();
-	repulsiveForceRobotRobot();
+	//repulsiveForceRobotObjects();
+	//repulsiveForceRobotRobot();
 
 	return result;
 }
@@ -135,7 +135,7 @@ void Goodrich::setWorkspace(Workspace *workspace){
 	this->workspace = workspace;
 }
 
-void Goodrich::setRuntimePaths(vector<Path>* runtimePaths){
+void Goodrich::setRuntimePaths(vector<Path> *runtimePaths){
 	this->runtimePaths = runtimePaths;
 }
 
