@@ -67,7 +67,7 @@ private:
 	Path PathPrtToPath(ob::PathPtr);
 	Workspace packetToWorkspace(SSL_WrapperPacket);
 	Pose handlePosition(Pose poseGR);
-	Object handlePosition(Object objectGR);	
+	Object handlePosition(Object objectGR);
 	void findPaths();
 
 public:

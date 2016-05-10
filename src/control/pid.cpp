@@ -16,8 +16,8 @@ copies or substantial portions of the Software.
 #include "pid.h"
 
 PID::PID(){
-	proportional_l = 0.0500;
-	proportional_a = 1.0000;
+	proportional_l = 0.0004; //p1 = 0.0004
+	proportional_a = 0.7000; //p2 = 0.8000
 }
 
 Command PID::calcCommand(Pose initial, Pose final){
@@ -29,6 +29,13 @@ Command PID::calcCommand(Pose initial, Pose final){
 		cmd.vel_normal = proportional_l * ((final.y - initial.y) * cos(initial.yaw) - (final.x - initial.x) * sin(initial.yaw));
 		cmd.vel_angular = proportional_a * (final.yaw - initial.yaw);
 	//}
+
+	/*x, y, w = robot_x, robot_y, robot_w
+	tx, ty, tw = ball_x, ball_y, 0
+
+	v_tan  = p1 * ((tx - x) * cos(w) + (ty - y) * sin(w))
+    v_norm = p1 * ((ty - y) * cos(w) - (tx - x) * sin(w))
+    v_ang = p2 * (tw - w)*/
 
 	return cmd;
 }
