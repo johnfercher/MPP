@@ -132,8 +132,11 @@ void MPP::net_thread(){
 	    		float dist = distance(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), offlinePaths.at(i).path.at(idDone.at(i)));
 
 	    		if(dist > 20){
-	    			/*result = goodrich.calcResult(i, offlinePaths.at(i).path.at(idDone.at(i)));
-
+	    			if(idDone.at(i) < offlinePaths.at(i).path.size()-1){
+	    				result = goodrich.calcResult(i, offlinePaths.at(i).path.at(idDone.at(i)), false);
+	    			}else{
+	    				result = goodrich.calcResult(i, offlinePaths.at(i).path.at(idDone.at(i)), true);
+	    			}
 	    			Pose newPoint = sum(
 			    				runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1),
 			    				result
@@ -142,7 +145,7 @@ void MPP::net_thread(){
 	    			newPoint.yaw = offlinePaths.at(i).path.at(idDone.at(i)).yaw;
 
 	    			cmd[i] = pid.calcCommand(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), newPoint);
-	    			//if(i == 1) runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1).show();
+	    			
 	    			if(i == 0){
 	    				cout << "result" << endl;
 	    				result.show();
@@ -154,23 +157,7 @@ void MPP::net_thread(){
 
 	    				cout << "runTime" << endl;
 	    				runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1).show();
-	    			}*/
-
-	    			cmd[i] = pid.calcCommand(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), workspace.goal.at(i));
-
-	    			//cmd[i] = pid.calcCommand(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), offlinePaths.at(i).path.at(idDone.at(i)));
-	    			//if(i == 0){
-	    				//cout << idDone.at(i) << endl;
-	    				cout << "robot : " << i;
-	    				runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1).show();
-	    				cout << "offline : " << i;
-						offlinePaths.at(i).path.at(idDone.at(i)).show();
- 	    				cout << "bola : ";
-	    				workspace.goal.at(0).show();
-	    				cout << "comando : ";
-	    				cmd[i].show();
-	    				cout << endl;
-	    			//}	
+	    			}
 	    		}else{
 	    			if(idDone.at(i) < offlinePaths.at(i).path.size()-1){
 	    				idDone.at(i)++;
@@ -216,7 +203,11 @@ void MPP::simulation_thread(){
     		float dist = distance(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), offlinePaths.at(i).path.at(idDone.at(i)));
 
     		if(dist > 20){
-    			result = goodrich.calcResult(i, offlinePaths.at(i).path.at(idDone.at(i)));
+    			if(idDone.at(i) < offlinePaths.at(i).path.size()-1){
+    				result = goodrich.calcResult(i, offlinePaths.at(i).path.at(idDone.at(i)), false);
+    			}else{
+    				result = goodrich.calcResult(i, offlinePaths.at(i).path.at(idDone.at(i)), true);
+    			}
     			//cout << "teste" << endl;
     			runtimePaths.at(i).path.push_back(
 	    			sum(

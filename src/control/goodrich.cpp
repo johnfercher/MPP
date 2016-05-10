@@ -21,6 +21,7 @@ Goodrich::Goodrich(){
 	INF = 0.4; //20
 	radiusRobot = 15;
 	areaRobot = 20;
+	is_last = false;
 }
 
 int Goodrich::sign(float signal){
@@ -33,14 +34,15 @@ int Goodrich::sign(float signal){
 	}
 }
 
-Pose Goodrich::calcResult(int id, Pose goal){
+Pose Goodrich::calcResult(int id, Pose goal, bool is_last){
 	this->id = id;
 	this->goal = goal;
+	this->is_last = is_last;
 	result = Pose(0, 0, 0);
 	
 	attractiveForce();
-	//repulsiveForceRobotObjects();
-	//repulsiveForceRobotRobot();
+	repulsiveForceRobotObjects();
+	repulsiveForceRobotRobot();
 
 	return result;
 }
@@ -52,14 +54,21 @@ void Goodrich::attractiveForce(){
 	distances = distance(runtimePaths->at(id).path.at(runtimePaths->at(id).path.size()-1), goal);
 	//cout << distances << endl;
 	
-	if(distances < radiusRobot){
-		result.x += 0;
-		result.y += 0;
-	}
-	else if(distances <= (radiusRobot + areaRobot)){
-		result.x += -alpha*(distances - radiusRobot)*cos(theta/180.0*M_PI); 
-		result.y += -alpha*(distances - radiusRobot)*sin(theta/180.0*M_PI);
+	if(is_last){
+		//cout << "tudo" << endl;
+		if(distances < radiusRobot){
+			result.x += 0;
+			result.y += 0;
+		}
+		else if(distances <= (radiusRobot + areaRobot)){
+			result.x += -alpha*(distances - radiusRobot)*cos(theta/180.0*M_PI); 
+			result.y += -alpha*(distances - radiusRobot)*sin(theta/180.0*M_PI);
+		}else{
+			result.x += -alpha*areaRobot*cos(theta/180.0*M_PI); 
+			result.y += -alpha*areaRobot*sin(theta/180.0*M_PI);
+		}
 	}else{
+		cout << "ntudo" << endl;
 		result.x += -alpha*areaRobot*cos(theta/180.0*M_PI); 
 		result.y += -alpha*areaRobot*sin(theta/180.0*M_PI);
 	}

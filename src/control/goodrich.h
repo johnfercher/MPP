@@ -35,6 +35,7 @@ private:
 	vector<Path> *runtimePaths;
 	Pose goal, result;
 	int id;
+	bool is_last;
 
 	int sign(float signal);
 	void attractiveForce();
@@ -44,7 +45,7 @@ private:
 public:
 	Goodrich();
 
-	Pose calcResult(int, Pose);
+	Pose calcResult(int, Pose, bool);
 	void setWorkspace(Workspace*);
 	void setRuntimePaths(vector<Path>*);
 	float angulation(Pose a, Pose b);
