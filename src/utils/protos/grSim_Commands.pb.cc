@@ -7,7 +7,6 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -51,16 +50,16 @@ void protobuf_AssignDesc_grSim_5fCommands_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(grSim_Robot_Command, wheel4_),
   };
   grSim_Robot_Command_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       grSim_Robot_Command_descriptor_,
       grSim_Robot_Command::default_instance_,
       grSim_Robot_Command_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(grSim_Robot_Command, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(grSim_Robot_Command, _unknown_fields_),
       -1,
-      -1,
-      sizeof(grSim_Robot_Command),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(grSim_Robot_Command, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(grSim_Robot_Command));
   grSim_Commands_descriptor_ = file->message_type(1);
   static const int grSim_Commands_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(grSim_Commands, timestamp_),
@@ -68,16 +67,16 @@ void protobuf_AssignDesc_grSim_5fCommands_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(grSim_Commands, robot_commands_),
   };
   grSim_Commands_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       grSim_Commands_descriptor_,
       grSim_Commands::default_instance_,
       grSim_Commands_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(grSim_Commands, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(grSim_Commands, _unknown_fields_),
       -1,
-      -1,
-      sizeof(grSim_Commands),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(grSim_Commands, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(grSim_Commands));
 }
 
 namespace {
@@ -91,9 +90,9 @@ inline void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      grSim_Robot_Command_descriptor_, &grSim_Robot_Command::default_instance());
+    grSim_Robot_Command_descriptor_, &grSim_Robot_Command::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      grSim_Commands_descriptor_, &grSim_Commands::default_instance());
+    grSim_Commands_descriptor_, &grSim_Commands::default_instance());
 }
 
 }  // namespace
@@ -138,19 +137,9 @@ struct StaticDescriptorInitializer_grSim_5fCommands_2eproto {
   }
 } static_descriptor_initializer_grSim_5fCommands_2eproto_;
 
-namespace {
-
-static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD;
-static void MergeFromFail(int line) {
-  GOOGLE_CHECK(false) << __FILE__ << ":" << line;
-}
-
-}  // namespace
-
-
 // ===================================================================
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int grSim_Robot_Command::kIdFieldNumber;
 const int grSim_Robot_Command::kKickspeedxFieldNumber;
 const int grSim_Robot_Command::kKickspeedzFieldNumber;
@@ -163,10 +152,10 @@ const int grSim_Robot_Command::kWheel1FieldNumber;
 const int grSim_Robot_Command::kWheel2FieldNumber;
 const int grSim_Robot_Command::kWheel3FieldNumber;
 const int grSim_Robot_Command::kWheel4FieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 grSim_Robot_Command::grSim_Robot_Command()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:grSim_Robot_Command)
 }
@@ -175,8 +164,7 @@ void grSim_Robot_Command::InitAsDefaultInstance() {
 }
 
 grSim_Robot_Command::grSim_Robot_Command(const grSim_Robot_Command& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:grSim_Robot_Command)
@@ -226,35 +214,31 @@ const grSim_Robot_Command& grSim_Robot_Command::default_instance() {
 
 grSim_Robot_Command* grSim_Robot_Command::default_instance_ = NULL;
 
-grSim_Robot_Command* grSim_Robot_Command::New(::google::protobuf::Arena* arena) const {
-  grSim_Robot_Command* n = new grSim_Robot_Command;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+grSim_Robot_Command* grSim_Robot_Command::New() const {
+  return new grSim_Robot_Command;
 }
 
 void grSim_Robot_Command::Clear() {
-#define ZR_HELPER_(f) reinterpret_cast<char*>(\
-  &reinterpret_cast<grSim_Robot_Command*>(16)->f)
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<grSim_Robot_Command*>(16)->f) - \
+   reinterpret_cast<char*>(16))
 
-#define ZR_(first, last) do {\
-  ::memset(&first, 0,\
-           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
-} while (0)
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
 
-  if (_has_bits_[0 / 32] & 255u) {
+  if (_has_bits_[0 / 32] & 255) {
     ZR_(id_, wheelsspeed_);
   }
   ZR_(wheel1_, wheel4_);
 
-#undef ZR_HELPER_
+#undef OFFSET_OF_FIELD_
 #undef ZR_
 
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool grSim_Robot_Command::MergePartialFromCodedStream(
@@ -531,7 +515,7 @@ void grSim_Robot_Command::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(12, this->wheel4(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
@@ -601,7 +585,7 @@ void grSim_Robot_Command::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(12, this->wheel4(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
@@ -609,87 +593,54 @@ void grSim_Robot_Command::SerializeWithCachedSizes(
   return target;
 }
 
-int grSim_Robot_Command::RequiredFieldsByteSizeFallback() const {
-  int total_size = 0;
-
-  if (has_id()) {
-    // required uint32 id = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->id());
-  }
-
-  if (has_kickspeedx()) {
-    // required float kickspeedx = 2;
-    total_size += 1 + 4;
-  }
-
-  if (has_kickspeedz()) {
-    // required float kickspeedz = 3;
-    total_size += 1 + 4;
-  }
-
-  if (has_veltangent()) {
-    // required float veltangent = 4;
-    total_size += 1 + 4;
-  }
-
-  if (has_velnormal()) {
-    // required float velnormal = 5;
-    total_size += 1 + 4;
-  }
-
-  if (has_velangular()) {
-    // required float velangular = 6;
-    total_size += 1 + 4;
-  }
-
-  if (has_spinner()) {
-    // required bool spinner = 7;
-    total_size += 1 + 1;
-  }
-
-  if (has_wheelsspeed()) {
-    // required bool wheelsspeed = 8;
-    total_size += 1 + 1;
-  }
-
-  return total_size;
-}
 int grSim_Robot_Command::ByteSize() const {
   int total_size = 0;
 
-  if (((_has_bits_[0] & 0x000000ff) ^ 0x000000ff) == 0) {  // All required fields are present.
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // required uint32 id = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->id());
+    if (has_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->id());
+    }
 
     // required float kickspeedx = 2;
-    total_size += 1 + 4;
+    if (has_kickspeedx()) {
+      total_size += 1 + 4;
+    }
 
     // required float kickspeedz = 3;
-    total_size += 1 + 4;
+    if (has_kickspeedz()) {
+      total_size += 1 + 4;
+    }
 
     // required float veltangent = 4;
-    total_size += 1 + 4;
+    if (has_veltangent()) {
+      total_size += 1 + 4;
+    }
 
     // required float velnormal = 5;
-    total_size += 1 + 4;
+    if (has_velnormal()) {
+      total_size += 1 + 4;
+    }
 
     // required float velangular = 6;
-    total_size += 1 + 4;
+    if (has_velangular()) {
+      total_size += 1 + 4;
+    }
 
     // required bool spinner = 7;
-    total_size += 1 + 1;
+    if (has_spinner()) {
+      total_size += 1 + 1;
+    }
 
     // required bool wheelsspeed = 8;
-    total_size += 1 + 1;
+    if (has_wheelsspeed()) {
+      total_size += 1 + 1;
+    }
 
-  } else {
-    total_size += RequiredFieldsByteSizeFallback();
   }
-  if (_has_bits_[8 / 32] & 3840u) {
+  if (_has_bits_[8 / 32] & (0xffu << (8 % 32))) {
     // optional float wheel1 = 9;
     if (has_wheel1()) {
       total_size += 1 + 4;
@@ -711,7 +662,7 @@ int grSim_Robot_Command::ByteSize() const {
     }
 
   }
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -723,10 +674,10 @@ int grSim_Robot_Command::ByteSize() const {
 }
 
 void grSim_Robot_Command::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
-  const grSim_Robot_Command* source = 
-      ::google::protobuf::internal::DynamicCastToGenerated<const grSim_Robot_Command>(
-          &from);
+  GOOGLE_CHECK_NE(&from, this);
+  const grSim_Robot_Command* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const grSim_Robot_Command*>(
+      &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -735,7 +686,7 @@ void grSim_Robot_Command::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void grSim_Robot_Command::MergeFrom(const grSim_Robot_Command& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_id()) {
       set_id(from.id());
@@ -776,9 +727,7 @@ void grSim_Robot_Command::MergeFrom(const grSim_Robot_Command& from) {
       set_wheel4(from.wheel4());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void grSim_Robot_Command::CopyFrom(const ::google::protobuf::Message& from) {
@@ -800,25 +749,23 @@ bool grSim_Robot_Command::IsInitialized() const {
 }
 
 void grSim_Robot_Command::Swap(grSim_Robot_Command* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void grSim_Robot_Command::InternalSwap(grSim_Robot_Command* other) {
-  std::swap(id_, other->id_);
-  std::swap(kickspeedx_, other->kickspeedx_);
-  std::swap(kickspeedz_, other->kickspeedz_);
-  std::swap(veltangent_, other->veltangent_);
-  std::swap(velnormal_, other->velnormal_);
-  std::swap(velangular_, other->velangular_);
-  std::swap(spinner_, other->spinner_);
-  std::swap(wheelsspeed_, other->wheelsspeed_);
-  std::swap(wheel1_, other->wheel1_);
-  std::swap(wheel2_, other->wheel2_);
-  std::swap(wheel3_, other->wheel3_);
-  std::swap(wheel4_, other->wheel4_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(id_, other->id_);
+    std::swap(kickspeedx_, other->kickspeedx_);
+    std::swap(kickspeedz_, other->kickspeedz_);
+    std::swap(veltangent_, other->veltangent_);
+    std::swap(velnormal_, other->velnormal_);
+    std::swap(velangular_, other->velangular_);
+    std::swap(spinner_, other->spinner_);
+    std::swap(wheelsspeed_, other->wheelsspeed_);
+    std::swap(wheel1_, other->wheel1_);
+    std::swap(wheel2_, other->wheel2_);
+    std::swap(wheel3_, other->wheel3_);
+    std::swap(wheel4_, other->wheel4_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata grSim_Robot_Command::GetMetadata() const {
@@ -829,309 +776,17 @@ void grSim_Robot_Command::InternalSwap(grSim_Robot_Command* other) {
   return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// grSim_Robot_Command
-
-// required uint32 id = 1;
-bool grSim_Robot_Command::has_id() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void grSim_Robot_Command::set_has_id() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void grSim_Robot_Command::clear_has_id() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void grSim_Robot_Command::clear_id() {
-  id_ = 0u;
-  clear_has_id();
-}
- ::google::protobuf::uint32 grSim_Robot_Command::id() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.id)
-  return id_;
-}
- void grSim_Robot_Command::set_id(::google::protobuf::uint32 value) {
-  set_has_id();
-  id_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.id)
-}
-
-// required float kickspeedx = 2;
-bool grSim_Robot_Command::has_kickspeedx() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-void grSim_Robot_Command::set_has_kickspeedx() {
-  _has_bits_[0] |= 0x00000002u;
-}
-void grSim_Robot_Command::clear_has_kickspeedx() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-void grSim_Robot_Command::clear_kickspeedx() {
-  kickspeedx_ = 0;
-  clear_has_kickspeedx();
-}
- float grSim_Robot_Command::kickspeedx() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.kickspeedx)
-  return kickspeedx_;
-}
- void grSim_Robot_Command::set_kickspeedx(float value) {
-  set_has_kickspeedx();
-  kickspeedx_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.kickspeedx)
-}
-
-// required float kickspeedz = 3;
-bool grSim_Robot_Command::has_kickspeedz() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-void grSim_Robot_Command::set_has_kickspeedz() {
-  _has_bits_[0] |= 0x00000004u;
-}
-void grSim_Robot_Command::clear_has_kickspeedz() {
-  _has_bits_[0] &= ~0x00000004u;
-}
-void grSim_Robot_Command::clear_kickspeedz() {
-  kickspeedz_ = 0;
-  clear_has_kickspeedz();
-}
- float grSim_Robot_Command::kickspeedz() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.kickspeedz)
-  return kickspeedz_;
-}
- void grSim_Robot_Command::set_kickspeedz(float value) {
-  set_has_kickspeedz();
-  kickspeedz_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.kickspeedz)
-}
-
-// required float veltangent = 4;
-bool grSim_Robot_Command::has_veltangent() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-void grSim_Robot_Command::set_has_veltangent() {
-  _has_bits_[0] |= 0x00000008u;
-}
-void grSim_Robot_Command::clear_has_veltangent() {
-  _has_bits_[0] &= ~0x00000008u;
-}
-void grSim_Robot_Command::clear_veltangent() {
-  veltangent_ = 0;
-  clear_has_veltangent();
-}
- float grSim_Robot_Command::veltangent() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.veltangent)
-  return veltangent_;
-}
- void grSim_Robot_Command::set_veltangent(float value) {
-  set_has_veltangent();
-  veltangent_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.veltangent)
-}
-
-// required float velnormal = 5;
-bool grSim_Robot_Command::has_velnormal() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
-}
-void grSim_Robot_Command::set_has_velnormal() {
-  _has_bits_[0] |= 0x00000010u;
-}
-void grSim_Robot_Command::clear_has_velnormal() {
-  _has_bits_[0] &= ~0x00000010u;
-}
-void grSim_Robot_Command::clear_velnormal() {
-  velnormal_ = 0;
-  clear_has_velnormal();
-}
- float grSim_Robot_Command::velnormal() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.velnormal)
-  return velnormal_;
-}
- void grSim_Robot_Command::set_velnormal(float value) {
-  set_has_velnormal();
-  velnormal_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.velnormal)
-}
-
-// required float velangular = 6;
-bool grSim_Robot_Command::has_velangular() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
-}
-void grSim_Robot_Command::set_has_velangular() {
-  _has_bits_[0] |= 0x00000020u;
-}
-void grSim_Robot_Command::clear_has_velangular() {
-  _has_bits_[0] &= ~0x00000020u;
-}
-void grSim_Robot_Command::clear_velangular() {
-  velangular_ = 0;
-  clear_has_velangular();
-}
- float grSim_Robot_Command::velangular() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.velangular)
-  return velangular_;
-}
- void grSim_Robot_Command::set_velangular(float value) {
-  set_has_velangular();
-  velangular_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.velangular)
-}
-
-// required bool spinner = 7;
-bool grSim_Robot_Command::has_spinner() const {
-  return (_has_bits_[0] & 0x00000040u) != 0;
-}
-void grSim_Robot_Command::set_has_spinner() {
-  _has_bits_[0] |= 0x00000040u;
-}
-void grSim_Robot_Command::clear_has_spinner() {
-  _has_bits_[0] &= ~0x00000040u;
-}
-void grSim_Robot_Command::clear_spinner() {
-  spinner_ = false;
-  clear_has_spinner();
-}
- bool grSim_Robot_Command::spinner() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.spinner)
-  return spinner_;
-}
- void grSim_Robot_Command::set_spinner(bool value) {
-  set_has_spinner();
-  spinner_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.spinner)
-}
-
-// required bool wheelsspeed = 8;
-bool grSim_Robot_Command::has_wheelsspeed() const {
-  return (_has_bits_[0] & 0x00000080u) != 0;
-}
-void grSim_Robot_Command::set_has_wheelsspeed() {
-  _has_bits_[0] |= 0x00000080u;
-}
-void grSim_Robot_Command::clear_has_wheelsspeed() {
-  _has_bits_[0] &= ~0x00000080u;
-}
-void grSim_Robot_Command::clear_wheelsspeed() {
-  wheelsspeed_ = false;
-  clear_has_wheelsspeed();
-}
- bool grSim_Robot_Command::wheelsspeed() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.wheelsspeed)
-  return wheelsspeed_;
-}
- void grSim_Robot_Command::set_wheelsspeed(bool value) {
-  set_has_wheelsspeed();
-  wheelsspeed_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.wheelsspeed)
-}
-
-// optional float wheel1 = 9;
-bool grSim_Robot_Command::has_wheel1() const {
-  return (_has_bits_[0] & 0x00000100u) != 0;
-}
-void grSim_Robot_Command::set_has_wheel1() {
-  _has_bits_[0] |= 0x00000100u;
-}
-void grSim_Robot_Command::clear_has_wheel1() {
-  _has_bits_[0] &= ~0x00000100u;
-}
-void grSim_Robot_Command::clear_wheel1() {
-  wheel1_ = 0;
-  clear_has_wheel1();
-}
- float grSim_Robot_Command::wheel1() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.wheel1)
-  return wheel1_;
-}
- void grSim_Robot_Command::set_wheel1(float value) {
-  set_has_wheel1();
-  wheel1_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.wheel1)
-}
-
-// optional float wheel2 = 10;
-bool grSim_Robot_Command::has_wheel2() const {
-  return (_has_bits_[0] & 0x00000200u) != 0;
-}
-void grSim_Robot_Command::set_has_wheel2() {
-  _has_bits_[0] |= 0x00000200u;
-}
-void grSim_Robot_Command::clear_has_wheel2() {
-  _has_bits_[0] &= ~0x00000200u;
-}
-void grSim_Robot_Command::clear_wheel2() {
-  wheel2_ = 0;
-  clear_has_wheel2();
-}
- float grSim_Robot_Command::wheel2() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.wheel2)
-  return wheel2_;
-}
- void grSim_Robot_Command::set_wheel2(float value) {
-  set_has_wheel2();
-  wheel2_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.wheel2)
-}
-
-// optional float wheel3 = 11;
-bool grSim_Robot_Command::has_wheel3() const {
-  return (_has_bits_[0] & 0x00000400u) != 0;
-}
-void grSim_Robot_Command::set_has_wheel3() {
-  _has_bits_[0] |= 0x00000400u;
-}
-void grSim_Robot_Command::clear_has_wheel3() {
-  _has_bits_[0] &= ~0x00000400u;
-}
-void grSim_Robot_Command::clear_wheel3() {
-  wheel3_ = 0;
-  clear_has_wheel3();
-}
- float grSim_Robot_Command::wheel3() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.wheel3)
-  return wheel3_;
-}
- void grSim_Robot_Command::set_wheel3(float value) {
-  set_has_wheel3();
-  wheel3_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.wheel3)
-}
-
-// optional float wheel4 = 12;
-bool grSim_Robot_Command::has_wheel4() const {
-  return (_has_bits_[0] & 0x00000800u) != 0;
-}
-void grSim_Robot_Command::set_has_wheel4() {
-  _has_bits_[0] |= 0x00000800u;
-}
-void grSim_Robot_Command::clear_has_wheel4() {
-  _has_bits_[0] &= ~0x00000800u;
-}
-void grSim_Robot_Command::clear_wheel4() {
-  wheel4_ = 0;
-  clear_has_wheel4();
-}
- float grSim_Robot_Command::wheel4() const {
-  // @@protoc_insertion_point(field_get:grSim_Robot_Command.wheel4)
-  return wheel4_;
-}
- void grSim_Robot_Command::set_wheel4(float value) {
-  set_has_wheel4();
-  wheel4_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Robot_Command.wheel4)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int grSim_Commands::kTimestampFieldNumber;
 const int grSim_Commands::kIsteamyellowFieldNumber;
 const int grSim_Commands::kRobotCommandsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 grSim_Commands::grSim_Commands()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:grSim_Commands)
 }
@@ -1140,8 +795,7 @@ void grSim_Commands::InitAsDefaultInstance() {
 }
 
 grSim_Commands::grSim_Commands(const grSim_Commands& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:grSim_Commands)
@@ -1181,24 +835,18 @@ const grSim_Commands& grSim_Commands::default_instance() {
 
 grSim_Commands* grSim_Commands::default_instance_ = NULL;
 
-grSim_Commands* grSim_Commands::New(::google::protobuf::Arena* arena) const {
-  grSim_Commands* n = new grSim_Commands;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+grSim_Commands* grSim_Commands::New() const {
+  return new grSim_Commands;
 }
 
 void grSim_Commands::Clear() {
-  if (_has_bits_[0 / 32] & 3u) {
+  if (_has_bits_[0 / 32] & 3) {
     timestamp_ = 0;
     isteamyellow_ = false;
   }
   robot_commands_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool grSim_Commands::MergePartialFromCodedStream(
@@ -1244,15 +892,12 @@ bool grSim_Commands::MergePartialFromCodedStream(
       case 3: {
         if (tag == 26) {
          parse_robot_commands:
-          DO_(input->IncrementRecursionDepth());
-         parse_loop_robot_commands:
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                 input, add_robot_commands()));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_loop_robot_commands;
-        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(26)) goto parse_robot_commands;
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -1293,12 +938,12 @@ void grSim_Commands::SerializeWithCachedSizes(
   }
 
   // repeated .grSim_Robot_Command robot_commands = 3;
-  for (unsigned int i = 0, n = this->robot_commands_size(); i < n; i++) {
+  for (int i = 0; i < this->robot_commands_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, this->robot_commands(i), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
@@ -1319,13 +964,13 @@ void grSim_Commands::SerializeWithCachedSizes(
   }
 
   // repeated .grSim_Robot_Command robot_commands = 3;
-  for (unsigned int i = 0, n = this->robot_commands_size(); i < n; i++) {
+  for (int i = 0; i < this->robot_commands_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         3, this->robot_commands(i), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
@@ -1333,33 +978,20 @@ void grSim_Commands::SerializeWithCachedSizes(
   return target;
 }
 
-int grSim_Commands::RequiredFieldsByteSizeFallback() const {
-  int total_size = 0;
-
-  if (has_timestamp()) {
-    // required double timestamp = 1;
-    total_size += 1 + 8;
-  }
-
-  if (has_isteamyellow()) {
-    // required bool isteamyellow = 2;
-    total_size += 1 + 1;
-  }
-
-  return total_size;
-}
 int grSim_Commands::ByteSize() const {
   int total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // required double timestamp = 1;
-    total_size += 1 + 8;
+    if (has_timestamp()) {
+      total_size += 1 + 8;
+    }
 
     // required bool isteamyellow = 2;
-    total_size += 1 + 1;
+    if (has_isteamyellow()) {
+      total_size += 1 + 1;
+    }
 
-  } else {
-    total_size += RequiredFieldsByteSizeFallback();
   }
   // repeated .grSim_Robot_Command robot_commands = 3;
   total_size += 1 * this->robot_commands_size();
@@ -1369,7 +1001,7 @@ int grSim_Commands::ByteSize() const {
         this->robot_commands(i));
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1381,10 +1013,10 @@ int grSim_Commands::ByteSize() const {
 }
 
 void grSim_Commands::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
-  const grSim_Commands* source = 
-      ::google::protobuf::internal::DynamicCastToGenerated<const grSim_Commands>(
-          &from);
+  GOOGLE_CHECK_NE(&from, this);
+  const grSim_Commands* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const grSim_Commands*>(
+      &from);
   if (source == NULL) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1393,7 +1025,7 @@ void grSim_Commands::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void grSim_Commands::MergeFrom(const grSim_Commands& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   robot_commands_.MergeFrom(from.robot_commands_);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_timestamp()) {
@@ -1403,9 +1035,7 @@ void grSim_Commands::MergeFrom(const grSim_Commands& from) {
       set_isteamyellow(from.isteamyellow());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void grSim_Commands::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1428,16 +1058,14 @@ bool grSim_Commands::IsInitialized() const {
 }
 
 void grSim_Commands::Swap(grSim_Commands* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void grSim_Commands::InternalSwap(grSim_Commands* other) {
-  std::swap(timestamp_, other->timestamp_);
-  std::swap(isteamyellow_, other->isteamyellow_);
-  robot_commands_.UnsafeArenaSwap(&other->robot_commands_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(timestamp_, other->timestamp_);
+    std::swap(isteamyellow_, other->isteamyellow_);
+    robot_commands_.Swap(&other->robot_commands_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata grSim_Commands::GetMetadata() const {
@@ -1448,88 +1076,6 @@ void grSim_Commands::InternalSwap(grSim_Commands* other) {
   return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// grSim_Commands
-
-// required double timestamp = 1;
-bool grSim_Commands::has_timestamp() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void grSim_Commands::set_has_timestamp() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void grSim_Commands::clear_has_timestamp() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void grSim_Commands::clear_timestamp() {
-  timestamp_ = 0;
-  clear_has_timestamp();
-}
- double grSim_Commands::timestamp() const {
-  // @@protoc_insertion_point(field_get:grSim_Commands.timestamp)
-  return timestamp_;
-}
- void grSim_Commands::set_timestamp(double value) {
-  set_has_timestamp();
-  timestamp_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Commands.timestamp)
-}
-
-// required bool isteamyellow = 2;
-bool grSim_Commands::has_isteamyellow() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-void grSim_Commands::set_has_isteamyellow() {
-  _has_bits_[0] |= 0x00000002u;
-}
-void grSim_Commands::clear_has_isteamyellow() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-void grSim_Commands::clear_isteamyellow() {
-  isteamyellow_ = false;
-  clear_has_isteamyellow();
-}
- bool grSim_Commands::isteamyellow() const {
-  // @@protoc_insertion_point(field_get:grSim_Commands.isteamyellow)
-  return isteamyellow_;
-}
- void grSim_Commands::set_isteamyellow(bool value) {
-  set_has_isteamyellow();
-  isteamyellow_ = value;
-  // @@protoc_insertion_point(field_set:grSim_Commands.isteamyellow)
-}
-
-// repeated .grSim_Robot_Command robot_commands = 3;
-int grSim_Commands::robot_commands_size() const {
-  return robot_commands_.size();
-}
-void grSim_Commands::clear_robot_commands() {
-  robot_commands_.Clear();
-}
-const ::grSim_Robot_Command& grSim_Commands::robot_commands(int index) const {
-  // @@protoc_insertion_point(field_get:grSim_Commands.robot_commands)
-  return robot_commands_.Get(index);
-}
-::grSim_Robot_Command* grSim_Commands::mutable_robot_commands(int index) {
-  // @@protoc_insertion_point(field_mutable:grSim_Commands.robot_commands)
-  return robot_commands_.Mutable(index);
-}
-::grSim_Robot_Command* grSim_Commands::add_robot_commands() {
-  // @@protoc_insertion_point(field_add:grSim_Commands.robot_commands)
-  return robot_commands_.Add();
-}
-::google::protobuf::RepeatedPtrField< ::grSim_Robot_Command >*
-grSim_Commands::mutable_robot_commands() {
-  // @@protoc_insertion_point(field_mutable_list:grSim_Commands.robot_commands)
-  return &robot_commands_;
-}
-const ::google::protobuf::RepeatedPtrField< ::grSim_Robot_Command >&
-grSim_Commands::robot_commands() const {
-  // @@protoc_insertion_point(field_list:grSim_Commands.robot_commands)
-  return robot_commands_;
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

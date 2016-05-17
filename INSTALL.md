@@ -9,14 +9,21 @@ Install (Debian 8)
 **MPP Install**
 ```
 $ sudo apt-get update && apt-get upgrade
-$ sudo apt-get install build-essential pkg-config git cmake
-$ sudo apt-get install gnuplot libqt4-core libqt4-dev protobuf-compiler libprotobuf-dev freeglut3 freeglut3-dev libompl-dev libboost-all-dev
+$ sudo apt-get install pkg-config 
+$ sudo apt-get install build-essential git cmake gnuplot libqt4-core libqt4-dev protobuf-compiler libprotobuf-dev freeglut3 freeglut3-dev libompl-dev libboost-all-dev libode1 libode-dev
+```
+
+Install (Ubuntu 16.04 LTS)
+------------------
+**MPP Install**
+```
+$ sudo apt-get update && apt-get upgrade
+$ sudo apt-get install pkg-config 
+$ sudo apt-get install g++ git cmake gnuplot libqtcore4 libqt4-dev protobuf-compiler libprotobuf-dev freeglut3 freeglut3-dev libompl-dev libboost-all-dev libode-dev libode4
 ```
 
 **grSim Install** [original][grsim-install]
 ```
-$ sudo apt-get install libode1 libode-dev
-
 $ wget http://vartypes.googlecode.com/files/vartypes-0.7.tar.gz
 $ tar xfz vartypes-0.7.tar.gz
 $ cd vartypes-0.7
