@@ -1,0 +1,7000 @@
+Success: TRUE
+Workspace: 1440606884
+Qtd_robots: 9
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 231
+
+Success: FALSE
+Workspace: 1440606940
+Qtd_robots: 9
+Qtd_obstacles: 15
+Qtd_collisions: 2
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440607026
+Qtd_robots: 8
+Qtd_obstacles: 61
+Qtd_collisions: 0
+Qtd_steps: 330
+
+Success: TRUE
+Workspace: 1440607210
+Qtd_robots: 5
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 243
+
+Success: TRUE
+Workspace: 1440607264
+Qtd_robots: 6
+Qtd_obstacles: 21
+Qtd_collisions: 0
+Qtd_steps: 261
+
+Success: TRUE
+Workspace: 1440607350
+Qtd_robots: 10
+Qtd_obstacles: 63
+Qtd_collisions: 1
+Qtd_steps: 334
+
+Success: TRUE
+Workspace: 1440607552
+Qtd_robots: 6
+Qtd_obstacles: 24
+Qtd_collisions: 2
+Qtd_steps: 310
+
+Success: TRUE
+Workspace: 1440607642
+Qtd_robots: 8
+Qtd_obstacles: 66
+Qtd_collisions: 3
+Qtd_steps: 254
+
+Success: TRUE
+Workspace: 1440607834
+Qtd_robots: 6
+Qtd_obstacles: 54
+Qtd_collisions: 1
+Qtd_steps: 296
+
+Success: TRUE
+Workspace: 1440607992
+Qtd_robots: 9
+Qtd_obstacles: 40
+Qtd_collisions: 2
+Qtd_steps: 370
+
+Success: TRUE
+Workspace: 1440608132
+Qtd_robots: 8
+Qtd_obstacles: 59
+Qtd_collisions: 3
+Qtd_steps: 321
+
+Success: TRUE
+Workspace: 1440608318
+Qtd_robots: 8
+Qtd_obstacles: 54
+Qtd_collisions: 0
+Qtd_steps: 272
+
+Success: FALSE
+Workspace: 1440608486
+Qtd_robots: 8
+Qtd_obstacles: 66
+Qtd_collisions: 3
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440608684
+Qtd_robots: 5
+Qtd_obstacles: 65
+Qtd_collisions: 0
+Qtd_steps: 350
+
+Success: TRUE
+Workspace: 1440608872
+Qtd_robots: 10
+Qtd_obstacles: 61
+Qtd_collisions: 3
+Qtd_steps: 411
+
+Success: TRUE
+Workspace: 1440609082
+Qtd_robots: 8
+Qtd_obstacles: 53
+Qtd_collisions: 1
+Qtd_steps: 317
+
+Success: TRUE
+Workspace: 1440609248
+Qtd_robots: 7
+Qtd_obstacles: 38
+Qtd_collisions: 2
+Qtd_steps: 316
+
+Success: TRUE
+Workspace: 1440609376
+Qtd_robots: 6
+Qtd_obstacles: 11
+Qtd_collisions: 0
+Qtd_steps: 313
+
+Success: TRUE
+Workspace: 1440609438
+Qtd_robots: 10
+Qtd_obstacles: 77
+Qtd_collisions: 4
+Qtd_steps: 426
+
+Success: TRUE
+Workspace: 1440609674
+Qtd_robots: 5
+Qtd_obstacles: 34
+Qtd_collisions: 0
+Qtd_steps: 354
+
+Success: TRUE
+Workspace: 1440609780
+Qtd_robots: 5
+Qtd_obstacles: 65
+Qtd_collisions: 0
+Qtd_steps: 320
+
+Success: TRUE
+Workspace: 1440609958
+Qtd_robots: 7
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 271
+
+Success: TRUE
+Workspace: 1440610022
+Qtd_robots: 10
+Qtd_obstacles: 20
+Qtd_collisions: 3
+Qtd_steps: 291
+
+Success: TRUE
+Workspace: 1440610126
+Qtd_robots: 10
+Qtd_obstacles: 78
+Qtd_collisions: 7
+Qtd_steps: 515
+
+Success: TRUE
+Workspace: 1440610372
+Qtd_robots: 9
+Qtd_obstacles: 46
+Qtd_collisions: 2
+Qtd_steps: 382
+
+Success: FALSE
+Workspace: 1440610528
+Qtd_robots: 8
+Qtd_obstacles: 53
+Qtd_collisions: 1
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440610696
+Qtd_robots: 10
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 232
+
+Success: TRUE
+Workspace: 1440610772
+Qtd_robots: 6
+Qtd_obstacles: 14
+Qtd_collisions: 0
+Qtd_steps: 227
+
+Success: TRUE
+Workspace: 1440610840
+Qtd_robots: 8
+Qtd_obstacles: 87
+Qtd_collisions: 2
+Qtd_steps: 529
+
+Success: TRUE
+Workspace: 1440611078
+Qtd_robots: 5
+Qtd_obstacles: 82
+Qtd_collisions: 0
+Qtd_steps: 364
+
+Success: TRUE
+Workspace: 1440611300
+Qtd_robots: 7
+Qtd_obstacles: 22
+Qtd_collisions: 0
+Qtd_steps: 276
+
+Success: TRUE
+Workspace: 1440611390
+Qtd_robots: 7
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 306
+
+Success: TRUE
+Workspace: 1440611436
+Qtd_robots: 10
+Qtd_obstacles: 85
+Qtd_collisions: 3
+Qtd_steps: 361
+
+Success: TRUE
+Workspace: 1440611684
+Qtd_robots: 6
+Qtd_obstacles: 8
+Qtd_collisions: 0
+Qtd_steps: 277
+
+Success: TRUE
+Workspace: 1440611738
+Qtd_robots: 10
+Qtd_obstacles: 17
+Qtd_collisions: 0
+Qtd_steps: 257
+
+Success: TRUE
+Workspace: 1440611826
+Qtd_robots: 9
+Qtd_obstacles: 16
+Qtd_collisions: 0
+Qtd_steps: 275
+
+Success: TRUE
+Workspace: 1440611914
+Qtd_robots: 10
+Qtd_obstacles: 39
+Qtd_collisions: 3
+Qtd_steps: 361
+
+Success: TRUE
+Workspace: 1440612072
+Qtd_robots: 5
+Qtd_obstacles: 64
+Qtd_collisions: 1
+Qtd_steps: 500
+
+Success: TRUE
+Workspace: 1440612256
+Qtd_robots: 6
+Qtd_obstacles: 49
+Qtd_collisions: 1
+Qtd_steps: 225
+
+Success: TRUE
+Workspace: 1440612402
+Qtd_robots: 8
+Qtd_obstacles: 34
+Qtd_collisions: 1
+Qtd_steps: 279
+
+Success: TRUE
+Workspace: 1440612526
+Qtd_robots: 10
+Qtd_obstacles: 51
+Qtd_collisions: 4
+Qtd_steps: 367
+
+Success: TRUE
+Workspace: 1440612698
+Qtd_robots: 8
+Qtd_obstacles: 54
+Qtd_collisions: 1
+Qtd_steps: 204
+
+Success: TRUE
+Workspace: 1440612860
+Qtd_robots: 10
+Qtd_obstacles: 75
+Qtd_collisions: 1
+Qtd_steps: 341
+
+Success: TRUE
+Workspace: 1440613102
+Qtd_robots: 5
+Qtd_obstacles: 82
+Qtd_collisions: 2
+Qtd_steps: 316
+
+Success: FALSE
+Workspace: 1440613312
+Qtd_robots: 9
+Qtd_obstacles: 48
+Qtd_collisions: 2
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440613480
+Qtd_robots: 8
+Qtd_obstacles: 98
+Qtd_collisions: 3
+Qtd_steps: 275
+
+Success: TRUE
+Workspace: 1440613754
+Qtd_robots: 6
+Qtd_obstacles: 55
+Qtd_collisions: 1
+Qtd_steps: 416
+
+Success: TRUE
+Workspace: 1440613912
+Qtd_robots: 8
+Qtd_obstacles: 77
+Qtd_collisions: 3
+Qtd_steps: 380
+
+Success: TRUE
+Workspace: 1440614150
+Qtd_robots: 10
+Qtd_obstacles: 58
+Qtd_collisions: 1
+Qtd_steps: 396
+
+Success: TRUE
+Workspace: 1440614342
+Qtd_robots: 8
+Qtd_obstacles: 97
+Qtd_collisions: 4
+Qtd_steps: 517
+
+Success: TRUE
+Workspace: 1440614612
+Qtd_robots: 9
+Qtd_obstacles: 55
+Qtd_collisions: 3
+Qtd_steps: 433
+
+Success: TRUE
+Workspace: 1440614794
+Qtd_robots: 6
+Qtd_obstacles: 12
+Qtd_collisions: 0
+Qtd_steps: 230
+
+Success: TRUE
+Workspace: 1440614858
+Qtd_robots: 8
+Qtd_obstacles: 35
+Qtd_collisions: 2
+Qtd_steps: 297
+
+Success: TRUE
+Workspace: 1440614988
+Qtd_robots: 7
+Qtd_obstacles: 9
+Qtd_collisions: 1
+Qtd_steps: 285
+
+Success: TRUE
+Workspace: 1440615052
+Qtd_robots: 7
+Qtd_obstacles: 48
+Qtd_collisions: 0
+Qtd_steps: 308
+
+Success: TRUE
+Workspace: 1440615204
+Qtd_robots: 5
+Qtd_obstacles: 40
+Qtd_collisions: 0
+Qtd_steps: 316
+
+Success: TRUE
+Workspace: 1440615330
+Qtd_robots: 6
+Qtd_obstacles: 5
+Qtd_collisions: 0
+Qtd_steps: 266
+
+Success: TRUE
+Workspace: 1440615380
+Qtd_robots: 6
+Qtd_obstacles: 5
+Qtd_collisions: 0
+Qtd_steps: 238
+
+Success: TRUE
+Workspace: 1440615428
+Qtd_robots: 5
+Qtd_obstacles: 70
+Qtd_collisions: 0
+Qtd_steps: 370
+
+Success: TRUE
+Workspace: 1440615620
+Qtd_robots: 5
+Qtd_obstacles: 28
+Qtd_collisions: 0
+Qtd_steps: 302
+
+Success: TRUE
+Workspace: 1440615712
+Qtd_robots: 10
+Qtd_obstacles: 91
+Qtd_collisions: 2
+Qtd_steps: 432
+
+Success: TRUE
+Workspace: 1440615964
+Qtd_robots: 10
+Qtd_obstacles: 61
+Qtd_collisions: 1
+Qtd_steps: 334
+
+Success: TRUE
+Workspace: 1440616170
+Qtd_robots: 5
+Qtd_obstacles: 66
+Qtd_collisions: 2
+Qtd_steps: 393
+
+Success: TRUE
+Workspace: 1440616340
+Qtd_robots: 6
+Qtd_obstacles: 36
+Qtd_collisions: 1
+Qtd_steps: 277
+
+Success: TRUE
+Workspace: 1440616456
+Qtd_robots: 6
+Qtd_obstacles: 56
+Qtd_collisions: 2
+Qtd_steps: 410
+
+Success: FALSE
+Workspace: 1440616620
+Qtd_robots: 10
+Qtd_obstacles: 96
+Qtd_collisions: 5
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440616914
+Qtd_robots: 6
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 252
+
+Success: TRUE
+Workspace: 1440616980
+Qtd_robots: 5
+Qtd_obstacles: 35
+Qtd_collisions: 0
+Qtd_steps: 327
+
+Success: TRUE
+Workspace: 1440617090
+Qtd_robots: 5
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 327
+
+Success: TRUE
+Workspace: 1440617164
+Qtd_robots: 10
+Qtd_obstacles: 33
+Qtd_collisions: 0
+Qtd_steps: 255
+
+Success: TRUE
+Workspace: 1440617288
+Qtd_robots: 5
+Qtd_obstacles: 100
+Qtd_collisions: 0
+Qtd_steps: 364
+
+Success: TRUE
+Workspace: 1440617548
+Qtd_robots: 7
+Qtd_obstacles: 3
+Qtd_collisions: 0
+Qtd_steps: 309
+
+Success: TRUE
+Workspace: 1440617596
+Qtd_robots: 9
+Qtd_obstacles: 33
+Qtd_collisions: 1
+Qtd_steps: 240
+
+Success: TRUE
+Workspace: 1440617720
+Qtd_robots: 10
+Qtd_obstacles: 29
+Qtd_collisions: 2
+Qtd_steps: 279
+
+Success: TRUE
+Workspace: 1440617846
+Qtd_robots: 8
+Qtd_obstacles: 43
+Qtd_collisions: 3
+Qtd_steps: 288
+
+Success: TRUE
+Workspace: 1440617988
+Qtd_robots: 5
+Qtd_obstacles: 59
+Qtd_collisions: 2
+Qtd_steps: 316
+
+Success: TRUE
+Workspace: 1440618144
+Qtd_robots: 9
+Qtd_obstacles: 41
+Qtd_collisions: 0
+Qtd_steps: 382
+
+Success: TRUE
+Workspace: 1440618292
+Qtd_robots: 6
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 310
+
+Success: TRUE
+Workspace: 1440618332
+Qtd_robots: 6
+Qtd_obstacles: 53
+Qtd_collisions: 2
+Qtd_steps: 312
+
+Success: TRUE
+Workspace: 1440618496
+Qtd_robots: 10
+Qtd_obstacles: 8
+Qtd_collisions: 1
+Qtd_steps: 364
+
+Success: TRUE
+Workspace: 1440618570
+Qtd_robots: 9
+Qtd_obstacles: 35
+Qtd_collisions: 2
+Qtd_steps: 334
+
+Success: TRUE
+Workspace: 1440618710
+Qtd_robots: 8
+Qtd_obstacles: 12
+Qtd_collisions: 1
+Qtd_steps: 273
+
+Success: TRUE
+Workspace: 1440618784
+Qtd_robots: 8
+Qtd_obstacles: 92
+Qtd_collisions: 2
+Qtd_steps: 495
+
+Success: TRUE
+Workspace: 1440619046
+Qtd_robots: 7
+Qtd_obstacles: 82
+Qtd_collisions: 2
+Qtd_steps: 625
+
+Success: TRUE
+Workspace: 1440619274
+Qtd_robots: 9
+Qtd_obstacles: 30
+Qtd_collisions: 0
+Qtd_steps: 300
+
+Success: TRUE
+Workspace: 1440619394
+Qtd_robots: 6
+Qtd_obstacles: 78
+Qtd_collisions: 0
+Qtd_steps: 369
+
+Success: TRUE
+Workspace: 1440619604
+Qtd_robots: 7
+Qtd_obstacles: 5
+Qtd_collisions: 1
+Qtd_steps: 230
+
+Success: TRUE
+Workspace: 1440619660
+Qtd_robots: 5
+Qtd_obstacles: 78
+Qtd_collisions: 2
+Qtd_steps: 416
+
+Success: TRUE
+Workspace: 1440619856
+Qtd_robots: 9
+Qtd_obstacles: 99
+Qtd_collisions: 2
+Qtd_steps: 433
+
+Success: TRUE
+Workspace: 1440620152
+Qtd_robots: 5
+Qtd_obstacles: 57
+Qtd_collisions: 1
+Qtd_steps: 364
+
+Success: TRUE
+Workspace: 1440620312
+Qtd_robots: 7
+Qtd_obstacles: 65
+Qtd_collisions: 1
+Qtd_steps: 544
+
+Success: TRUE
+Workspace: 1440620504
+Qtd_robots: 7
+Qtd_obstacles: 23
+Qtd_collisions: 0
+Qtd_steps: 259
+
+Success: TRUE
+Workspace: 1440620596
+Qtd_robots: 7
+Qtd_obstacles: 47
+Qtd_collisions: 1
+Qtd_steps: 344
+
+Success: TRUE
+Workspace: 1440620744
+Qtd_robots: 5
+Qtd_obstacles: 27
+Qtd_collisions: 0
+Qtd_steps: 243
+
+Success: TRUE
+Workspace: 1440620836
+Qtd_robots: 5
+Qtd_obstacles: 75
+Qtd_collisions: 2
+Qtd_steps: 250
+
+Success: TRUE
+Workspace: 1440621032
+Qtd_robots: 7
+Qtd_obstacles: 97
+Qtd_collisions: 1
+Qtd_steps: 329
+
+Success: TRUE
+Workspace: 1440621306
+Qtd_robots: 7
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 330
+
+Success: TRUE
+Workspace: 1440621350
+Qtd_robots: 10
+Qtd_obstacles: 56
+Qtd_collisions: 2
+Qtd_steps: 403
+
+Success: TRUE
+Workspace: 1440621542
+Qtd_robots: 9
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 276
+
+Success: TRUE
+Workspace: 1440621612
+Qtd_robots: 8
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 279
+
+Success: TRUE
+Workspace: 1440621690
+Qtd_robots: 8
+Qtd_obstacles: 46
+Qtd_collisions: 0
+Qtd_steps: 447
+
+Success: TRUE
+Workspace: 1440621840
+Qtd_robots: 6
+Qtd_obstacles: 65
+Qtd_collisions: 2
+Qtd_steps: 382
+
+Success: TRUE
+Workspace: 1440622030
+Qtd_robots: 9
+Qtd_obstacles: 78
+Qtd_collisions: 3
+Qtd_steps: 501
+
+Success: TRUE
+Workspace: 1440622264
+Qtd_robots: 5
+Qtd_obstacles: 88
+Qtd_collisions: 2
+Qtd_steps: 277
+
+Success: TRUE
+Workspace: 1440622494
+Qtd_robots: 10
+Qtd_obstacles: 9
+Qtd_collisions: 2
+Qtd_steps: 202
+
+Success: FALSE
+Workspace: 1440622568
+Qtd_robots: 9
+Qtd_obstacles: 77
+Qtd_collisions: 6
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440622800
+Qtd_robots: 9
+Qtd_obstacles: 36
+Qtd_collisions: 2
+Qtd_steps: 298
+
+Success: TRUE
+Workspace: 1440622932
+Qtd_robots: 10
+Qtd_obstacles: 17
+Qtd_collisions: 2
+Qtd_steps: 270
+
+Success: TRUE
+Workspace: 1440623020
+Qtd_robots: 9
+Qtd_obstacles: 8
+Qtd_collisions: 0
+Qtd_steps: 299
+
+Success: TRUE
+Workspace: 1440623086
+Qtd_robots: 9
+Qtd_obstacles: 37
+Qtd_collisions: 0
+Qtd_steps: 234
+
+Success: TRUE
+Workspace: 1440623220
+Qtd_robots: 8
+Qtd_obstacles: 100
+Qtd_collisions: 2
+Qtd_steps: 590
+
+Success: TRUE
+Workspace: 1440623502
+Qtd_robots: 7
+Qtd_obstacles: 80
+Qtd_collisions: 1
+Qtd_steps: 311
+
+Success: TRUE
+Workspace: 1440623720
+Qtd_robots: 10
+Qtd_obstacles: 59
+Qtd_collisions: 1
+Qtd_steps: 355
+
+Success: TRUE
+Workspace: 1440623912
+Qtd_robots: 10
+Qtd_obstacles: 40
+Qtd_collisions: 2
+Qtd_steps: 444
+
+Success: TRUE
+Workspace: 1440624054
+Qtd_robots: 6
+Qtd_obstacles: 84
+Qtd_collisions: 3
+Qtd_steps: 489
+
+Success: TRUE
+Workspace: 1440624276
+Qtd_robots: 9
+Qtd_obstacles: 73
+Qtd_collisions: 2
+Qtd_steps: 342
+
+Success: TRUE
+Workspace: 1440624490
+Qtd_robots: 9
+Qtd_obstacles: 59
+Qtd_collisions: 0
+Qtd_steps: 358
+
+Success: TRUE
+Workspace: 1440624684
+Qtd_robots: 5
+Qtd_obstacles: 21
+Qtd_collisions: 0
+Qtd_steps: 200
+
+Success: TRUE
+Workspace: 1440624764
+Qtd_robots: 6
+Qtd_obstacles: 59
+Qtd_collisions: 0
+Qtd_steps: 327
+
+Success: TRUE
+Workspace: 1440624940
+Qtd_robots: 7
+Qtd_obstacles: 84
+Qtd_collisions: 2
+Qtd_steps: 346
+
+Success: TRUE
+Workspace: 1440625158
+Qtd_robots: 7
+Qtd_obstacles: 48
+Qtd_collisions: 0
+Qtd_steps: 237
+
+Success: TRUE
+Workspace: 1440625320
+Qtd_robots: 10
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 307
+
+Success: TRUE
+Workspace: 1440625378
+Qtd_robots: 9
+Qtd_obstacles: 43
+Qtd_collisions: 0
+Qtd_steps: 290
+
+Success: TRUE
+Workspace: 1440625530
+Qtd_robots: 8
+Qtd_obstacles: 35
+Qtd_collisions: 1
+Qtd_steps: 268
+
+Success: FALSE
+Workspace: 1440625660
+Qtd_robots: 10
+Qtd_obstacles: 61
+Qtd_collisions: 2
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440625862
+Qtd_robots: 8
+Qtd_obstacles: 90
+Qtd_collisions: 3
+Qtd_steps: 403
+
+Success: TRUE
+Workspace: 1440626116
+Qtd_robots: 8
+Qtd_obstacles: 61
+Qtd_collisions: 2
+Qtd_steps: 308
+
+Success: TRUE
+Workspace: 1440626310
+Qtd_robots: 6
+Qtd_obstacles: 51
+Qtd_collisions: 1
+Qtd_steps: 386
+
+Success: TRUE
+Workspace: 1440626456
+Qtd_robots: 5
+Qtd_obstacles: 68
+Qtd_collisions: 2
+Qtd_steps: 225
+
+Success: TRUE
+Workspace: 1440626638
+Qtd_robots: 6
+Qtd_obstacles: 67
+Qtd_collisions: 3
+Qtd_steps: 361
+
+Success: TRUE
+Workspace: 1440626830
+Qtd_robots: 9
+Qtd_obstacles: 87
+Qtd_collisions: 5
+Qtd_steps: 282
+
+Success: TRUE
+Workspace: 1440627092
+Qtd_robots: 5
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 278
+
+Success: TRUE
+Workspace: 1440627142
+Qtd_robots: 8
+Qtd_obstacles: 61
+Qtd_collisions: 3
+Qtd_steps: 406
+
+Success: TRUE
+Workspace: 1440627332
+Qtd_robots: 10
+Qtd_obstacles: 45
+Qtd_collisions: 2
+Qtd_steps: 458
+
+Success: TRUE
+Workspace: 1440627490
+Qtd_robots: 8
+Qtd_obstacles: 93
+Qtd_collisions: 1
+Qtd_steps: 261
+
+Success: TRUE
+Workspace: 1440627760
+Qtd_robots: 9
+Qtd_obstacles: 29
+Qtd_collisions: 0
+Qtd_steps: 358
+
+Success: TRUE
+Workspace: 1440627880
+Qtd_robots: 7
+Qtd_obstacles: 31
+Qtd_collisions: 1
+Qtd_steps: 267
+
+Success: TRUE
+Workspace: 1440628004
+Qtd_robots: 10
+Qtd_obstacles: 91
+Qtd_collisions: 3
+Qtd_steps: 395
+
+Success: TRUE
+Workspace: 1440628290
+Qtd_robots: 9
+Qtd_obstacles: 29
+Qtd_collisions: 1
+Qtd_steps: 428
+
+Success: TRUE
+Workspace: 1440628406
+Qtd_robots: 9
+Qtd_obstacles: 64
+Qtd_collisions: 3
+Qtd_steps: 311
+
+Success: TRUE
+Workspace: 1440628606
+Qtd_robots: 10
+Qtd_obstacles: 17
+Qtd_collisions: 1
+Qtd_steps: 324
+
+Success: TRUE
+Workspace: 1440628704
+Qtd_robots: 7
+Qtd_obstacles: 80
+Qtd_collisions: 2
+Qtd_steps: 484
+
+Success: TRUE
+Workspace: 1440628934
+Qtd_robots: 6
+Qtd_obstacles: 49
+Qtd_collisions: 1
+Qtd_steps: 270
+
+Success: TRUE
+Workspace: 1440629076
+Qtd_robots: 7
+Qtd_obstacles: 77
+Qtd_collisions: 2
+Qtd_steps: 367
+
+Success: TRUE
+Workspace: 1440629282
+Qtd_robots: 7
+Qtd_obstacles: 25
+Qtd_collisions: 0
+Qtd_steps: 260
+
+Success: TRUE
+Workspace: 1440629380
+Qtd_robots: 5
+Qtd_obstacles: 63
+Qtd_collisions: 3
+Qtd_steps: 407
+
+Success: TRUE
+Workspace: 1440629556
+Qtd_robots: 10
+Qtd_obstacles: 93
+Qtd_collisions: 5
+Qtd_steps: 593
+
+Success: TRUE
+Workspace: 1440629828
+Qtd_robots: 8
+Qtd_obstacles: 60
+Qtd_collisions: 2
+Qtd_steps: 381
+
+Success: TRUE
+Workspace: 1440630004
+Qtd_robots: 9
+Qtd_obstacles: 100
+Qtd_collisions: 5
+Qtd_steps: 300
+
+Success: TRUE
+Workspace: 1440630286
+Qtd_robots: 8
+Qtd_obstacles: 13
+Qtd_collisions: 2
+Qtd_steps: 209
+
+Success: TRUE
+Workspace: 1440630358
+Qtd_robots: 5
+Qtd_obstacles: 73
+Qtd_collisions: 0
+Qtd_steps: 225
+
+Success: TRUE
+Workspace: 1440630554
+Qtd_robots: 9
+Qtd_obstacles: 29
+Qtd_collisions: 0
+Qtd_steps: 349
+
+Success: TRUE
+Workspace: 1440630670
+Qtd_robots: 8
+Qtd_obstacles: 60
+Qtd_collisions: 2
+Qtd_steps: 354
+
+Success: TRUE
+Workspace: 1440630856
+Qtd_robots: 5
+Qtd_obstacles: 90
+Qtd_collisions: 1
+Qtd_steps: 339
+
+Success: TRUE
+Workspace: 1440631100
+Qtd_robots: 5
+Qtd_obstacles: 99
+Qtd_collisions: 0
+Qtd_steps: 323
+
+Success: TRUE
+Workspace: 1440631344
+Qtd_robots: 6
+Qtd_obstacles: 81
+Qtd_collisions: 1
+Qtd_steps: 312
+
+Success: TRUE
+Workspace: 1440631568
+Qtd_robots: 9
+Qtd_obstacles: 55
+Qtd_collisions: 1
+Qtd_steps: 372
+
+Success: TRUE
+Workspace: 1440631742
+Qtd_robots: 8
+Qtd_obstacles: 63
+Qtd_collisions: 1
+Qtd_steps: 286
+
+Success: TRUE
+Workspace: 1440631938
+Qtd_robots: 9
+Qtd_obstacles: 23
+Qtd_collisions: 1
+Qtd_steps: 450
+
+Success: TRUE
+Workspace: 1440632044
+Qtd_robots: 7
+Qtd_obstacles: 54
+Qtd_collisions: 1
+Qtd_steps: 391
+
+Success: TRUE
+Workspace: 1440632210
+Qtd_robots: 5
+Qtd_obstacles: 92
+Qtd_collisions: 3
+Qtd_steps: 304
+
+Success: TRUE
+Workspace: 1440632458
+Qtd_robots: 8
+Qtd_obstacles: 43
+Qtd_collisions: 1
+Qtd_steps: 282
+
+Success: TRUE
+Workspace: 1440632612
+Qtd_robots: 8
+Qtd_obstacles: 92
+Qtd_collisions: 1
+Qtd_steps: 350
+
+Success: TRUE
+Workspace: 1440632866
+Qtd_robots: 9
+Qtd_obstacles: 3
+Qtd_collisions: 0
+Qtd_steps: 227
+
+Success: TRUE
+Workspace: 1440632922
+Qtd_robots: 5
+Qtd_obstacles: 48
+Qtd_collisions: 2
+Qtd_steps: 233
+
+Success: TRUE
+Workspace: 1440633070
+Qtd_robots: 9
+Qtd_obstacles: 25
+Qtd_collisions: 0
+Qtd_steps: 258
+
+Success: TRUE
+Workspace: 1440633176
+Qtd_robots: 7
+Qtd_obstacles: 32
+Qtd_collisions: 1
+Qtd_steps: 379
+
+Success: FALSE
+Workspace: 1440633284
+Qtd_robots: 8
+Qtd_obstacles: 74
+Qtd_collisions: 1
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440633506
+Qtd_robots: 10
+Qtd_obstacles: 89
+Qtd_collisions: 2
+Qtd_steps: 626
+
+Success: TRUE
+Workspace: 1440633770
+Qtd_robots: 8
+Qtd_obstacles: 41
+Qtd_collisions: 1
+Qtd_steps: 295
+
+Success: TRUE
+Workspace: 1440633910
+Qtd_robots: 10
+Qtd_obstacles: 88
+Qtd_collisions: 3
+Qtd_steps: 208
+
+Success: TRUE
+Workspace: 1440634186
+Qtd_robots: 8
+Qtd_obstacles: 94
+Qtd_collisions: 5
+Qtd_steps: 445
+
+Success: TRUE
+Workspace: 1440634450
+Qtd_robots: 6
+Qtd_obstacles: 28
+Qtd_collisions: 1
+Qtd_steps: 283
+
+Success: TRUE
+Workspace: 1440634554
+Qtd_robots: 5
+Qtd_obstacles: 77
+Qtd_collisions: 3
+Qtd_steps: 329
+
+Success: TRUE
+Workspace: 1440634756
+Qtd_robots: 9
+Qtd_obstacles: 71
+Qtd_collisions: 3
+Qtd_steps: 399
+
+Success: TRUE
+Workspace: 1440634960
+Qtd_robots: 7
+Qtd_obstacles: 39
+Qtd_collisions: 1
+Qtd_steps: 313
+
+Success: TRUE
+Workspace: 1440635090
+Qtd_robots: 6
+Qtd_obstacles: 70
+Qtd_collisions: 0
+Qtd_steps: 246
+
+Success: TRUE
+Workspace: 1440635282
+Qtd_robots: 7
+Qtd_obstacles: 46
+Qtd_collisions: 2
+Qtd_steps: 332
+
+Success: TRUE
+Workspace: 1440635424
+Qtd_robots: 7
+Qtd_obstacles: 33
+Qtd_collisions: 1
+Qtd_steps: 232
+
+Success: TRUE
+Workspace: 1440635540
+Qtd_robots: 10
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 409
+
+Success: TRUE
+Workspace: 1440635628
+Qtd_robots: 6
+Qtd_obstacles: 30
+Qtd_collisions: 1
+Qtd_steps: 324
+
+Success: TRUE
+Workspace: 1440635734
+Qtd_robots: 5
+Qtd_obstacles: 56
+Qtd_collisions: 1
+Qtd_steps: 230
+
+Success: TRUE
+Workspace: 1440635894
+Qtd_robots: 8
+Qtd_obstacles: 85
+Qtd_collisions: 4
+Qtd_steps: 428
+
+Success: TRUE
+Workspace: 1440636152
+Qtd_robots: 10
+Qtd_obstacles: 80
+Qtd_collisions: 1
+Qtd_steps: 447
+
+Success: FALSE
+Workspace: 1440636392
+Qtd_robots: 5
+Qtd_obstacles: 33
+Qtd_collisions: 0
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440636494
+Qtd_robots: 6
+Qtd_obstacles: 52
+Qtd_collisions: 1
+Qtd_steps: 281
+
+Success: TRUE
+Workspace: 1440636646
+Qtd_robots: 10
+Qtd_obstacles: 90
+Qtd_collisions: 5
+Qtd_steps: 513
+
+Success: TRUE
+Workspace: 1440636908
+Qtd_robots: 7
+Qtd_obstacles: 69
+Qtd_collisions: 1
+Qtd_steps: 384
+
+Success: TRUE
+Workspace: 1440637106
+Qtd_robots: 7
+Qtd_obstacles: 99
+Qtd_collisions: 3
+Qtd_steps: 426
+
+Success: TRUE
+Workspace: 1440637368
+Qtd_robots: 9
+Qtd_obstacles: 65
+Qtd_collisions: 3
+Qtd_steps: 329
+
+Success: TRUE
+Workspace: 1440637584
+Qtd_robots: 9
+Qtd_obstacles: 65
+Qtd_collisions: 2
+Qtd_steps: 475
+
+Success: TRUE
+Workspace: 1440637792
+Qtd_robots: 10
+Qtd_obstacles: 29
+Qtd_collisions: 2
+Qtd_steps: 429
+
+Success: TRUE
+Workspace: 1440637924
+Qtd_robots: 8
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 278
+
+Success: TRUE
+Workspace: 1440637974
+Qtd_robots: 6
+Qtd_obstacles: 46
+Qtd_collisions: 0
+Qtd_steps: 251
+
+Success: TRUE
+Workspace: 1440638120
+Qtd_robots: 9
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 261
+
+Success: TRUE
+Workspace: 1440638178
+Qtd_robots: 7
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 209
+
+Success: FALSE
+Workspace: 1440638240
+Qtd_robots: 8
+Qtd_obstacles: 43
+Qtd_collisions: 2
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440638394
+Qtd_robots: 10
+Qtd_obstacles: 11
+Qtd_collisions: 1
+Qtd_steps: 271
+
+Success: TRUE
+Workspace: 1440638472
+Qtd_robots: 6
+Qtd_obstacles: 72
+Qtd_collisions: 1
+Qtd_steps: 395
+
+Success: TRUE
+Workspace: 1440638670
+Qtd_robots: 6
+Qtd_obstacles: 53
+Qtd_collisions: 1
+Qtd_steps: 287
+
+Success: TRUE
+Workspace: 1440638820
+Qtd_robots: 8
+Qtd_obstacles: 71
+Qtd_collisions: 0
+Qtd_steps: 293
+
+Success: TRUE
+Workspace: 1440639022
+Qtd_robots: 10
+Qtd_obstacles: 91
+Qtd_collisions: 2
+Qtd_steps: 328
+
+Success: TRUE
+Workspace: 1440639316
+Qtd_robots: 10
+Qtd_obstacles: 12
+Qtd_collisions: 0
+Qtd_steps: 248
+
+Success: TRUE
+Workspace: 1440639400
+Qtd_robots: 10
+Qtd_obstacles: 6
+Qtd_collisions: 0
+Qtd_steps: 275
+
+Success: TRUE
+Workspace: 1440639466
+Qtd_robots: 10
+Qtd_obstacles: 96
+Qtd_collisions: 1
+Qtd_steps: 342
+
+Success: TRUE
+Workspace: 1440639738
+Qtd_robots: 7
+Qtd_obstacles: 76
+Qtd_collisions: 1
+Qtd_steps: 220
+
+Success: TRUE
+Workspace: 1440639944
+Qtd_robots: 7
+Qtd_obstacles: 77
+Qtd_collisions: 3
+Qtd_steps: 382
+
+Success: TRUE
+Workspace: 1440640162
+Qtd_robots: 8
+Qtd_obstacles: 13
+Qtd_collisions: 1
+Qtd_steps: 285
+
+Success: TRUE
+Workspace: 1440640238
+Qtd_robots: 9
+Qtd_obstacles: 76
+Qtd_collisions: 3
+Qtd_steps: 381
+
+Success: TRUE
+Workspace: 1440640480
+Qtd_robots: 7
+Qtd_obstacles: 14
+Qtd_collisions: 0
+Qtd_steps: 247
+
+Success: TRUE
+Workspace: 1440640552
+Qtd_robots: 6
+Qtd_obstacles: 56
+Qtd_collisions: 1
+Qtd_steps: 391
+
+Success: FALSE
+Workspace: 1440640708
+Qtd_robots: 8
+Qtd_obstacles: 78
+Qtd_collisions: 2
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440640926
+Qtd_robots: 5
+Qtd_obstacles: 8
+Qtd_collisions: 0
+Qtd_steps: 236
+
+Success: TRUE
+Workspace: 1440640978
+Qtd_robots: 9
+Qtd_obstacles: 68
+Qtd_collisions: 2
+Qtd_steps: 382
+
+Success: TRUE
+Workspace: 1440641186
+Qtd_robots: 8
+Qtd_obstacles: 97
+Qtd_collisions: 5
+Qtd_steps: 388
+
+Success: TRUE
+Workspace: 1440641460
+Qtd_robots: 6
+Qtd_obstacles: 86
+Qtd_collisions: 2
+Qtd_steps: 285
+
+Success: TRUE
+Workspace: 1440641674
+Qtd_robots: 8
+Qtd_obstacles: 38
+Qtd_collisions: 0
+Qtd_steps: 241
+
+Success: TRUE
+Workspace: 1440641798
+Qtd_robots: 6
+Qtd_obstacles: 100
+Qtd_collisions: 2
+Qtd_steps: 287
+
+Success: TRUE
+Workspace: 1440642054
+Qtd_robots: 8
+Qtd_obstacles: 63
+Qtd_collisions: 4
+Qtd_steps: 359
+
+Success: TRUE
+Workspace: 1440642242
+Qtd_robots: 5
+Qtd_obstacles: 85
+Qtd_collisions: 2
+Qtd_steps: 510
+
+Success: TRUE
+Workspace: 1440642468
+Qtd_robots: 5
+Qtd_obstacles: 44
+Qtd_collisions: 0
+Qtd_steps: 226
+
+Success: TRUE
+Workspace: 1440642596
+Qtd_robots: 10
+Qtd_obstacles: 87
+Qtd_collisions: 2
+Qtd_steps: 442
+
+Success: TRUE
+Workspace: 1440642856
+Qtd_robots: 9
+Qtd_obstacles: 94
+Qtd_collisions: 3
+Qtd_steps: 396
+
+Success: TRUE
+Workspace: 1440643120
+Qtd_robots: 5
+Qtd_obstacles: 58
+Qtd_collisions: 0
+Qtd_steps: 217
+
+Success: TRUE
+Workspace: 1440643286
+Qtd_robots: 6
+Qtd_obstacles: 52
+Qtd_collisions: 0
+Qtd_steps: 370
+
+Success: TRUE
+Workspace: 1440643436
+Qtd_robots: 10
+Qtd_obstacles: 96
+Qtd_collisions: 4
+Qtd_steps: 519
+
+Success: TRUE
+Workspace: 1440643726
+Qtd_robots: 10
+Qtd_obstacles: 28
+Qtd_collisions: 2
+Qtd_steps: 349
+
+Success: TRUE
+Workspace: 1440643850
+Qtd_robots: 10
+Qtd_obstacles: 37
+Qtd_collisions: 0
+Qtd_steps: 292
+
+Success: TRUE
+Workspace: 1440644006
+Qtd_robots: 7
+Qtd_obstacles: 70
+Qtd_collisions: 2
+Qtd_steps: 249
+
+Success: TRUE
+Workspace: 1440644206
+Qtd_robots: 10
+Qtd_obstacles: 69
+Qtd_collisions: 2
+Qtd_steps: 565
+
+Success: TRUE
+Workspace: 1440644420
+Qtd_robots: 10
+Qtd_obstacles: 51
+Qtd_collisions: 3
+Qtd_steps: 248
+
+Success: TRUE
+Workspace: 1440644596
+Qtd_robots: 5
+Qtd_obstacles: 88
+Qtd_collisions: 2
+Qtd_steps: 347
+
+Success: TRUE
+Workspace: 1440644824
+Qtd_robots: 8
+Qtd_obstacles: 77
+Qtd_collisions: 5
+Qtd_steps: 370
+
+Success: TRUE
+Workspace: 1440645054
+Qtd_robots: 9
+Qtd_obstacles: 100
+Qtd_collisions: 4
+Qtd_steps: 429
+
+Success: TRUE
+Workspace: 1440645332
+Qtd_robots: 6
+Qtd_obstacles: 43
+Qtd_collisions: 0
+Qtd_steps: 293
+
+Success: TRUE
+Workspace: 1440645472
+Qtd_robots: 6
+Qtd_obstacles: 89
+Qtd_collisions: 1
+Qtd_steps: 228
+
+Success: TRUE
+Workspace: 1440645708
+Qtd_robots: 10
+Qtd_obstacles: 85
+Qtd_collisions: 3
+Qtd_steps: 704
+
+Success: TRUE
+Workspace: 1440645964
+Qtd_robots: 6
+Qtd_obstacles: 83
+Qtd_collisions: 3
+Qtd_steps: 643
+
+Success: TRUE
+Workspace: 1440646186
+Qtd_robots: 7
+Qtd_obstacles: 11
+Qtd_collisions: 1
+Qtd_steps: 224
+
+Success: TRUE
+Workspace: 1440646256
+Qtd_robots: 9
+Qtd_obstacles: 39
+Qtd_collisions: 0
+Qtd_steps: 251
+
+Success: TRUE
+Workspace: 1440646392
+Qtd_robots: 10
+Qtd_obstacles: 17
+Qtd_collisions: 1
+Qtd_steps: 495
+
+Success: TRUE
+Workspace: 1440646490
+Qtd_robots: 8
+Qtd_obstacles: 82
+Qtd_collisions: 5
+Qtd_steps: 394
+
+Success: TRUE
+Workspace: 1440646730
+Qtd_robots: 5
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 196
+
+Success: TRUE
+Workspace: 1440646812
+Qtd_robots: 8
+Qtd_obstacles: 52
+Qtd_collisions: 1
+Qtd_steps: 474
+
+Success: TRUE
+Workspace: 1440646972
+Qtd_robots: 9
+Qtd_obstacles: 48
+Qtd_collisions: 2
+Qtd_steps: 235
+
+Success: TRUE
+Workspace: 1440647132
+Qtd_robots: 9
+Qtd_obstacles: 64
+Qtd_collisions: 1
+Qtd_steps: 540
+
+Success: FALSE
+Workspace: 1440647328
+Qtd_robots: 5
+Qtd_obstacles: 95
+Qtd_collisions: 3
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440647564
+Qtd_robots: 6
+Qtd_obstacles: 80
+Qtd_collisions: 1
+Qtd_steps: 463
+
+Success: TRUE
+Workspace: 1440647782
+Qtd_robots: 5
+Qtd_obstacles: 66
+Qtd_collisions: 0
+Qtd_steps: 399
+
+Success: TRUE
+Workspace: 1440647948
+Qtd_robots: 6
+Qtd_obstacles: 25
+Qtd_collisions: 2
+Qtd_steps: 367
+
+Success: TRUE
+Workspace: 1440648040
+Qtd_robots: 5
+Qtd_obstacles: 84
+Qtd_collisions: 2
+Qtd_steps: 471
+
+Success: TRUE
+Workspace: 1440648252
+Qtd_robots: 10
+Qtd_obstacles: 9
+Qtd_collisions: 1
+Qtd_steps: 255
+
+Success: TRUE
+Workspace: 1440648330
+Qtd_robots: 8
+Qtd_obstacles: 60
+Qtd_collisions: 4
+Qtd_steps: 391
+
+Success: TRUE
+Workspace: 1440648514
+Qtd_robots: 6
+Qtd_obstacles: 85
+Qtd_collisions: 1
+Qtd_steps: 256
+
+Success: TRUE
+Workspace: 1440648732
+Qtd_robots: 10
+Qtd_obstacles: 70
+Qtd_collisions: 2
+Qtd_steps: 372
+
+Success: TRUE
+Workspace: 1440648962
+Qtd_robots: 10
+Qtd_obstacles: 35
+Qtd_collisions: 0
+Qtd_steps: 315
+
+Success: TRUE
+Workspace: 1440649096
+Qtd_robots: 8
+Qtd_obstacles: 67
+Qtd_collisions: 2
+Qtd_steps: 371
+
+Success: FALSE
+Workspace: 1440649302
+Qtd_robots: 10
+Qtd_obstacles: 28
+Qtd_collisions: 3
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440649426
+Qtd_robots: 8
+Qtd_obstacles: 36
+Qtd_collisions: 2
+Qtd_steps: 263
+
+Success: TRUE
+Workspace: 1440649556
+Qtd_robots: 5
+Qtd_obstacles: 90
+Qtd_collisions: 2
+Qtd_steps: 366
+
+Success: TRUE
+Workspace: 1440649786
+Qtd_robots: 8
+Qtd_obstacles: 92
+Qtd_collisions: 2
+Qtd_steps: 442
+
+Success: TRUE
+Workspace: 1440650052
+Qtd_robots: 9
+Qtd_obstacles: 82
+Qtd_collisions: 2
+Qtd_steps: 396
+
+Success: TRUE
+Workspace: 1440650304
+Qtd_robots: 7
+Qtd_obstacles: 46
+Qtd_collisions: 2
+Qtd_steps: 325
+
+Success: TRUE
+Workspace: 1440650454
+Qtd_robots: 7
+Qtd_obstacles: 56
+Qtd_collisions: 3
+Qtd_steps: 306
+
+Success: TRUE
+Workspace: 1440650614
+Qtd_robots: 5
+Qtd_obstacles: 84
+Qtd_collisions: 0
+Qtd_steps: 250
+
+Success: TRUE
+Workspace: 1440650830
+Qtd_robots: 10
+Qtd_obstacles: 55
+Qtd_collisions: 2
+Qtd_steps: 426
+
+Success: TRUE
+Workspace: 1440651024
+Qtd_robots: 9
+Qtd_obstacles: 88
+Qtd_collisions: 6
+Qtd_steps: 285
+
+Success: TRUE
+Workspace: 1440651278
+Qtd_robots: 7
+Qtd_obstacles: 66
+Qtd_collisions: 2
+Qtd_steps: 328
+
+Success: TRUE
+Workspace: 1440651468
+Qtd_robots: 8
+Qtd_obstacles: 48
+Qtd_collisions: 1
+Qtd_steps: 327
+
+Success: TRUE
+Workspace: 1440651616
+Qtd_robots: 8
+Qtd_obstacles: 77
+Qtd_collisions: 4
+Qtd_steps: 672
+
+Success: TRUE
+Workspace: 1440651838
+Qtd_robots: 5
+Qtd_obstacles: 20
+Qtd_collisions: 0
+Qtd_steps: 254
+
+Success: TRUE
+Workspace: 1440651920
+Qtd_robots: 9
+Qtd_obstacles: 60
+Qtd_collisions: 0
+Qtd_steps: 408
+
+Success: TRUE
+Workspace: 1440652116
+Qtd_robots: 6
+Qtd_obstacles: 64
+Qtd_collisions: 1
+Qtd_steps: 276
+
+Success: TRUE
+Workspace: 1440652294
+Qtd_robots: 8
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 246
+
+Success: TRUE
+Workspace: 1440652362
+Qtd_robots: 5
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 229
+
+Success: TRUE
+Workspace: 1440652448
+Qtd_robots: 5
+Qtd_obstacles: 77
+Qtd_collisions: 1
+Qtd_steps: 307
+
+Success: TRUE
+Workspace: 1440652648
+Qtd_robots: 6
+Qtd_obstacles: 70
+Qtd_collisions: 0
+Qtd_steps: 376
+
+Success: TRUE
+Workspace: 1440652842
+Qtd_robots: 10
+Qtd_obstacles: 73
+Qtd_collisions: 5
+Qtd_steps: 452
+
+Success: TRUE
+Workspace: 1440653064
+Qtd_robots: 7
+Qtd_obstacles: 37
+Qtd_collisions: 0
+Qtd_steps: 304
+
+Success: TRUE
+Workspace: 1440653186
+Qtd_robots: 10
+Qtd_obstacles: 76
+Qtd_collisions: 3
+Qtd_steps: 386
+
+Success: TRUE
+Workspace: 1440653438
+Qtd_robots: 8
+Qtd_obstacles: 66
+Qtd_collisions: 3
+Qtd_steps: 277
+
+Success: TRUE
+Workspace: 1440653646
+Qtd_robots: 7
+Qtd_obstacles: 41
+Qtd_collisions: 0
+Qtd_steps: 343
+
+Success: TRUE
+Workspace: 1440653782
+Qtd_robots: 9
+Qtd_obstacles: 6
+Qtd_collisions: 0
+Qtd_steps: 273
+
+Success: TRUE
+Workspace: 1440653844
+Qtd_robots: 9
+Qtd_obstacles: 3
+Qtd_collisions: 0
+Qtd_steps: 286
+
+Success: TRUE
+Workspace: 1440653900
+Qtd_robots: 6
+Qtd_obstacles: 47
+Qtd_collisions: 3
+Qtd_steps: 478
+
+Success: TRUE
+Workspace: 1440654046
+Qtd_robots: 6
+Qtd_obstacles: 20
+Qtd_collisions: 0
+Qtd_steps: 319
+
+Success: TRUE
+Workspace: 1440654128
+Qtd_robots: 5
+Qtd_obstacles: 25
+Qtd_collisions: 1
+Qtd_steps: 249
+
+Success: TRUE
+Workspace: 1440654218
+Qtd_robots: 6
+Qtd_obstacles: 72
+Qtd_collisions: 4
+Qtd_steps: 688
+
+Success: TRUE
+Workspace: 1440654420
+Qtd_robots: 10
+Qtd_obstacles: 68
+Qtd_collisions: 2
+Qtd_steps: 468
+
+Success: TRUE
+Workspace: 1440654648
+Qtd_robots: 10
+Qtd_obstacles: 34
+Qtd_collisions: 1
+Qtd_steps: 317
+
+Success: TRUE
+Workspace: 1440654780
+Qtd_robots: 7
+Qtd_obstacles: 85
+Qtd_collisions: 1
+Qtd_steps: 354
+
+Success: TRUE
+Workspace: 1440655012
+Qtd_robots: 9
+Qtd_obstacles: 96
+Qtd_collisions: 4
+Qtd_steps: 406
+
+Success: TRUE
+Workspace: 1440655290
+Qtd_robots: 5
+Qtd_obstacles: 57
+Qtd_collisions: 1
+Qtd_steps: 270
+
+Success: TRUE
+Workspace: 1440655442
+Qtd_robots: 7
+Qtd_obstacles: 81
+Qtd_collisions: 3
+Qtd_steps: 395
+
+Success: TRUE
+Workspace: 1440655664
+Qtd_robots: 7
+Qtd_obstacles: 77
+Qtd_collisions: 2
+Qtd_steps: 302
+
+Success: TRUE
+Workspace: 1440655880
+Qtd_robots: 5
+Qtd_obstacles: 16
+Qtd_collisions: 0
+Qtd_steps: 253
+
+Success: TRUE
+Workspace: 1440655954
+Qtd_robots: 5
+Qtd_obstacles: 39
+Qtd_collisions: 1
+Qtd_steps: 277
+
+Success: TRUE
+Workspace: 1440656078
+Qtd_robots: 8
+Qtd_obstacles: 17
+Qtd_collisions: 0
+Qtd_steps: 309
+
+Success: TRUE
+Workspace: 1440656162
+Qtd_robots: 9
+Qtd_obstacles: 64
+Qtd_collisions: 1
+Qtd_steps: 331
+
+Success: FALSE
+Workspace: 1440656354
+Qtd_robots: 7
+Qtd_obstacles: 29
+Qtd_collisions: 0
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440656460
+Qtd_robots: 5
+Qtd_obstacles: 19
+Qtd_collisions: 0
+Qtd_steps: 255
+
+Success: TRUE
+Workspace: 1440656534
+Qtd_robots: 7
+Qtd_obstacles: 92
+Qtd_collisions: 2
+Qtd_steps: 339
+
+Success: TRUE
+Workspace: 1440656798
+Qtd_robots: 6
+Qtd_obstacles: 42
+Qtd_collisions: 1
+Qtd_steps: 304
+
+Success: TRUE
+Workspace: 1440656924
+Qtd_robots: 9
+Qtd_obstacles: 19
+Qtd_collisions: 0
+Qtd_steps: 263
+
+Success: TRUE
+Workspace: 1440657020
+Qtd_robots: 9
+Qtd_obstacles: 11
+Qtd_collisions: 1
+Qtd_steps: 362
+
+Success: TRUE
+Workspace: 1440657098
+Qtd_robots: 7
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 278
+
+Success: TRUE
+Workspace: 1440657142
+Qtd_robots: 5
+Qtd_obstacles: 75
+Qtd_collisions: 1
+Qtd_steps: 287
+
+Success: TRUE
+Workspace: 1440657342
+Qtd_robots: 10
+Qtd_obstacles: 93
+Qtd_collisions: 3
+Qtd_steps: 301
+
+Success: TRUE
+Workspace: 1440657620
+Qtd_robots: 6
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 266
+
+Success: TRUE
+Workspace: 1440657686
+Qtd_robots: 7
+Qtd_obstacles: 30
+Qtd_collisions: 2
+Qtd_steps: 231
+
+Success: TRUE
+Workspace: 1440657792
+Qtd_robots: 8
+Qtd_obstacles: 31
+Qtd_collisions: 0
+Qtd_steps: 360
+
+Success: TRUE
+Workspace: 1440657910
+Qtd_robots: 10
+Qtd_obstacles: 47
+Qtd_collisions: 3
+Qtd_steps: 400
+
+Success: TRUE
+Workspace: 1440658078
+Qtd_robots: 7
+Qtd_obstacles: 32
+Qtd_collisions: 1
+Qtd_steps: 311
+
+Success: TRUE
+Workspace: 1440658194
+Qtd_robots: 9
+Qtd_obstacles: 86
+Qtd_collisions: 1
+Qtd_steps: 408
+
+Success: TRUE
+Workspace: 1440658476
+Qtd_robots: 7
+Qtd_obstacles: 8
+Qtd_collisions: 0
+Qtd_steps: 278
+
+Success: TRUE
+Workspace: 1440658534
+Qtd_robots: 9
+Qtd_obstacles: 71
+Qtd_collisions: 3
+Qtd_steps: 314
+
+Success: FALSE
+Workspace: 1440658748
+Qtd_robots: 10
+Qtd_obstacles: 56
+Qtd_collisions: 0
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440658936
+Qtd_robots: 6
+Qtd_obstacles: 59
+Qtd_collisions: 1
+Qtd_steps: 386
+
+Success: TRUE
+Workspace: 1440659104
+Qtd_robots: 6
+Qtd_obstacles: 49
+Qtd_collisions: 3
+Qtd_steps: 403
+
+Success: TRUE
+Workspace: 1440659256
+Qtd_robots: 6
+Qtd_obstacles: 23
+Qtd_collisions: 0
+Qtd_steps: 263
+
+Success: TRUE
+Workspace: 1440659346
+Qtd_robots: 7
+Qtd_obstacles: 51
+Qtd_collisions: 1
+Qtd_steps: 346
+
+Success: TRUE
+Workspace: 1440659498
+Qtd_robots: 10
+Qtd_obstacles: 44
+Qtd_collisions: 2
+Qtd_steps: 348
+
+Success: TRUE
+Workspace: 1440659650
+Qtd_robots: 8
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 232
+
+Success: TRUE
+Workspace: 1440659698
+Qtd_robots: 9
+Qtd_obstacles: 50
+Qtd_collisions: 2
+Qtd_steps: 235
+
+Success: FALSE
+Workspace: 1440659858
+Qtd_robots: 7
+Qtd_obstacles: 97
+Qtd_collisions: 3
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440660118
+Qtd_robots: 8
+Qtd_obstacles: 80
+Qtd_collisions: 1
+Qtd_steps: 465
+
+Success: TRUE
+Workspace: 1440660338
+Qtd_robots: 7
+Qtd_obstacles: 70
+Qtd_collisions: 3
+Qtd_steps: 424
+
+Success: TRUE
+Workspace: 1440660538
+Qtd_robots: 9
+Qtd_obstacles: 60
+Qtd_collisions: 2
+Qtd_steps: 327
+
+Success: TRUE
+Workspace: 1440660732
+Qtd_robots: 6
+Qtd_obstacles: 98
+Qtd_collisions: 2
+Qtd_steps: 265
+
+Success: TRUE
+Workspace: 1440660996
+Qtd_robots: 5
+Qtd_obstacles: 96
+Qtd_collisions: 1
+Qtd_steps: 309
+
+Success: TRUE
+Workspace: 1440661238
+Qtd_robots: 6
+Qtd_obstacles: 59
+Qtd_collisions: 2
+Qtd_steps: 289
+
+Success: TRUE
+Workspace: 1440661406
+Qtd_robots: 7
+Qtd_obstacles: 12
+Qtd_collisions: 0
+Qtd_steps: 292
+
+Success: TRUE
+Workspace: 1440661472
+Qtd_robots: 10
+Qtd_obstacles: 37
+Qtd_collisions: 2
+Qtd_steps: 258
+
+Success: FALSE
+Workspace: 1440661610
+Qtd_robots: 10
+Qtd_obstacles: 86
+Qtd_collisions: 6
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440661884
+Qtd_robots: 9
+Qtd_obstacles: 94
+Qtd_collisions: 6
+Qtd_steps: 272
+
+Success: TRUE
+Workspace: 1440662152
+Qtd_robots: 8
+Qtd_obstacles: 30
+Qtd_collisions: 1
+Qtd_steps: 254
+
+Success: TRUE
+Workspace: 1440662264
+Qtd_robots: 9
+Qtd_obstacles: 83
+Qtd_collisions: 3
+Qtd_steps: 340
+
+Success: TRUE
+Workspace: 1440662502
+Qtd_robots: 7
+Qtd_obstacles: 59
+Qtd_collisions: 2
+Qtd_steps: 431
+
+Success: TRUE
+Workspace: 1440662680
+Qtd_robots: 5
+Qtd_obstacles: 26
+Qtd_collisions: 0
+Qtd_steps: 285
+
+Success: TRUE
+Workspace: 1440662768
+Qtd_robots: 8
+Qtd_obstacles: 38
+Qtd_collisions: 1
+Qtd_steps: 260
+
+Success: TRUE
+Workspace: 1440662892
+Qtd_robots: 8
+Qtd_obstacles: 10
+Qtd_collisions: 0
+Qtd_steps: 214
+
+Success: TRUE
+Workspace: 1440662964
+Qtd_robots: 7
+Qtd_obstacles: 85
+Qtd_collisions: 1
+Qtd_steps: 616
+
+Success: TRUE
+Workspace: 1440663190
+Qtd_robots: 10
+Qtd_obstacles: 21
+Qtd_collisions: 0
+Qtd_steps: 260
+
+Success: TRUE
+Workspace: 1440663296
+Qtd_robots: 5
+Qtd_obstacles: 19
+Qtd_collisions: 1
+Qtd_steps: 301
+
+Success: TRUE
+Workspace: 1440663372
+Qtd_robots: 6
+Qtd_obstacles: 79
+Qtd_collisions: 1
+Qtd_steps: 326
+
+Success: TRUE
+Workspace: 1440663586
+Qtd_robots: 10
+Qtd_obstacles: 90
+Qtd_collisions: 4
+Qtd_steps: 439
+
+Success: TRUE
+Workspace: 1440663862
+Qtd_robots: 5
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 433
+
+Success: TRUE
+Workspace: 1440663924
+Qtd_robots: 6
+Qtd_obstacles: 56
+Qtd_collisions: 1
+Qtd_steps: 371
+
+Success: TRUE
+Workspace: 1440664096
+Qtd_robots: 5
+Qtd_obstacles: 97
+Qtd_collisions: 1
+Qtd_steps: 342
+
+Success: TRUE
+Workspace: 1440664342
+Qtd_robots: 5
+Qtd_obstacles: 73
+Qtd_collisions: 1
+Qtd_steps: 301
+
+Success: TRUE
+Workspace: 1440664534
+Qtd_robots: 6
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 215
+
+Success: TRUE
+Workspace: 1440664576
+Qtd_robots: 5
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 211
+
+Success: TRUE
+Workspace: 1440664650
+Qtd_robots: 7
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 287
+
+Success: TRUE
+Workspace: 1440664710
+Qtd_robots: 10
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 322
+
+Success: TRUE
+Workspace: 1440664822
+Qtd_robots: 5
+Qtd_obstacles: 80
+Qtd_collisions: 0
+Qtd_steps: 342
+
+Success: TRUE
+Workspace: 1440665022
+Qtd_robots: 6
+Qtd_obstacles: 15
+Qtd_collisions: 1
+Qtd_steps: 228
+
+Success: TRUE
+Workspace: 1440665096
+Qtd_robots: 5
+Qtd_obstacles: 34
+Qtd_collisions: 0
+Qtd_steps: 278
+
+Success: TRUE
+Workspace: 1440665202
+Qtd_robots: 9
+Qtd_obstacles: 64
+Qtd_collisions: 3
+Qtd_steps: 519
+
+Success: FALSE
+Workspace: 1440665394
+Qtd_robots: 6
+Qtd_obstacles: 93
+Qtd_collisions: 2
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440665634
+Qtd_robots: 5
+Qtd_obstacles: 40
+Qtd_collisions: 1
+Qtd_steps: 356
+
+Success: TRUE
+Workspace: 1440665756
+Qtd_robots: 8
+Qtd_obstacles: 92
+Qtd_collisions: 3
+Qtd_steps: 437
+
+Success: FALSE
+Workspace: 1440666008
+Qtd_robots: 9
+Qtd_obstacles: 50
+Qtd_collisions: 0
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440666180
+Qtd_robots: 5
+Qtd_obstacles: 11
+Qtd_collisions: 0
+Qtd_steps: 253
+
+Success: TRUE
+Workspace: 1440666238
+Qtd_robots: 5
+Qtd_obstacles: 78
+Qtd_collisions: 0
+Qtd_steps: 392
+
+Success: TRUE
+Workspace: 1440666442
+Qtd_robots: 10
+Qtd_obstacles: 79
+Qtd_collisions: 4
+Qtd_steps: 600
+
+Success: TRUE
+Workspace: 1440666708
+Qtd_robots: 8
+Qtd_obstacles: 80
+Qtd_collisions: 2
+Qtd_steps: 442
+
+Success: TRUE
+Workspace: 1440666936
+Qtd_robots: 10
+Qtd_obstacles: 6
+Qtd_collisions: 0
+Qtd_steps: 212
+
+Success: TRUE
+Workspace: 1440667006
+Qtd_robots: 7
+Qtd_obstacles: 44
+Qtd_collisions: 0
+Qtd_steps: 515
+
+Success: TRUE
+Workspace: 1440667144
+Qtd_robots: 5
+Qtd_obstacles: 81
+Qtd_collisions: 0
+Qtd_steps: 358
+
+Success: TRUE
+Workspace: 1440667356
+Qtd_robots: 8
+Qtd_obstacles: 47
+Qtd_collisions: 1
+Qtd_steps: 600
+
+Success: TRUE
+Workspace: 1440667506
+Qtd_robots: 5
+Qtd_obstacles: 62
+Qtd_collisions: 2
+Qtd_steps: 185
+
+Success: TRUE
+Workspace: 1440667670
+Qtd_robots: 7
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 279
+
+Success: TRUE
+Workspace: 1440667732
+Qtd_robots: 6
+Qtd_obstacles: 90
+Qtd_collisions: 2
+Qtd_steps: 288
+
+Success: TRUE
+Workspace: 1440667972
+Qtd_robots: 8
+Qtd_obstacles: 28
+Qtd_collisions: 1
+Qtd_steps: 361
+
+Success: TRUE
+Workspace: 1440668084
+Qtd_robots: 7
+Qtd_obstacles: 34
+Qtd_collisions: 2
+Qtd_steps: 239
+
+Success: FALSE
+Workspace: 1440668216
+Qtd_robots: 8
+Qtd_obstacles: 84
+Qtd_collisions: 6
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440668468
+Qtd_robots: 7
+Qtd_obstacles: 47
+Qtd_collisions: 2
+Qtd_steps: 477
+
+Success: TRUE
+Workspace: 1440668630
+Qtd_robots: 6
+Qtd_obstacles: 73
+Qtd_collisions: 0
+Qtd_steps: 351
+
+Success: TRUE
+Workspace: 1440668824
+Qtd_robots: 8
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 277
+
+Success: TRUE
+Workspace: 1440668904
+Qtd_robots: 5
+Qtd_obstacles: 39
+Qtd_collisions: 0
+Qtd_steps: 289
+
+Success: TRUE
+Workspace: 1440669022
+Qtd_robots: 8
+Qtd_obstacles: 65
+Qtd_collisions: 1
+Qtd_steps: 380
+
+Success: TRUE
+Workspace: 1440669228
+Qtd_robots: 7
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 300
+
+Success: TRUE
+Workspace: 1440669278
+Qtd_robots: 7
+Qtd_obstacles: 18
+Qtd_collisions: 1
+Qtd_steps: 261
+
+Success: TRUE
+Workspace: 1440669360
+Qtd_robots: 8
+Qtd_obstacles: 65
+Qtd_collisions: 2
+Qtd_steps: 309
+
+Success: TRUE
+Workspace: 1440669558
+Qtd_robots: 5
+Qtd_obstacles: 42
+Qtd_collisions: 0
+Qtd_steps: 296
+
+Success: FALSE
+Workspace: 1440669688
+Qtd_robots: 8
+Qtd_obstacles: 53
+Qtd_collisions: 5
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440669856
+Qtd_robots: 9
+Qtd_obstacles: 41
+Qtd_collisions: 4
+Qtd_steps: 330
+
+Success: TRUE
+Workspace: 1440670012
+Qtd_robots: 7
+Qtd_obstacles: 66
+Qtd_collisions: 3
+Qtd_steps: 405
+
+Success: TRUE
+Workspace: 1440670212
+Qtd_robots: 7
+Qtd_obstacles: 64
+Qtd_collisions: 3
+Qtd_steps: 339
+
+Success: TRUE
+Workspace: 1440670402
+Qtd_robots: 8
+Qtd_obstacles: 99
+Qtd_collisions: 3
+Qtd_steps: 428
+
+Success: TRUE
+Workspace: 1440670670
+Qtd_robots: 10
+Qtd_obstacles: 44
+Qtd_collisions: 2
+Qtd_steps: 282
+
+Success: TRUE
+Workspace: 1440670836
+Qtd_robots: 5
+Qtd_obstacles: 72
+Qtd_collisions: 0
+Qtd_steps: 240
+
+Success: TRUE
+Workspace: 1440671034
+Qtd_robots: 10
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 322
+
+Success: TRUE
+Workspace: 1440671092
+Qtd_robots: 10
+Qtd_obstacles: 80
+Qtd_collisions: 1
+Qtd_steps: 504
+
+Success: TRUE
+Workspace: 1440671352
+Qtd_robots: 6
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 284
+
+Success: TRUE
+Workspace: 1440671432
+Qtd_robots: 10
+Qtd_obstacles: 6
+Qtd_collisions: 0
+Qtd_steps: 291
+
+Success: TRUE
+Workspace: 1440671498
+Qtd_robots: 10
+Qtd_obstacles: 47
+Qtd_collisions: 2
+Qtd_steps: 298
+
+Success: TRUE
+Workspace: 1440671666
+Qtd_robots: 10
+Qtd_obstacles: 79
+Qtd_collisions: 2
+Qtd_steps: 364
+
+Success: TRUE
+Workspace: 1440671898
+Qtd_robots: 10
+Qtd_obstacles: 90
+Qtd_collisions: 4
+Qtd_steps: 353
+
+Success: TRUE
+Workspace: 1440672180
+Qtd_robots: 8
+Qtd_obstacles: 26
+Qtd_collisions: 0
+Qtd_steps: 252
+
+Success: TRUE
+Workspace: 1440672282
+Qtd_robots: 6
+Qtd_obstacles: 75
+Qtd_collisions: 0
+Qtd_steps: 361
+
+Success: TRUE
+Workspace: 1440672482
+Qtd_robots: 9
+Qtd_obstacles: 83
+Qtd_collisions: 1
+Qtd_steps: 340
+
+Success: TRUE
+Workspace: 1440672726
+Qtd_robots: 8
+Qtd_obstacles: 70
+Qtd_collisions: 1
+Qtd_steps: 396
+
+Success: TRUE
+Workspace: 1440672942
+Qtd_robots: 8
+Qtd_obstacles: 49
+Qtd_collisions: 3
+Qtd_steps: 297
+
+Success: TRUE
+Workspace: 1440673104
+Qtd_robots: 10
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 248
+
+Success: TRUE
+Workspace: 1440673192
+Qtd_robots: 7
+Qtd_obstacles: 3
+Qtd_collisions: 1
+Qtd_steps: 271
+
+Success: TRUE
+Workspace: 1440673240
+Qtd_robots: 5
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 203
+
+Success: FALSE
+Workspace: 1440673324
+Qtd_robots: 7
+Qtd_obstacles: 63
+Qtd_collisions: 2
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440673508
+Qtd_robots: 9
+Qtd_obstacles: 35
+Qtd_collisions: 0
+Qtd_steps: 387
+
+Success: TRUE
+Workspace: 1440673648
+Qtd_robots: 10
+Qtd_obstacles: 79
+Qtd_collisions: 0
+Qtd_steps: 450
+
+Success: TRUE
+Workspace: 1440673902
+Qtd_robots: 8
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 328
+
+Success: TRUE
+Workspace: 1440673976
+Qtd_robots: 10
+Qtd_obstacles: 95
+Qtd_collisions: 4
+Qtd_steps: 322
+
+Success: TRUE
+Workspace: 1440674256
+Qtd_robots: 10
+Qtd_obstacles: 64
+Qtd_collisions: 1
+Qtd_steps: 505
+
+Success: TRUE
+Workspace: 1440674460
+Qtd_robots: 9
+Qtd_obstacles: 13
+Qtd_collisions: 1
+Qtd_steps: 319
+
+Success: TRUE
+Workspace: 1440674544
+Qtd_robots: 5
+Qtd_obstacles: 67
+Qtd_collisions: 0
+Qtd_steps: 301
+
+Success: TRUE
+Workspace: 1440674722
+Qtd_robots: 8
+Qtd_obstacles: 68
+Qtd_collisions: 3
+Qtd_steps: 532
+
+Success: TRUE
+Workspace: 1440674924
+Qtd_robots: 5
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 238
+
+Success: FALSE
+Workspace: 1440674998
+Qtd_robots: 10
+Qtd_obstacles: 78
+Qtd_collisions: 4
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440675230
+Qtd_robots: 6
+Qtd_obstacles: 14
+Qtd_collisions: 0
+Qtd_steps: 258
+
+Success: TRUE
+Workspace: 1440675298
+Qtd_robots: 6
+Qtd_obstacles: 73
+Qtd_collisions: 2
+Qtd_steps: 463
+
+Success: TRUE
+Workspace: 1440675490
+Qtd_robots: 6
+Qtd_obstacles: 100
+Qtd_collisions: 3
+Qtd_steps: 279
+
+Success: TRUE
+Workspace: 1440675754
+Qtd_robots: 9
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 210
+
+Success: TRUE
+Workspace: 1440675864
+Qtd_robots: 9
+Qtd_obstacles: 82
+Qtd_collisions: 2
+Qtd_steps: 399
+
+Success: TRUE
+Workspace: 1440676110
+Qtd_robots: 5
+Qtd_obstacles: 3
+Qtd_collisions: 0
+Qtd_steps: 252
+
+Success: TRUE
+Workspace: 1440676150
+Qtd_robots: 7
+Qtd_obstacles: 50
+Qtd_collisions: 0
+Qtd_steps: 303
+
+Success: TRUE
+Workspace: 1440676310
+Qtd_robots: 6
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 272
+
+Success: TRUE
+Workspace: 1440676356
+Qtd_robots: 7
+Qtd_obstacles: 50
+Qtd_collisions: 2
+Qtd_steps: 414
+
+Success: TRUE
+Workspace: 1440676514
+Qtd_robots: 9
+Qtd_obstacles: 63
+Qtd_collisions: 2
+Qtd_steps: 340
+
+Success: TRUE
+Workspace: 1440676712
+Qtd_robots: 9
+Qtd_obstacles: 95
+Qtd_collisions: 2
+Qtd_steps: 370
+
+Success: TRUE
+Workspace: 1440676982
+Qtd_robots: 8
+Qtd_obstacles: 17
+Qtd_collisions: 0
+Qtd_steps: 333
+
+Success: TRUE
+Workspace: 1440677072
+Qtd_robots: 7
+Qtd_obstacles: 64
+Qtd_collisions: 0
+Qtd_steps: 349
+
+Success: TRUE
+Workspace: 1440677280
+Qtd_robots: 10
+Qtd_obstacles: 98
+Qtd_collisions: 4
+Qtd_steps: 550
+
+Success: TRUE
+Workspace: 1440677576
+Qtd_robots: 10
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 334
+
+Success: FALSE
+Workspace: 1440677686
+Qtd_robots: 7
+Qtd_obstacles: 48
+Qtd_collisions: 1
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440677838
+Qtd_robots: 8
+Qtd_obstacles: 80
+Qtd_collisions: 3
+Qtd_steps: 735
+
+Success: TRUE
+Workspace: 1440678058
+Qtd_robots: 10
+Qtd_obstacles: 45
+Qtd_collisions: 2
+Qtd_steps: 867
+
+Success: TRUE
+Workspace: 1440678224
+Qtd_robots: 8
+Qtd_obstacles: 28
+Qtd_collisions: 1
+Qtd_steps: 298
+
+Success: TRUE
+Workspace: 1440678338
+Qtd_robots: 9
+Qtd_obstacles: 50
+Qtd_collisions: 0
+Qtd_steps: 359
+
+Success: TRUE
+Workspace: 1440678510
+Qtd_robots: 10
+Qtd_obstacles: 94
+Qtd_collisions: 2
+Qtd_steps: 596
+
+Success: TRUE
+Workspace: 1440678788
+Qtd_robots: 10
+Qtd_obstacles: 34
+Qtd_collisions: 1
+Qtd_steps: 464
+
+Success: TRUE
+Workspace: 1440678926
+Qtd_robots: 10
+Qtd_obstacles: 77
+Qtd_collisions: 5
+Qtd_steps: 383
+
+Success: TRUE
+Workspace: 1440679162
+Qtd_robots: 9
+Qtd_obstacles: 91
+Qtd_collisions: 4
+Qtd_steps: 579
+
+Success: TRUE
+Workspace: 1440679430
+Qtd_robots: 9
+Qtd_obstacles: 17
+Qtd_collisions: 1
+Qtd_steps: 294
+
+Success: TRUE
+Workspace: 1440679528
+Qtd_robots: 6
+Qtd_obstacles: 48
+Qtd_collisions: 0
+Qtd_steps: 400
+
+Success: TRUE
+Workspace: 1440679682
+Qtd_robots: 8
+Qtd_obstacles: 93
+Qtd_collisions: 3
+Qtd_steps: 619
+
+Success: TRUE
+Workspace: 1440679936
+Qtd_robots: 8
+Qtd_obstacles: 62
+Qtd_collisions: 1
+Qtd_steps: 460
+
+Success: TRUE
+Workspace: 1440680110
+Qtd_robots: 6
+Qtd_obstacles: 39
+Qtd_collisions: 0
+Qtd_steps: 397
+
+Success: TRUE
+Workspace: 1440680230
+Qtd_robots: 5
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 191
+
+Success: TRUE
+Workspace: 1440680302
+Qtd_robots: 10
+Qtd_obstacles: 59
+Qtd_collisions: 3
+Qtd_steps: 196
+
+Success: TRUE
+Workspace: 1440680496
+Qtd_robots: 8
+Qtd_obstacles: 34
+Qtd_collisions: 0
+Qtd_steps: 357
+
+Success: TRUE
+Workspace: 1440680622
+Qtd_robots: 6
+Qtd_obstacles: 21
+Qtd_collisions: 0
+Qtd_steps: 257
+
+Success: TRUE
+Workspace: 1440680704
+Qtd_robots: 6
+Qtd_obstacles: 30
+Qtd_collisions: 1
+Qtd_steps: 353
+
+Success: TRUE
+Workspace: 1440680810
+Qtd_robots: 6
+Qtd_obstacles: 48
+Qtd_collisions: 0
+Qtd_steps: 327
+
+Success: TRUE
+Workspace: 1440680950
+Qtd_robots: 5
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 179
+
+Success: TRUE
+Workspace: 1440681020
+Qtd_robots: 8
+Qtd_obstacles: 56
+Qtd_collisions: 0
+Qtd_steps: 341
+
+Success: TRUE
+Workspace: 1440681190
+Qtd_robots: 9
+Qtd_obstacles: 30
+Qtd_collisions: 2
+Qtd_steps: 371
+
+Success: TRUE
+Workspace: 1440681308
+Qtd_robots: 5
+Qtd_obstacles: 75
+Qtd_collisions: 0
+Qtd_steps: 316
+
+Success: TRUE
+Workspace: 1440681502
+Qtd_robots: 7
+Qtd_obstacles: 10
+Qtd_collisions: 1
+Qtd_steps: 352
+
+Success: TRUE
+Workspace: 1440681566
+Qtd_robots: 9
+Qtd_obstacles: 52
+Qtd_collisions: 0
+Qtd_steps: 395
+
+Success: TRUE
+Workspace: 1440681738
+Qtd_robots: 10
+Qtd_obstacles: 47
+Qtd_collisions: 1
+Qtd_steps: 259
+
+Success: TRUE
+Workspace: 1440681902
+Qtd_robots: 7
+Qtd_obstacles: 48
+Qtd_collisions: 2
+Qtd_steps: 529
+
+Success: TRUE
+Workspace: 1440682046
+Qtd_robots: 7
+Qtd_obstacles: 68
+Qtd_collisions: 3
+Qtd_steps: 379
+
+Success: TRUE
+Workspace: 1440682244
+Qtd_robots: 7
+Qtd_obstacles: 92
+Qtd_collisions: 2
+Qtd_steps: 435
+
+Success: TRUE
+Workspace: 1440682506
+Qtd_robots: 10
+Qtd_obstacles: 78
+Qtd_collisions: 4
+Qtd_steps: 495
+
+Success: TRUE
+Workspace: 1440682758
+Qtd_robots: 7
+Qtd_obstacles: 96
+Qtd_collisions: 3
+Qtd_steps: 401
+
+Success: TRUE
+Workspace: 1440683020
+Qtd_robots: 6
+Qtd_obstacles: 92
+Qtd_collisions: 0
+Qtd_steps: 374
+
+Success: TRUE
+Workspace: 1440683284
+Qtd_robots: 8
+Qtd_obstacles: 94
+Qtd_collisions: 4
+Qtd_steps: 363
+
+Success: TRUE
+Workspace: 1440683548
+Qtd_robots: 5
+Qtd_obstacles: 63
+Qtd_collisions: 0
+Qtd_steps: 350
+
+Success: TRUE
+Workspace: 1440683716
+Qtd_robots: 8
+Qtd_obstacles: 83
+Qtd_collisions: 5
+Qtd_steps: 368
+
+Success: TRUE
+Workspace: 1440683942
+Qtd_robots: 9
+Qtd_obstacles: 75
+Qtd_collisions: 3
+Qtd_steps: 263
+
+Success: TRUE
+Workspace: 1440684174
+Qtd_robots: 5
+Qtd_obstacles: 28
+Qtd_collisions: 0
+Qtd_steps: 325
+
+Success: TRUE
+Workspace: 1440684274
+Qtd_robots: 8
+Qtd_obstacles: 91
+Qtd_collisions: 1
+Qtd_steps: 502
+
+Success: TRUE
+Workspace: 1440684526
+Qtd_robots: 10
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 342
+
+Success: TRUE
+Workspace: 1440684636
+Qtd_robots: 7
+Qtd_obstacles: 57
+Qtd_collisions: 3
+Qtd_steps: 220
+
+Success: TRUE
+Workspace: 1440684816
+Qtd_robots: 5
+Qtd_obstacles: 54
+Qtd_collisions: 1
+Qtd_steps: 307
+
+Success: TRUE
+Workspace: 1440684970
+Qtd_robots: 8
+Qtd_obstacles: 72
+Qtd_collisions: 1
+Qtd_steps: 334
+
+Success: TRUE
+Workspace: 1440685184
+Qtd_robots: 9
+Qtd_obstacles: 41
+Qtd_collisions: 3
+Qtd_steps: 477
+
+Success: TRUE
+Workspace: 1440685340
+Qtd_robots: 8
+Qtd_obstacles: 14
+Qtd_collisions: 0
+Qtd_steps: 479
+
+Success: TRUE
+Workspace: 1440685414
+Qtd_robots: 8
+Qtd_obstacles: 50
+Qtd_collisions: 1
+Qtd_steps: 329
+
+Success: TRUE
+Workspace: 1440685580
+Qtd_robots: 9
+Qtd_obstacles: 68
+Qtd_collisions: 1
+Qtd_steps: 450
+
+Success: TRUE
+Workspace: 1440685790
+Qtd_robots: 8
+Qtd_obstacles: 5
+Qtd_collisions: 0
+Qtd_steps: 290
+
+Success: TRUE
+Workspace: 1440685848
+Qtd_robots: 7
+Qtd_obstacles: 13
+Qtd_collisions: 1
+Qtd_steps: 355
+
+Success: TRUE
+Workspace: 1440685924
+Qtd_robots: 9
+Qtd_obstacles: 55
+Qtd_collisions: 2
+Qtd_steps: 332
+
+Success: TRUE
+Workspace: 1440686096
+Qtd_robots: 9
+Qtd_obstacles: 30
+Qtd_collisions: 1
+Qtd_steps: 246
+
+Success: TRUE
+Workspace: 1440686224
+Qtd_robots: 6
+Qtd_obstacles: 45
+Qtd_collisions: 3
+Qtd_steps: 285
+
+Success: FALSE
+Workspace: 1440686368
+Qtd_robots: 9
+Qtd_obstacles: 47
+Qtd_collisions: 0
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440686528
+Qtd_robots: 5
+Qtd_obstacles: 71
+Qtd_collisions: 1
+Qtd_steps: 408
+
+Success: TRUE
+Workspace: 1440686714
+Qtd_robots: 8
+Qtd_obstacles: 42
+Qtd_collisions: 1
+Qtd_steps: 283
+
+Success: TRUE
+Workspace: 1440686856
+Qtd_robots: 9
+Qtd_obstacles: 39
+Qtd_collisions: 0
+Qtd_steps: 334
+
+Success: TRUE
+Workspace: 1440687008
+Qtd_robots: 7
+Qtd_obstacles: 34
+Qtd_collisions: 1
+Qtd_steps: 713
+
+Success: TRUE
+Workspace: 1440687124
+Qtd_robots: 10
+Qtd_obstacles: 38
+Qtd_collisions: 2
+Qtd_steps: 334
+
+Success: TRUE
+Workspace: 1440687266
+Qtd_robots: 6
+Qtd_obstacles: 86
+Qtd_collisions: 1
+Qtd_steps: 386
+
+Success: TRUE
+Workspace: 1440687494
+Qtd_robots: 5
+Qtd_obstacles: 25
+Qtd_collisions: 2
+Qtd_steps: 231
+
+Success: TRUE
+Workspace: 1440687580
+Qtd_robots: 6
+Qtd_obstacles: 68
+Qtd_collisions: 1
+Qtd_steps: 299
+
+Success: TRUE
+Workspace: 1440687766
+Qtd_robots: 9
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 246
+
+Success: TRUE
+Workspace: 1440687854
+Qtd_robots: 6
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 249
+
+Success: TRUE
+Workspace: 1440687950
+Qtd_robots: 5
+Qtd_obstacles: 89
+Qtd_collisions: 2
+Qtd_steps: 239
+
+Success: TRUE
+Workspace: 1440688176
+Qtd_robots: 9
+Qtd_obstacles: 68
+Qtd_collisions: 1
+Qtd_steps: 420
+
+Success: TRUE
+Workspace: 1440688390
+Qtd_robots: 5
+Qtd_obstacles: 54
+Qtd_collisions: 0
+Qtd_steps: 309
+
+Success: TRUE
+Workspace: 1440688536
+Qtd_robots: 7
+Qtd_obstacles: 8
+Qtd_collisions: 0
+Qtd_steps: 220
+
+Success: TRUE
+Workspace: 1440688604
+Qtd_robots: 7
+Qtd_obstacles: 84
+Qtd_collisions: 5
+Qtd_steps: 278
+
+Success: TRUE
+Workspace: 1440688848
+Qtd_robots: 6
+Qtd_obstacles: 79
+Qtd_collisions: 0
+Qtd_steps: 259
+
+Success: TRUE
+Workspace: 1440689048
+Qtd_robots: 6
+Qtd_obstacles: 53
+Qtd_collisions: 1
+Qtd_steps: 342
+
+Success: TRUE
+Workspace: 1440689204
+Qtd_robots: 9
+Qtd_obstacles: 89
+Qtd_collisions: 3
+Qtd_steps: 301
+
+Success: TRUE
+Workspace: 1440689462
+Qtd_robots: 9
+Qtd_obstacles: 22
+Qtd_collisions: 1
+Qtd_steps: 216
+
+Success: TRUE
+Workspace: 1440689558
+Qtd_robots: 8
+Qtd_obstacles: 44
+Qtd_collisions: 3
+Qtd_steps: 340
+
+Success: TRUE
+Workspace: 1440689718
+Qtd_robots: 7
+Qtd_obstacles: 49
+Qtd_collisions: 1
+Qtd_steps: 313
+
+Success: TRUE
+Workspace: 1440689874
+Qtd_robots: 8
+Qtd_obstacles: 45
+Qtd_collisions: 1
+Qtd_steps: 298
+
+Success: TRUE
+Workspace: 1440690020
+Qtd_robots: 5
+Qtd_obstacles: 88
+Qtd_collisions: 1
+Qtd_steps: 425
+
+Success: TRUE
+Workspace: 1440690254
+Qtd_robots: 10
+Qtd_obstacles: 49
+Qtd_collisions: 1
+Qtd_steps: 380
+
+Success: TRUE
+Workspace: 1440690428
+Qtd_robots: 10
+Qtd_obstacles: 89
+Qtd_collisions: 4
+Qtd_steps: 457
+
+Success: TRUE
+Workspace: 1440690692
+Qtd_robots: 6
+Qtd_obstacles: 20
+Qtd_collisions: 1
+Qtd_steps: 301
+
+Success: TRUE
+Workspace: 1440690776
+Qtd_robots: 5
+Qtd_obstacles: 20
+Qtd_collisions: 0
+Qtd_steps: 258
+
+Success: TRUE
+Workspace: 1440690852
+Qtd_robots: 6
+Qtd_obstacles: 34
+Qtd_collisions: 1
+Qtd_steps: 495
+
+Success: TRUE
+Workspace: 1440690970
+Qtd_robots: 6
+Qtd_obstacles: 35
+Qtd_collisions: 1
+Qtd_steps: 268
+
+Success: TRUE
+Workspace: 1440691084
+Qtd_robots: 6
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 286
+
+Success: TRUE
+Workspace: 1440691142
+Qtd_robots: 8
+Qtd_obstacles: 59
+Qtd_collisions: 2
+Qtd_steps: 495
+
+Success: TRUE
+Workspace: 1440691318
+Qtd_robots: 9
+Qtd_obstacles: 28
+Qtd_collisions: 0
+Qtd_steps: 333
+
+Success: TRUE
+Workspace: 1440691438
+Qtd_robots: 5
+Qtd_obstacles: 86
+Qtd_collisions: 1
+Qtd_steps: 515
+
+Success: TRUE
+Workspace: 1440691672
+Qtd_robots: 5
+Qtd_obstacles: 58
+Qtd_collisions: 1
+Qtd_steps: 326
+
+Success: TRUE
+Workspace: 1440691834
+Qtd_robots: 7
+Qtd_obstacles: 87
+Qtd_collisions: 0
+Qtd_steps: 273
+
+Success: TRUE
+Workspace: 1440692076
+Qtd_robots: 5
+Qtd_obstacles: 21
+Qtd_collisions: 0
+Qtd_steps: 248
+
+Success: TRUE
+Workspace: 1440692152
+Qtd_robots: 5
+Qtd_obstacles: 90
+Qtd_collisions: 2
+Qtd_steps: 155
+
+Success: TRUE
+Workspace: 1440692378
+Qtd_robots: 8
+Qtd_obstacles: 70
+Qtd_collisions: 3
+Qtd_steps: 419
+
+Success: TRUE
+Workspace: 1440692590
+Qtd_robots: 10
+Qtd_obstacles: 6
+Qtd_collisions: 0
+Qtd_steps: 250
+
+Success: TRUE
+Workspace: 1440692664
+Qtd_robots: 5
+Qtd_obstacles: 72
+Qtd_collisions: 2
+Qtd_steps: 278
+
+Success: TRUE
+Workspace: 1440692864
+Qtd_robots: 6
+Qtd_obstacles: 96
+Qtd_collisions: 4
+Qtd_steps: 244
+
+Success: TRUE
+Workspace: 1440693108
+Qtd_robots: 10
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 251
+
+Success: TRUE
+Workspace: 1440693194
+Qtd_robots: 10
+Qtd_obstacles: 61
+Qtd_collisions: 1
+Qtd_steps: 418
+
+Success: TRUE
+Workspace: 1440693400
+Qtd_robots: 9
+Qtd_obstacles: 56
+Qtd_collisions: 2
+Qtd_steps: 432
+
+Success: TRUE
+Workspace: 1440693578
+Qtd_robots: 6
+Qtd_obstacles: 44
+Qtd_collisions: 2
+Qtd_steps: 217
+
+Success: TRUE
+Workspace: 1440693716
+Qtd_robots: 5
+Qtd_obstacles: 38
+Qtd_collisions: 2
+Qtd_steps: 414
+
+Success: TRUE
+Workspace: 1440693834
+Qtd_robots: 8
+Qtd_obstacles: 7
+Qtd_collisions: 1
+Qtd_steps: 377
+
+Success: TRUE
+Workspace: 1440693894
+Qtd_robots: 5
+Qtd_obstacles: 24
+Qtd_collisions: 1
+Qtd_steps: 265
+
+Success: TRUE
+Workspace: 1440693984
+Qtd_robots: 6
+Qtd_obstacles: 45
+Qtd_collisions: 2
+Qtd_steps: 426
+
+Success: TRUE
+Workspace: 1440694116
+Qtd_robots: 10
+Qtd_obstacles: 70
+Qtd_collisions: 3
+Qtd_steps: 409
+
+Success: TRUE
+Workspace: 1440694342
+Qtd_robots: 5
+Qtd_obstacles: 61
+Qtd_collisions: 0
+Qtd_steps: 394
+
+Success: TRUE
+Workspace: 1440694526
+Qtd_robots: 5
+Qtd_obstacles: 28
+Qtd_collisions: 0
+Qtd_steps: 308
+
+Success: TRUE
+Workspace: 1440694622
+Qtd_robots: 8
+Qtd_obstacles: 5
+Qtd_collisions: 0
+Qtd_steps: 206
+
+Success: FALSE
+Workspace: 1440694678
+Qtd_robots: 8
+Qtd_obstacles: 58
+Qtd_collisions: 2
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440694852
+Qtd_robots: 9
+Qtd_obstacles: 50
+Qtd_collisions: 2
+Qtd_steps: 430
+
+Success: TRUE
+Workspace: 1440695030
+Qtd_robots: 7
+Qtd_obstacles: 100
+Qtd_collisions: 1
+Qtd_steps: 337
+
+Success: TRUE
+Workspace: 1440695294
+Qtd_robots: 9
+Qtd_obstacles: 17
+Qtd_collisions: 0
+Qtd_steps: 300
+
+Success: TRUE
+Workspace: 1440695386
+Qtd_robots: 9
+Qtd_obstacles: 90
+Qtd_collisions: 1
+Qtd_steps: 393
+
+Success: TRUE
+Workspace: 1440695656
+Qtd_robots: 6
+Qtd_obstacles: 80
+Qtd_collisions: 3
+Qtd_steps: 277
+
+Success: TRUE
+Workspace: 1440695882
+Qtd_robots: 7
+Qtd_obstacles: 40
+Qtd_collisions: 1
+Qtd_steps: 247
+
+Success: TRUE
+Workspace: 1440696012
+Qtd_robots: 6
+Qtd_obstacles: 11
+Qtd_collisions: 0
+Qtd_steps: 313
+
+Success: TRUE
+Workspace: 1440696074
+Qtd_robots: 9
+Qtd_obstacles: 30
+Qtd_collisions: 1
+Qtd_steps: 306
+
+Success: TRUE
+Workspace: 1440696198
+Qtd_robots: 5
+Qtd_obstacles: 37
+Qtd_collisions: 1
+Qtd_steps: 277
+
+Success: TRUE
+Workspace: 1440696316
+Qtd_robots: 6
+Qtd_obstacles: 79
+Qtd_collisions: 3
+Qtd_steps: 371
+
+Success: TRUE
+Workspace: 1440696540
+Qtd_robots: 5
+Qtd_obstacles: 83
+Qtd_collisions: 0
+Qtd_steps: 322
+
+Success: TRUE
+Workspace: 1440696756
+Qtd_robots: 7
+Qtd_obstacles: 99
+Qtd_collisions: 3
+Qtd_steps: 294
+
+Success: TRUE
+Workspace: 1440697020
+Qtd_robots: 9
+Qtd_obstacles: 14
+Qtd_collisions: 0
+Qtd_steps: 345
+
+Success: TRUE
+Workspace: 1440697100
+Qtd_robots: 5
+Qtd_obstacles: 30
+Qtd_collisions: 0
+Qtd_steps: 263
+
+Success: TRUE
+Workspace: 1440697200
+Qtd_robots: 5
+Qtd_obstacles: 91
+Qtd_collisions: 3
+Qtd_steps: 330
+
+Success: TRUE
+Workspace: 1440697430
+Qtd_robots: 8
+Qtd_obstacles: 74
+Qtd_collisions: 1
+Qtd_steps: 326
+
+Success: TRUE
+Workspace: 1440697644
+Qtd_robots: 9
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 305
+
+Success: TRUE
+Workspace: 1440697706
+Qtd_robots: 10
+Qtd_obstacles: 39
+Qtd_collisions: 1
+Qtd_steps: 384
+
+Success: TRUE
+Workspace: 1440697854
+Qtd_robots: 8
+Qtd_obstacles: 76
+Qtd_collisions: 1
+Qtd_steps: 333
+
+Success: FALSE
+Workspace: 1440698070
+Qtd_robots: 8
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440698150
+Qtd_robots: 6
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 226
+
+Success: TRUE
+Workspace: 1440698206
+Qtd_robots: 10
+Qtd_obstacles: 16
+Qtd_collisions: 1
+Qtd_steps: 225
+
+Success: TRUE
+Workspace: 1440698304
+Qtd_robots: 6
+Qtd_obstacles: 75
+Qtd_collisions: 3
+Qtd_steps: 306
+
+Success: TRUE
+Workspace: 1440698510
+Qtd_robots: 9
+Qtd_obstacles: 61
+Qtd_collisions: 3
+Qtd_steps: 342
+
+Success: TRUE
+Workspace: 1440698704
+Qtd_robots: 9
+Qtd_obstacles: 56
+Qtd_collisions: 5
+Qtd_steps: 425
+
+Success: TRUE
+Workspace: 1440698894
+Qtd_robots: 8
+Qtd_obstacles: 45
+Qtd_collisions: 0
+Qtd_steps: 341
+
+Success: TRUE
+Workspace: 1440699036
+Qtd_robots: 5
+Qtd_obstacles: 26
+Qtd_collisions: 1
+Qtd_steps: 478
+
+Success: TRUE
+Workspace: 1440699126
+Qtd_robots: 5
+Qtd_obstacles: 32
+Qtd_collisions: 0
+Qtd_steps: 262
+
+Success: TRUE
+Workspace: 1440699232
+Qtd_robots: 5
+Qtd_obstacles: 67
+Qtd_collisions: 1
+Qtd_steps: 591
+
+Success: TRUE
+Workspace: 1440699402
+Qtd_robots: 6
+Qtd_obstacles: 58
+Qtd_collisions: 1
+Qtd_steps: 361
+
+Success: TRUE
+Workspace: 1440699580
+Qtd_robots: 5
+Qtd_obstacles: 5
+Qtd_collisions: 0
+Qtd_steps: 221
+
+Success: TRUE
+Workspace: 1440699624
+Qtd_robots: 8
+Qtd_obstacles: 20
+Qtd_collisions: 0
+Qtd_steps: 296
+
+Success: TRUE
+Workspace: 1440699718
+Qtd_robots: 10
+Qtd_obstacles: 38
+Qtd_collisions: 2
+Qtd_steps: 359
+
+Success: TRUE
+Workspace: 1440699870
+Qtd_robots: 9
+Qtd_obstacles: 87
+Qtd_collisions: 0
+Qtd_steps: 417
+
+Success: TRUE
+Workspace: 1440700138
+Qtd_robots: 7
+Qtd_obstacles: 81
+Qtd_collisions: 2
+Qtd_steps: 409
+
+Success: TRUE
+Workspace: 1440700366
+Qtd_robots: 6
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 242
+
+Success: TRUE
+Workspace: 1440700420
+Qtd_robots: 6
+Qtd_obstacles: 100
+Qtd_collisions: 2
+Qtd_steps: 456
+
+Success: TRUE
+Workspace: 1440700676
+Qtd_robots: 8
+Qtd_obstacles: 91
+Qtd_collisions: 4
+Qtd_steps: 634
+
+Success: TRUE
+Workspace: 1440700934
+Qtd_robots: 7
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 279
+
+Success: TRUE
+Workspace: 1440701016
+Qtd_robots: 9
+Qtd_obstacles: 98
+Qtd_collisions: 6
+Qtd_steps: 495
+
+Success: TRUE
+Workspace: 1440701288
+Qtd_robots: 8
+Qtd_obstacles: 57
+Qtd_collisions: 0
+Qtd_steps: 353
+
+Success: TRUE
+Workspace: 1440701460
+Qtd_robots: 10
+Qtd_obstacles: 28
+Qtd_collisions: 0
+Qtd_steps: 394
+
+Success: TRUE
+Workspace: 1440701586
+Qtd_robots: 7
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 217
+
+Success: TRUE
+Workspace: 1440701632
+Qtd_robots: 10
+Qtd_obstacles: 49
+Qtd_collisions: 1
+Qtd_steps: 340
+
+Success: TRUE
+Workspace: 1440701798
+Qtd_robots: 10
+Qtd_obstacles: 99
+Qtd_collisions: 7
+Qtd_steps: 450
+
+Success: TRUE
+Workspace: 1440702088
+Qtd_robots: 5
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 206
+
+Success: TRUE
+Workspace: 1440702156
+Qtd_robots: 10
+Qtd_obstacles: 13
+Qtd_collisions: 1
+Qtd_steps: 238
+
+Success: TRUE
+Workspace: 1440702238
+Qtd_robots: 8
+Qtd_obstacles: 12
+Qtd_collisions: 0
+Qtd_steps: 272
+
+Success: TRUE
+Workspace: 1440702310
+Qtd_robots: 7
+Qtd_obstacles: 70
+Qtd_collisions: 2
+Qtd_steps: 326
+
+Success: TRUE
+Workspace: 1440702514
+Qtd_robots: 5
+Qtd_obstacles: 89
+Qtd_collisions: 0
+Qtd_steps: 361
+
+Success: FALSE
+Workspace: 1440702742
+Qtd_robots: 7
+Qtd_obstacles: 37
+Qtd_collisions: 0
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440702868
+Qtd_robots: 5
+Qtd_obstacles: 6
+Qtd_collisions: 0
+Qtd_steps: 320
+
+Success: TRUE
+Workspace: 1440702914
+Qtd_robots: 9
+Qtd_obstacles: 72
+Qtd_collisions: 3
+Qtd_steps: 341
+
+Success: TRUE
+Workspace: 1440703144
+Qtd_robots: 7
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 217
+
+Success: TRUE
+Workspace: 1440703202
+Qtd_robots: 8
+Qtd_obstacles: 31
+Qtd_collisions: 1
+Qtd_steps: 309
+
+Success: TRUE
+Workspace: 1440703322
+Qtd_robots: 7
+Qtd_obstacles: 61
+Qtd_collisions: 2
+Qtd_steps: 337
+
+Success: TRUE
+Workspace: 1440703510
+Qtd_robots: 7
+Qtd_obstacles: 74
+Qtd_collisions: 1
+Qtd_steps: 316
+
+Success: TRUE
+Workspace: 1440703714
+Qtd_robots: 7
+Qtd_obstacles: 6
+Qtd_collisions: 0
+Qtd_steps: 217
+
+Success: TRUE
+Workspace: 1440703770
+Qtd_robots: 8
+Qtd_obstacles: 57
+Qtd_collisions: 2
+Qtd_steps: 340
+
+Success: TRUE
+Workspace: 1440703944
+Qtd_robots: 10
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 270
+
+Success: TRUE
+Workspace: 1440704008
+Qtd_robots: 8
+Qtd_obstacles: 10
+Qtd_collisions: 1
+Qtd_steps: 390
+
+Success: TRUE
+Workspace: 1440704074
+Qtd_robots: 10
+Qtd_obstacles: 34
+Qtd_collisions: 2
+Qtd_steps: 375
+
+Success: TRUE
+Workspace: 1440704214
+Qtd_robots: 7
+Qtd_obstacles: 84
+Qtd_collisions: 2
+Qtd_steps: 427
+
+Success: TRUE
+Workspace: 1440704434
+Qtd_robots: 9
+Qtd_obstacles: 98
+Qtd_collisions: 4
+Qtd_steps: 370
+
+Success: TRUE
+Workspace: 1440704734
+Qtd_robots: 9
+Qtd_obstacles: 74
+Qtd_collisions: 0
+Qtd_steps: 338
+
+Success: TRUE
+Workspace: 1440704964
+Qtd_robots: 9
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 219
+
+Success: TRUE
+Workspace: 1440705024
+Qtd_robots: 6
+Qtd_obstacles: 26
+Qtd_collisions: 1
+Qtd_steps: 293
+
+Success: TRUE
+Workspace: 1440705118
+Qtd_robots: 9
+Qtd_obstacles: 96
+Qtd_collisions: 2
+Qtd_steps: 371
+
+Success: TRUE
+Workspace: 1440705388
+Qtd_robots: 10
+Qtd_obstacles: 6
+Qtd_collisions: 0
+Qtd_steps: 232
+
+Success: TRUE
+Workspace: 1440705454
+Qtd_robots: 8
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 325
+
+Success: TRUE
+Workspace: 1440705502
+Qtd_robots: 5
+Qtd_obstacles: 42
+Qtd_collisions: 0
+Qtd_steps: 302
+
+Success: TRUE
+Workspace: 1440705628
+Qtd_robots: 8
+Qtd_obstacles: 8
+Qtd_collisions: 0
+Qtd_steps: 296
+
+Success: TRUE
+Workspace: 1440705692
+Qtd_robots: 10
+Qtd_obstacles: 66
+Qtd_collisions: 3
+Qtd_steps: 391
+
+Success: TRUE
+Workspace: 1440705910
+Qtd_robots: 7
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 301
+
+Success: FALSE
+Workspace: 1440705982
+Qtd_robots: 6
+Qtd_obstacles: 35
+Qtd_collisions: 1
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440706104
+Qtd_robots: 6
+Qtd_obstacles: 84
+Qtd_collisions: 0
+Qtd_steps: 367
+
+Success: TRUE
+Workspace: 1440706328
+Qtd_robots: 6
+Qtd_obstacles: 30
+Qtd_collisions: 0
+Qtd_steps: 299
+
+Success: TRUE
+Workspace: 1440706436
+Qtd_robots: 8
+Qtd_obstacles: 39
+Qtd_collisions: 1
+Qtd_steps: 246
+
+Success: TRUE
+Workspace: 1440706564
+Qtd_robots: 5
+Qtd_obstacles: 40
+Qtd_collisions: 2
+Qtd_steps: 209
+
+Success: TRUE
+Workspace: 1440706694
+Qtd_robots: 9
+Qtd_obstacles: 20
+Qtd_collisions: 2
+Qtd_steps: 246
+
+Success: TRUE
+Workspace: 1440706790
+Qtd_robots: 8
+Qtd_obstacles: 45
+Qtd_collisions: 2
+Qtd_steps: 304
+
+Success: TRUE
+Workspace: 1440706934
+Qtd_robots: 9
+Qtd_obstacles: 62
+Qtd_collisions: 2
+Qtd_steps: 346
+
+Success: TRUE
+Workspace: 1440707124
+Qtd_robots: 10
+Qtd_obstacles: 42
+Qtd_collisions: 4
+Qtd_steps: 437
+
+Success: TRUE
+Workspace: 1440707272
+Qtd_robots: 8
+Qtd_obstacles: 39
+Qtd_collisions: 2
+Qtd_steps: 407
+
+Success: TRUE
+Workspace: 1440707414
+Qtd_robots: 10
+Qtd_obstacles: 35
+Qtd_collisions: 0
+Qtd_steps: 218
+
+Success: TRUE
+Workspace: 1440707560
+Qtd_robots: 9
+Qtd_obstacles: 43
+Qtd_collisions: 1
+Qtd_steps: 285
+
+Success: TRUE
+Workspace: 1440707698
+Qtd_robots: 10
+Qtd_obstacles: 66
+Qtd_collisions: 4
+Qtd_steps: 380
+
+Success: TRUE
+Workspace: 1440707918
+Qtd_robots: 7
+Qtd_obstacles: 28
+Qtd_collisions: 3
+Qtd_steps: 297
+
+Success: TRUE
+Workspace: 1440708018
+Qtd_robots: 7
+Qtd_obstacles: 43
+Qtd_collisions: 0
+Qtd_steps: 259
+
+Success: TRUE
+Workspace: 1440708150
+Qtd_robots: 10
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 256
+
+Success: TRUE
+Workspace: 1440708208
+Qtd_robots: 7
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 275
+
+Success: TRUE
+Workspace: 1440708286
+Qtd_robots: 10
+Qtd_obstacles: 52
+Qtd_collisions: 1
+Qtd_steps: 226
+
+Success: FALSE
+Workspace: 1440708462
+Qtd_robots: 6
+Qtd_obstacles: 63
+Qtd_collisions: 2
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440708638
+Qtd_robots: 8
+Qtd_obstacles: 74
+Qtd_collisions: 1
+Qtd_steps: 473
+
+Success: TRUE
+Workspace: 1440708860
+Qtd_robots: 7
+Qtd_obstacles: 91
+Qtd_collisions: 1
+Qtd_steps: 386
+
+Success: TRUE
+Workspace: 1440709106
+Qtd_robots: 6
+Qtd_obstacles: 49
+Qtd_collisions: 1
+Qtd_steps: 439
+
+Success: TRUE
+Workspace: 1440709252
+Qtd_robots: 6
+Qtd_obstacles: 76
+Qtd_collisions: 1
+Qtd_steps: 357
+
+Success: TRUE
+Workspace: 1440709460
+Qtd_robots: 8
+Qtd_obstacles: 45
+Qtd_collisions: 1
+Qtd_steps: 226
+
+Success: TRUE
+Workspace: 1440709610
+Qtd_robots: 5
+Qtd_obstacles: 12
+Qtd_collisions: 1
+Qtd_steps: 254
+
+Success: FALSE
+Workspace: 1440709670
+Qtd_robots: 10
+Qtd_obstacles: 61
+Qtd_collisions: 4
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440709854
+Qtd_robots: 8
+Qtd_obstacles: 81
+Qtd_collisions: 2
+Qtd_steps: 457
+
+Success: TRUE
+Workspace: 1440710090
+Qtd_robots: 7
+Qtd_obstacles: 97
+Qtd_collisions: 1
+Qtd_steps: 481
+
+Success: TRUE
+Workspace: 1440710348
+Qtd_robots: 6
+Qtd_obstacles: 51
+Qtd_collisions: 2
+Qtd_steps: 427
+
+Success: TRUE
+Workspace: 1440710502
+Qtd_robots: 5
+Qtd_obstacles: 81
+Qtd_collisions: 0
+Qtd_steps: 135
+
+Success: TRUE
+Workspace: 1440710716
+Qtd_robots: 6
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 300
+
+Success: TRUE
+Workspace: 1440710798
+Qtd_robots: 8
+Qtd_obstacles: 20
+Qtd_collisions: 1
+Qtd_steps: 302
+
+Success: TRUE
+Workspace: 1440710890
+Qtd_robots: 7
+Qtd_obstacles: 92
+Qtd_collisions: 3
+Qtd_steps: 477
+
+Success: TRUE
+Workspace: 1440711130
+Qtd_robots: 10
+Qtd_obstacles: 34
+Qtd_collisions: 1
+Qtd_steps: 306
+
+Success: TRUE
+Workspace: 1440711270
+Qtd_robots: 10
+Qtd_obstacles: 41
+Qtd_collisions: 1
+Qtd_steps: 323
+
+Success: TRUE
+Workspace: 1440711416
+Qtd_robots: 10
+Qtd_obstacles: 85
+Qtd_collisions: 1
+Qtd_steps: 492
+
+Success: TRUE
+Workspace: 1440711666
+Qtd_robots: 7
+Qtd_obstacles: 55
+Qtd_collisions: 1
+Qtd_steps: 308
+
+Success: TRUE
+Workspace: 1440711830
+Qtd_robots: 5
+Qtd_obstacles: 26
+Qtd_collisions: 0
+Qtd_steps: 141
+
+Success: TRUE
+Workspace: 1440711928
+Qtd_robots: 10
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 200
+
+Success: TRUE
+Workspace: 1440711984
+Qtd_robots: 7
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 318
+
+Success: TRUE
+Workspace: 1440712070
+Qtd_robots: 6
+Qtd_obstacles: 63
+Qtd_collisions: 0
+Qtd_steps: 388
+
+Success: TRUE
+Workspace: 1440712244
+Qtd_robots: 6
+Qtd_obstacles: 82
+Qtd_collisions: 4
+Qtd_steps: 492
+
+Success: TRUE
+Workspace: 1440712464
+Qtd_robots: 6
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 254
+
+Success: TRUE
+Workspace: 1440712504
+Qtd_robots: 10
+Qtd_obstacles: 88
+Qtd_collisions: 6
+Qtd_steps: 373
+
+Success: TRUE
+Workspace: 1440712764
+Qtd_robots: 7
+Qtd_obstacles: 77
+Qtd_collisions: 1
+Qtd_steps: 361
+
+Success: FALSE
+Workspace: 1440712984
+Qtd_robots: 7
+Qtd_obstacles: 20
+Qtd_collisions: 0
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440713070
+Qtd_robots: 5
+Qtd_obstacles: 31
+Qtd_collisions: 0
+Qtd_steps: 292
+
+Success: TRUE
+Workspace: 1440713172
+Qtd_robots: 6
+Qtd_obstacles: 63
+Qtd_collisions: 1
+Qtd_steps: 248
+
+Success: TRUE
+Workspace: 1440713354
+Qtd_robots: 7
+Qtd_obstacles: 11
+Qtd_collisions: 0
+Qtd_steps: 357
+
+Success: TRUE
+Workspace: 1440713418
+Qtd_robots: 10
+Qtd_obstacles: 16
+Qtd_collisions: 0
+Qtd_steps: 394
+
+Success: TRUE
+Workspace: 1440713508
+Qtd_robots: 9
+Qtd_obstacles: 32
+Qtd_collisions: 0
+Qtd_steps: 263
+
+Success: TRUE
+Workspace: 1440713632
+Qtd_robots: 8
+Qtd_obstacles: 64
+Qtd_collisions: 1
+Qtd_steps: 521
+
+Success: TRUE
+Workspace: 1440713842
+Qtd_robots: 7
+Qtd_obstacles: 62
+Qtd_collisions: 4
+Qtd_steps: 385
+
+Success: TRUE
+Workspace: 1440714022
+Qtd_robots: 7
+Qtd_obstacles: 70
+Qtd_collisions: 1
+Qtd_steps: 363
+
+Success: TRUE
+Workspace: 1440714230
+Qtd_robots: 9
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 247
+
+Success: TRUE
+Workspace: 1440714296
+Qtd_robots: 7
+Qtd_obstacles: 32
+Qtd_collisions: 0
+Qtd_steps: 267
+
+Success: TRUE
+Workspace: 1440714404
+Qtd_robots: 8
+Qtd_obstacles: 53
+Qtd_collisions: 0
+Qtd_steps: 460
+
+Success: TRUE
+Workspace: 1440714564
+Qtd_robots: 9
+Qtd_obstacles: 61
+Qtd_collisions: 4
+Qtd_steps: 460
+
+Success: TRUE
+Workspace: 1440714756
+Qtd_robots: 8
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 331
+
+Success: TRUE
+Workspace: 1440714856
+Qtd_robots: 5
+Qtd_obstacles: 86
+Qtd_collisions: 0
+Qtd_steps: 418
+
+Success: TRUE
+Workspace: 1440715086
+Qtd_robots: 5
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 234
+
+Success: TRUE
+Workspace: 1440715134
+Qtd_robots: 8
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 223
+
+Success: TRUE
+Workspace: 1440715182
+Qtd_robots: 9
+Qtd_obstacles: 64
+Qtd_collisions: 3
+Qtd_steps: 390
+
+Success: TRUE
+Workspace: 1440715388
+Qtd_robots: 8
+Qtd_obstacles: 26
+Qtd_collisions: 0
+Qtd_steps: 360
+
+Success: TRUE
+Workspace: 1440715492
+Qtd_robots: 9
+Qtd_obstacles: 33
+Qtd_collisions: 0
+Qtd_steps: 288
+
+Success: TRUE
+Workspace: 1440715616
+Qtd_robots: 5
+Qtd_obstacles: 4
+Qtd_collisions: 1
+Qtd_steps: 188
+
+Success: TRUE
+Workspace: 1440715658
+Qtd_robots: 8
+Qtd_obstacles: 72
+Qtd_collisions: 2
+Qtd_steps: 333
+
+Success: TRUE
+Workspace: 1440715872
+Qtd_robots: 5
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 205
+
+Success: TRUE
+Workspace: 1440715934
+Qtd_robots: 5
+Qtd_obstacles: 58
+Qtd_collisions: 1
+Qtd_steps: 354
+
+Success: TRUE
+Workspace: 1440716096
+Qtd_robots: 9
+Qtd_obstacles: 8
+Qtd_collisions: 0
+Qtd_steps: 332
+
+Success: TRUE
+Workspace: 1440716170
+Qtd_robots: 8
+Qtd_obstacles: 77
+Qtd_collisions: 3
+Qtd_steps: 501
+
+Success: TRUE
+Workspace: 1440716404
+Qtd_robots: 8
+Qtd_obstacles: 16
+Qtd_collisions: 0
+Qtd_steps: 231
+
+Success: TRUE
+Workspace: 1440716484
+Qtd_robots: 10
+Qtd_obstacles: 76
+Qtd_collisions: 4
+Qtd_steps: 470
+
+Success: TRUE
+Workspace: 1440716724
+Qtd_robots: 5
+Qtd_obstacles: 29
+Qtd_collisions: 0
+Qtd_steps: 302
+
+Success: TRUE
+Workspace: 1440716818
+Qtd_robots: 8
+Qtd_obstacles: 84
+Qtd_collisions: 2
+Qtd_steps: 420
+
+Success: FALSE
+Workspace: 1440717058
+Qtd_robots: 10
+Qtd_obstacles: 86
+Qtd_collisions: 3
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440717316
+Qtd_robots: 7
+Qtd_obstacles: 91
+Qtd_collisions: 1
+Qtd_steps: 256
+
+Success: TRUE
+Workspace: 1440717572
+Qtd_robots: 6
+Qtd_obstacles: 76
+Qtd_collisions: 1
+Qtd_steps: 366
+
+Success: TRUE
+Workspace: 1440717776
+Qtd_robots: 10
+Qtd_obstacles: 78
+Qtd_collisions: 3
+Qtd_steps: 567
+
+Success: TRUE
+Workspace: 1440718010
+Qtd_robots: 10
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 299
+
+Success: FALSE
+Workspace: 1440718106
+Qtd_robots: 9
+Qtd_obstacles: 76
+Qtd_collisions: 3
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440718332
+Qtd_robots: 10
+Qtd_obstacles: 70
+Qtd_collisions: 4
+Qtd_steps: 625
+
+Success: TRUE
+Workspace: 1440718546
+Qtd_robots: 6
+Qtd_obstacles: 40
+Qtd_collisions: 2
+Qtd_steps: 252
+
+Success: TRUE
+Workspace: 1440718682
+Qtd_robots: 10
+Qtd_obstacles: 92
+Qtd_collisions: 3
+Qtd_steps: 658
+
+Success: TRUE
+Workspace: 1440718960
+Qtd_robots: 6
+Qtd_obstacles: 26
+Qtd_collisions: 0
+Qtd_steps: 298
+
+Success: TRUE
+Workspace: 1440719052
+Qtd_robots: 10
+Qtd_obstacles: 42
+Qtd_collisions: 0
+Qtd_steps: 321
+
+Success: TRUE
+Workspace: 1440719212
+Qtd_robots: 10
+Qtd_obstacles: 37
+Qtd_collisions: 2
+Qtd_steps: 354
+
+Success: TRUE
+Workspace: 1440719366
+Qtd_robots: 5
+Qtd_obstacles: 32
+Qtd_collisions: 0
+Qtd_steps: 234
+
+Success: TRUE
+Workspace: 1440719472
+Qtd_robots: 6
+Qtd_obstacles: 33
+Qtd_collisions: 0
+Qtd_steps: 318
+
+Success: TRUE
+Workspace: 1440719578
+Qtd_robots: 7
+Qtd_obstacles: 76
+Qtd_collisions: 0
+Qtd_steps: 266
+
+Success: TRUE
+Workspace: 1440719782
+Qtd_robots: 5
+Qtd_obstacles: 14
+Qtd_collisions: 0
+Qtd_steps: 201
+
+Success: TRUE
+Workspace: 1440719844
+Qtd_robots: 7
+Qtd_obstacles: 28
+Qtd_collisions: 0
+Qtd_steps: 340
+
+Success: TRUE
+Workspace: 1440719950
+Qtd_robots: 5
+Qtd_obstacles: 54
+Qtd_collisions: 2
+Qtd_steps: 266
+
+Success: TRUE
+Workspace: 1440720114
+Qtd_robots: 8
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 201
+
+Success: TRUE
+Workspace: 1440720162
+Qtd_robots: 9
+Qtd_obstacles: 77
+Qtd_collisions: 3
+Qtd_steps: 429
+
+Success: TRUE
+Workspace: 1440720406
+Qtd_robots: 7
+Qtd_obstacles: 11
+Qtd_collisions: 0
+Qtd_steps: 345
+
+Success: TRUE
+Workspace: 1440720472
+Qtd_robots: 5
+Qtd_obstacles: 57
+Qtd_collisions: 3
+Qtd_steps: 481
+
+Success: TRUE
+Workspace: 1440720628
+Qtd_robots: 6
+Qtd_obstacles: 76
+Qtd_collisions: 3
+Qtd_steps: 233
+
+Success: TRUE
+Workspace: 1440720830
+Qtd_robots: 8
+Qtd_obstacles: 93
+Qtd_collisions: 1
+Qtd_steps: 309
+
+Success: TRUE
+Workspace: 1440721088
+Qtd_robots: 5
+Qtd_obstacles: 5
+Qtd_collisions: 0
+Qtd_steps: 297
+
+Success: TRUE
+Workspace: 1440721134
+Qtd_robots: 9
+Qtd_obstacles: 36
+Qtd_collisions: 1
+Qtd_steps: 336
+
+Success: TRUE
+Workspace: 1440721268
+Qtd_robots: 7
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 289
+
+Success: TRUE
+Workspace: 1440721352
+Qtd_robots: 5
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 280
+
+Success: TRUE
+Workspace: 1440721420
+Qtd_robots: 6
+Qtd_obstacles: 35
+Qtd_collisions: 1
+Qtd_steps: 347
+
+Success: TRUE
+Workspace: 1440721538
+Qtd_robots: 7
+Qtd_obstacles: 61
+Qtd_collisions: 3
+Qtd_steps: 399
+
+Success: TRUE
+Workspace: 1440721710
+Qtd_robots: 9
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 332
+
+Success: TRUE
+Workspace: 1440721790
+Qtd_robots: 7
+Qtd_obstacles: 30
+Qtd_collisions: 0
+Qtd_steps: 288
+
+Success: TRUE
+Workspace: 1440721902
+Qtd_robots: 10
+Qtd_obstacles: 73
+Qtd_collisions: 3
+Qtd_steps: 497
+
+Success: TRUE
+Workspace: 1440722136
+Qtd_robots: 10
+Qtd_obstacles: 96
+Qtd_collisions: 2
+Qtd_steps: 450
+
+Success: TRUE
+Workspace: 1440722418
+Qtd_robots: 8
+Qtd_obstacles: 57
+Qtd_collisions: 0
+Qtd_steps: 362
+
+Success: TRUE
+Workspace: 1440722592
+Qtd_robots: 8
+Qtd_obstacles: 13
+Qtd_collisions: 2
+Qtd_steps: 213
+
+Success: TRUE
+Workspace: 1440722670
+Qtd_robots: 8
+Qtd_obstacles: 39
+Qtd_collisions: 1
+Qtd_steps: 340
+
+Success: TRUE
+Workspace: 1440722804
+Qtd_robots: 7
+Qtd_obstacles: 16
+Qtd_collisions: 0
+Qtd_steps: 365
+
+Success: TRUE
+Workspace: 1440722880
+Qtd_robots: 9
+Qtd_obstacles: 45
+Qtd_collisions: 1
+Qtd_steps: 417
+
+Success: TRUE
+Workspace: 1440723042
+Qtd_robots: 7
+Qtd_obstacles: 97
+Qtd_collisions: 2
+Qtd_steps: 401
+
+Success: TRUE
+Workspace: 1440723314
+Qtd_robots: 6
+Qtd_obstacles: 44
+Qtd_collisions: 0
+Qtd_steps: 274
+
+Success: TRUE
+Workspace: 1440723456
+Qtd_robots: 6
+Qtd_obstacles: 37
+Qtd_collisions: 0
+Qtd_steps: 331
+
+Success: TRUE
+Workspace: 1440723576
+Qtd_robots: 5
+Qtd_obstacles: 45
+Qtd_collisions: 0
+Qtd_steps: 103
+
+Success: TRUE
+Workspace: 1440723702
+Qtd_robots: 9
+Qtd_obstacles: 51
+Qtd_collisions: 0
+Qtd_steps: 355
+
+Success: TRUE
+Workspace: 1440723874
+Qtd_robots: 7
+Qtd_obstacles: 3
+Qtd_collisions: 0
+Qtd_steps: 243
+
+Success: TRUE
+Workspace: 1440723922
+Qtd_robots: 6
+Qtd_obstacles: 52
+Qtd_collisions: 1
+Qtd_steps: 466
+
+Success: TRUE
+Workspace: 1440724074
+Qtd_robots: 9
+Qtd_obstacles: 6
+Qtd_collisions: 0
+Qtd_steps: 287
+
+Success: FALSE
+Workspace: 1440724140
+Qtd_robots: 8
+Qtd_obstacles: 55
+Qtd_collisions: 3
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440724306
+Qtd_robots: 8
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 330
+
+Success: TRUE
+Workspace: 1440724382
+Qtd_robots: 5
+Qtd_obstacles: 68
+Qtd_collisions: 1
+Qtd_steps: 383
+
+Success: TRUE
+Workspace: 1440724558
+Qtd_robots: 7
+Qtd_obstacles: 81
+Qtd_collisions: 0
+Qtd_steps: 379
+
+Success: TRUE
+Workspace: 1440724808
+Qtd_robots: 5
+Qtd_obstacles: 94
+Qtd_collisions: 3
+Qtd_steps: 491
+
+Success: TRUE
+Workspace: 1440725036
+Qtd_robots: 9
+Qtd_obstacles: 29
+Qtd_collisions: 1
+Qtd_steps: 346
+
+Success: TRUE
+Workspace: 1440725164
+Qtd_robots: 9
+Qtd_obstacles: 22
+Qtd_collisions: 0
+Qtd_steps: 333
+
+Success: TRUE
+Workspace: 1440725262
+Qtd_robots: 7
+Qtd_obstacles: 42
+Qtd_collisions: 0
+Qtd_steps: 418
+
+Success: TRUE
+Workspace: 1440725396
+Qtd_robots: 6
+Qtd_obstacles: 76
+Qtd_collisions: 2
+Qtd_steps: 308
+
+Success: TRUE
+Workspace: 1440725618
+Qtd_robots: 8
+Qtd_obstacles: 16
+Qtd_collisions: 0
+Qtd_steps: 235
+
+Success: TRUE
+Workspace: 1440725702
+Qtd_robots: 6
+Qtd_obstacles: 34
+Qtd_collisions: 0
+Qtd_steps: 294
+
+Success: TRUE
+Workspace: 1440725820
+Qtd_robots: 5
+Qtd_obstacles: 82
+Qtd_collisions: 2
+Qtd_steps: 365
+
+Success: TRUE
+Workspace: 1440726028
+Qtd_robots: 8
+Qtd_obstacles: 11
+Qtd_collisions: 0
+Qtd_steps: 375
+
+Success: TRUE
+Workspace: 1440726100
+Qtd_robots: 8
+Qtd_obstacles: 50
+Qtd_collisions: 2
+Qtd_steps: 351
+
+Success: TRUE
+Workspace: 1440726270
+Qtd_robots: 10
+Qtd_obstacles: 21
+Qtd_collisions: 1
+Qtd_steps: 376
+
+Success: TRUE
+Workspace: 1440726374
+Qtd_robots: 10
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 290
+
+Success: TRUE
+Workspace: 1440726430
+Qtd_robots: 9
+Qtd_obstacles: 38
+Qtd_collisions: 0
+Qtd_steps: 215
+
+Success: TRUE
+Workspace: 1440726576
+Qtd_robots: 6
+Qtd_obstacles: 97
+Qtd_collisions: 3
+Qtd_steps: 476
+
+Success: FALSE
+Workspace: 1440726826
+Qtd_robots: 7
+Qtd_obstacles: 49
+Qtd_collisions: 1
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440726976
+Qtd_robots: 6
+Qtd_obstacles: 84
+Qtd_collisions: 1
+Qtd_steps: 364
+
+Success: TRUE
+Workspace: 1440727202
+Qtd_robots: 7
+Qtd_obstacles: 87
+Qtd_collisions: 2
+Qtd_steps: 486
+
+Success: TRUE
+Workspace: 1440727446
+Qtd_robots: 5
+Qtd_obstacles: 31
+Qtd_collisions: 1
+Qtd_steps: 248
+
+Success: TRUE
+Workspace: 1440727546
+Qtd_robots: 6
+Qtd_obstacles: 94
+Qtd_collisions: 1
+Qtd_steps: 380
+
+Success: TRUE
+Workspace: 1440727802
+Qtd_robots: 7
+Qtd_obstacles: 30
+Qtd_collisions: 0
+Qtd_steps: 359
+
+Success: TRUE
+Workspace: 1440727912
+Qtd_robots: 9
+Qtd_obstacles: 79
+Qtd_collisions: 2
+Qtd_steps: 431
+
+Success: TRUE
+Workspace: 1440728154
+Qtd_robots: 6
+Qtd_obstacles: 77
+Qtd_collisions: 1
+Qtd_steps: 273
+
+Success: TRUE
+Workspace: 1440728364
+Qtd_robots: 10
+Qtd_obstacles: 43
+Qtd_collisions: 0
+Qtd_steps: 244
+
+Success: TRUE
+Workspace: 1440728522
+Qtd_robots: 7
+Qtd_obstacles: 26
+Qtd_collisions: 1
+Qtd_steps: 421
+
+Success: TRUE
+Workspace: 1440728622
+Qtd_robots: 10
+Qtd_obstacles: 54
+Qtd_collisions: 2
+Qtd_steps: 478
+
+Success: TRUE
+Workspace: 1440728806
+Qtd_robots: 5
+Qtd_obstacles: 69
+Qtd_collisions: 0
+Qtd_steps: 235
+
+Success: TRUE
+Workspace: 1440728988
+Qtd_robots: 10
+Qtd_obstacles: 33
+Qtd_collisions: 0
+Qtd_steps: 296
+
+Success: TRUE
+Workspace: 1440729124
+Qtd_robots: 5
+Qtd_obstacles: 46
+Qtd_collisions: 1
+Qtd_steps: 276
+
+Success: TRUE
+Workspace: 1440729256
+Qtd_robots: 7
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 181
+
+Success: FALSE
+Workspace: 1440729302
+Qtd_robots: 8
+Qtd_obstacles: 31
+Qtd_collisions: 1
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440729414
+Qtd_robots: 7
+Qtd_obstacles: 64
+Qtd_collisions: 1
+Qtd_steps: 230
+
+Success: TRUE
+Workspace: 1440729596
+Qtd_robots: 5
+Qtd_obstacles: 96
+Qtd_collisions: 1
+Qtd_steps: 515
+
+Success: TRUE
+Workspace: 1440729852
+Qtd_robots: 8
+Qtd_obstacles: 69
+Qtd_collisions: 2
+Qtd_steps: 435
+
+Success: TRUE
+Workspace: 1440730054
+Qtd_robots: 10
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 383
+
+Success: TRUE
+Workspace: 1440730110
+Qtd_robots: 7
+Qtd_obstacles: 10
+Qtd_collisions: 0
+Qtd_steps: 236
+
+Success: TRUE
+Workspace: 1440730174
+Qtd_robots: 9
+Qtd_obstacles: 52
+Qtd_collisions: 1
+Qtd_steps: 274
+
+Success: TRUE
+Workspace: 1440730354
+Qtd_robots: 6
+Qtd_obstacles: 79
+Qtd_collisions: 2
+Qtd_steps: 346
+
+Success: TRUE
+Workspace: 1440730570
+Qtd_robots: 9
+Qtd_obstacles: 82
+Qtd_collisions: 4
+Qtd_steps: 318
+
+Success: TRUE
+Workspace: 1440730804
+Qtd_robots: 10
+Qtd_obstacles: 55
+Qtd_collisions: 0
+Qtd_steps: 448
+
+Success: TRUE
+Workspace: 1440730990
+Qtd_robots: 5
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 286
+
+Success: TRUE
+Workspace: 1440731076
+Qtd_robots: 9
+Qtd_obstacles: 19
+Qtd_collisions: 0
+Qtd_steps: 274
+
+Success: TRUE
+Workspace: 1440731176
+Qtd_robots: 10
+Qtd_obstacles: 46
+Qtd_collisions: 1
+Qtd_steps: 281
+
+Success: TRUE
+Workspace: 1440731356
+Qtd_robots: 8
+Qtd_obstacles: 100
+Qtd_collisions: 2
+Qtd_steps: 354
+
+Success: TRUE
+Workspace: 1440731634
+Qtd_robots: 7
+Qtd_obstacles: 5
+Qtd_collisions: 0
+Qtd_steps: 236
+
+Success: TRUE
+Workspace: 1440731690
+Qtd_robots: 5
+Qtd_obstacles: 45
+Qtd_collisions: 0
+Qtd_steps: 325
+
+Success: TRUE
+Workspace: 1440731820
+Qtd_robots: 10
+Qtd_obstacles: 62
+Qtd_collisions: 2
+Qtd_steps: 516
+
+Success: TRUE
+Workspace: 1440732028
+Qtd_robots: 6
+Qtd_obstacles: 27
+Qtd_collisions: 0
+Qtd_steps: 246
+
+Success: TRUE
+Workspace: 1440732126
+Qtd_robots: 8
+Qtd_obstacles: 82
+Qtd_collisions: 2
+Qtd_steps: 417
+
+Success: TRUE
+Workspace: 1440732370
+Qtd_robots: 8
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 331
+
+Success: TRUE
+Workspace: 1440732424
+Qtd_robots: 8
+Qtd_obstacles: 48
+Qtd_collisions: 1
+Qtd_steps: 289
+
+Success: TRUE
+Workspace: 1440732584
+Qtd_robots: 6
+Qtd_obstacles: 100
+Qtd_collisions: 4
+Qtd_steps: 293
+
+Success: TRUE
+Workspace: 1440732846
+Qtd_robots: 5
+Qtd_obstacles: 67
+Qtd_collisions: 2
+Qtd_steps: 179
+
+Success: TRUE
+Workspace: 1440733024
+Qtd_robots: 9
+Qtd_obstacles: 33
+Qtd_collisions: 1
+Qtd_steps: 160
+
+Success: TRUE
+Workspace: 1440733150
+Qtd_robots: 8
+Qtd_obstacles: 56
+Qtd_collisions: 1
+Qtd_steps: 278
+
+Success: TRUE
+Workspace: 1440733330
+Qtd_robots: 5
+Qtd_obstacles: 67
+Qtd_collisions: 1
+Qtd_steps: 236
+
+Success: TRUE
+Workspace: 1440733502
+Qtd_robots: 6
+Qtd_obstacles: 61
+Qtd_collisions: 1
+Qtd_steps: 387
+
+Success: TRUE
+Workspace: 1440733680
+Qtd_robots: 5
+Qtd_obstacles: 51
+Qtd_collisions: 4
+Qtd_steps: 329
+
+Success: TRUE
+Workspace: 1440733826
+Qtd_robots: 5
+Qtd_obstacles: 30
+Qtd_collisions: 0
+Qtd_steps: 285
+
+Success: TRUE
+Workspace: 1440733928
+Qtd_robots: 7
+Qtd_obstacles: 5
+Qtd_collisions: 0
+Qtd_steps: 290
+
+Success: TRUE
+Workspace: 1440733982
+Qtd_robots: 5
+Qtd_obstacles: 98
+Qtd_collisions: 3
+Qtd_steps: 562
+
+Success: TRUE
+Workspace: 1440734224
+Qtd_robots: 5
+Qtd_obstacles: 40
+Qtd_collisions: 0
+Qtd_steps: 167
+
+Success: TRUE
+Workspace: 1440734344
+Qtd_robots: 8
+Qtd_obstacles: 96
+Qtd_collisions: 2
+Qtd_steps: 501
+
+Success: TRUE
+Workspace: 1440734618
+Qtd_robots: 7
+Qtd_obstacles: 54
+Qtd_collisions: 2
+Qtd_steps: 330
+
+Success: TRUE
+Workspace: 1440734776
+Qtd_robots: 7
+Qtd_obstacles: 38
+Qtd_collisions: 1
+Qtd_steps: 339
+
+Success: TRUE
+Workspace: 1440734908
+Qtd_robots: 6
+Qtd_obstacles: 66
+Qtd_collisions: 1
+Qtd_steps: 418
+
+Success: TRUE
+Workspace: 1440735092
+Qtd_robots: 10
+Qtd_obstacles: 54
+Qtd_collisions: 3
+Qtd_steps: 463
+
+Success: TRUE
+Workspace: 1440735274
+Qtd_robots: 5
+Qtd_obstacles: 78
+Qtd_collisions: 1
+Qtd_steps: 297
+
+Success: TRUE
+Workspace: 1440735482
+Qtd_robots: 7
+Qtd_obstacles: 88
+Qtd_collisions: 1
+Qtd_steps: 337
+
+Success: TRUE
+Workspace: 1440735728
+Qtd_robots: 10
+Qtd_obstacles: 76
+Qtd_collisions: 3
+Qtd_steps: 393
+
+Success: TRUE
+Workspace: 1440735972
+Qtd_robots: 7
+Qtd_obstacles: 90
+Qtd_collisions: 1
+Qtd_steps: 559
+
+Success: TRUE
+Workspace: 1440736220
+Qtd_robots: 5
+Qtd_obstacles: 47
+Qtd_collisions: 1
+Qtd_steps: 416
+
+Success: TRUE
+Workspace: 1440736358
+Qtd_robots: 7
+Qtd_obstacles: 94
+Qtd_collisions: 2
+Qtd_steps: 349
+
+Success: TRUE
+Workspace: 1440736610
+Qtd_robots: 5
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 270
+
+Success: TRUE
+Workspace: 1440736648
+Qtd_robots: 8
+Qtd_obstacles: 28
+Qtd_collisions: 2
+Qtd_steps: 329
+
+Success: TRUE
+Workspace: 1440736754
+Qtd_robots: 6
+Qtd_obstacles: 61
+Qtd_collisions: 0
+Qtd_steps: 444
+
+Success: TRUE
+Workspace: 1440736928
+Qtd_robots: 5
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 181
+
+Success: TRUE
+Workspace: 1440736970
+Qtd_robots: 7
+Qtd_obstacles: 88
+Qtd_collisions: 2
+Qtd_steps: 341
+
+Success: TRUE
+Workspace: 1440737204
+Qtd_robots: 7
+Qtd_obstacles: 86
+Qtd_collisions: 1
+Qtd_steps: 466
+
+Success: TRUE
+Workspace: 1440737440
+Qtd_robots: 9
+Qtd_obstacles: 73
+Qtd_collisions: 1
+Qtd_steps: 314
+
+Success: TRUE
+Workspace: 1440737674
+Qtd_robots: 6
+Qtd_obstacles: 68
+Qtd_collisions: 1
+Qtd_steps: 339
+
+Success: TRUE
+Workspace: 1440737856
+Qtd_robots: 5
+Qtd_obstacles: 48
+Qtd_collisions: 2
+Qtd_steps: 248
+
+Success: TRUE
+Workspace: 1440737992
+Qtd_robots: 10
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 289
+
+Success: TRUE
+Workspace: 1440738058
+Qtd_robots: 8
+Qtd_obstacles: 33
+Qtd_collisions: 0
+Qtd_steps: 245
+
+Success: TRUE
+Workspace: 1440738182
+Qtd_robots: 8
+Qtd_obstacles: 64
+Qtd_collisions: 3
+Qtd_steps: 299
+
+Success: TRUE
+Workspace: 1440738372
+Qtd_robots: 8
+Qtd_obstacles: 53
+Qtd_collisions: 2
+Qtd_steps: 324
+
+Success: TRUE
+Workspace: 1440738528
+Qtd_robots: 5
+Qtd_obstacles: 42
+Qtd_collisions: 0
+Qtd_steps: 356
+
+Success: TRUE
+Workspace: 1440738650
+Qtd_robots: 6
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 211
+
+Success: TRUE
+Workspace: 1440738704
+Qtd_robots: 10
+Qtd_obstacles: 56
+Qtd_collisions: 6
+Qtd_steps: 448
+
+Success: TRUE
+Workspace: 1440738896
+Qtd_robots: 7
+Qtd_obstacles: 45
+Qtd_collisions: 0
+Qtd_steps: 380
+
+Success: TRUE
+Workspace: 1440739038
+Qtd_robots: 9
+Qtd_obstacles: 87
+Qtd_collisions: 3
+Qtd_steps: 325
+
+Success: TRUE
+Workspace: 1440739290
+Qtd_robots: 7
+Qtd_obstacles: 35
+Qtd_collisions: 0
+Qtd_steps: 278
+
+Success: TRUE
+Workspace: 1440739416
+Qtd_robots: 6
+Qtd_obstacles: 79
+Qtd_collisions: 2
+Qtd_steps: 404
+
+Success: TRUE
+Workspace: 1440739628
+Qtd_robots: 5
+Qtd_obstacles: 29
+Qtd_collisions: 0
+Qtd_steps: 270
+
+Success: TRUE
+Workspace: 1440739720
+Qtd_robots: 6
+Qtd_obstacles: 69
+Qtd_collisions: 2
+Qtd_steps: 311
+
+Success: TRUE
+Workspace: 1440739920
+Qtd_robots: 7
+Qtd_obstacles: 61
+Qtd_collisions: 0
+Qtd_steps: 358
+
+Success: TRUE
+Workspace: 1440740104
+Qtd_robots: 6
+Qtd_obstacles: 76
+Qtd_collisions: 2
+Qtd_steps: 316
+
+Success: TRUE
+Workspace: 1440740308
+Qtd_robots: 9
+Qtd_obstacles: 30
+Qtd_collisions: 1
+Qtd_steps: 268
+
+Success: TRUE
+Workspace: 1440740436
+Qtd_robots: 10
+Qtd_obstacles: 20
+Qtd_collisions: 2
+Qtd_steps: 280
+
+Success: TRUE
+Workspace: 1440740540
+Qtd_robots: 8
+Qtd_obstacles: 99
+Qtd_collisions: 4
+Qtd_steps: 426
+
+Success: FALSE
+Workspace: 1440740814
+Qtd_robots: 7
+Qtd_obstacles: 98
+Qtd_collisions: 5
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440741076
+Qtd_robots: 5
+Qtd_obstacles: 34
+Qtd_collisions: 2
+Qtd_steps: 309
+
+Success: TRUE
+Workspace: 1440741184
+Qtd_robots: 5
+Qtd_obstacles: 20
+Qtd_collisions: 0
+Qtd_steps: 379
+
+Success: TRUE
+Workspace: 1440741260
+Qtd_robots: 5
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 328
+
+Success: TRUE
+Workspace: 1440741302
+Qtd_robots: 7
+Qtd_obstacles: 48
+Qtd_collisions: 0
+Qtd_steps: 377
+
+Success: FALSE
+Workspace: 1440741448
+Qtd_robots: 7
+Qtd_obstacles: 31
+Qtd_collisions: 0
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440741562
+Qtd_robots: 8
+Qtd_obstacles: 89
+Qtd_collisions: 2
+Qtd_steps: 502
+
+Success: TRUE
+Workspace: 1440741816
+Qtd_robots: 7
+Qtd_obstacles: 26
+Qtd_collisions: 0
+Qtd_steps: 279
+
+Success: TRUE
+Workspace: 1440741918
+Qtd_robots: 9
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 338
+
+Success: TRUE
+Workspace: 1440742006
+Qtd_robots: 8
+Qtd_obstacles: 85
+Qtd_collisions: 4
+Qtd_steps: 479
+
+Success: TRUE
+Workspace: 1440742258
+Qtd_robots: 8
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 233
+
+Success: TRUE
+Workspace: 1440742308
+Qtd_robots: 5
+Qtd_obstacles: 100
+Qtd_collisions: 1
+Qtd_steps: 598
+
+Success: TRUE
+Workspace: 1440742554
+Qtd_robots: 8
+Qtd_obstacles: 49
+Qtd_collisions: 1
+Qtd_steps: 454
+
+Success: TRUE
+Workspace: 1440742718
+Qtd_robots: 10
+Qtd_obstacles: 64
+Qtd_collisions: 2
+Qtd_steps: 548
+
+Success: TRUE
+Workspace: 1440742922
+Qtd_robots: 10
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 344
+
+Success: TRUE
+Workspace: 1440742990
+Qtd_robots: 5
+Qtd_obstacles: 76
+Qtd_collisions: 1
+Qtd_steps: 409
+
+Success: TRUE
+Workspace: 1440743192
+Qtd_robots: 6
+Qtd_obstacles: 33
+Qtd_collisions: 0
+Qtd_steps: 387
+
+Success: TRUE
+Workspace: 1440743300
+Qtd_robots: 5
+Qtd_obstacles: 48
+Qtd_collisions: 1
+Qtd_steps: 297
+
+Success: FALSE
+Workspace: 1440743434
+Qtd_robots: 6
+Qtd_obstacles: 28
+Qtd_collisions: 0
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440743530
+Qtd_robots: 8
+Qtd_obstacles: 2
+Qtd_collisions: 0
+Qtd_steps: 300
+
+Success: TRUE
+Workspace: 1440743580
+Qtd_robots: 8
+Qtd_obstacles: 74
+Qtd_collisions: 2
+Qtd_steps: 420
+
+Success: TRUE
+Workspace: 1440743798
+Qtd_robots: 7
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 314
+
+Success: TRUE
+Workspace: 1440743854
+Qtd_robots: 9
+Qtd_obstacles: 39
+Qtd_collisions: 0
+Qtd_steps: 236
+
+Success: TRUE
+Workspace: 1440743990
+Qtd_robots: 8
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 295
+
+Success: TRUE
+Workspace: 1440744076
+Qtd_robots: 7
+Qtd_obstacles: 95
+Qtd_collisions: 0
+Qtd_steps: 365
+
+Success: TRUE
+Workspace: 1440744338
+Qtd_robots: 7
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 356
+
+Success: TRUE
+Workspace: 1440744390
+Qtd_robots: 7
+Qtd_obstacles: 24
+Qtd_collisions: 1
+Qtd_steps: 260
+
+Success: TRUE
+Workspace: 1440744488
+Qtd_robots: 5
+Qtd_obstacles: 64
+Qtd_collisions: 5
+Qtd_steps: 293
+
+Success: TRUE
+Workspace: 1440744662
+Qtd_robots: 8
+Qtd_obstacles: 62
+Qtd_collisions: 2
+Qtd_steps: 558
+
+Success: TRUE
+Workspace: 1440744854
+Qtd_robots: 5
+Qtd_obstacles: 66
+Qtd_collisions: 0
+Qtd_steps: 330
+
+Success: TRUE
+Workspace: 1440745024
+Qtd_robots: 10
+Qtd_obstacles: 85
+Qtd_collisions: 3
+Qtd_steps: 374
+
+Success: TRUE
+Workspace: 1440745288
+Qtd_robots: 8
+Qtd_obstacles: 39
+Qtd_collisions: 0
+Qtd_steps: 287
+
+Success: TRUE
+Workspace: 1440745434
+Qtd_robots: 5
+Qtd_obstacles: 87
+Qtd_collisions: 3
+Qtd_steps: 479
+
+Success: TRUE
+Workspace: 1440745656
+Qtd_robots: 5
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 299
+
+Success: TRUE
+Workspace: 1440745708
+Qtd_robots: 7
+Qtd_obstacles: 4
+Qtd_collisions: 0
+Qtd_steps: 227
+
+Success: TRUE
+Workspace: 1440745758
+Qtd_robots: 9
+Qtd_obstacles: 49
+Qtd_collisions: 1
+Qtd_steps: 331
+
+Success: TRUE
+Workspace: 1440745934
+Qtd_robots: 6
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 246
+
+Success: TRUE
+Workspace: 1440746002
+Qtd_robots: 6
+Qtd_obstacles: 24
+Qtd_collisions: 1
+Qtd_steps: 310
+
+Success: TRUE
+Workspace: 1440746098
+Qtd_robots: 9
+Qtd_obstacles: 49
+Qtd_collisions: 0
+Qtd_steps: 456
+
+Success: TRUE
+Workspace: 1440746274
+Qtd_robots: 9
+Qtd_obstacles: 46
+Qtd_collisions: 0
+Qtd_steps: 320
+
+Success: TRUE
+Workspace: 1440746426
+Qtd_robots: 7
+Qtd_obstacles: 71
+Qtd_collisions: 1
+Qtd_steps: 265
+
+Success: TRUE
+Workspace: 1440746632
+Qtd_robots: 7
+Qtd_obstacles: 49
+Qtd_collisions: 0
+Qtd_steps: 323
+
+Success: TRUE
+Workspace: 1440746788
+Qtd_robots: 9
+Qtd_obstacles: 41
+Qtd_collisions: 0
+Qtd_steps: 430
+
+Success: TRUE
+Workspace: 1440746932
+Qtd_robots: 5
+Qtd_obstacles: 81
+Qtd_collisions: 1
+Qtd_steps: 363
+
+Success: TRUE
+Workspace: 1440747146
+Qtd_robots: 5
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 238
+
+Success: TRUE
+Workspace: 1440747198
+Qtd_robots: 10
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 258
+
+Success: TRUE
+Workspace: 1440747286
+Qtd_robots: 6
+Qtd_obstacles: 9
+Qtd_collisions: 0
+Qtd_steps: 246
+
+Success: FALSE
+Workspace: 1440747346
+Qtd_robots: 6
+Qtd_obstacles: 29
+Qtd_collisions: 2
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440747444
+Qtd_robots: 5
+Qtd_obstacles: 59
+Qtd_collisions: 0
+Qtd_steps: 485
+
+Success: TRUE
+Workspace: 1440747608
+Qtd_robots: 6
+Qtd_obstacles: 63
+Qtd_collisions: 2
+Qtd_steps: 553
+
+Success: TRUE
+Workspace: 1440747790
+Qtd_robots: 10
+Qtd_obstacles: 94
+Qtd_collisions: 3
+Qtd_steps: 522
+
+Success: TRUE
+Workspace: 1440748074
+Qtd_robots: 10
+Qtd_obstacles: 58
+Qtd_collisions: 4
+Qtd_steps: 453
+
+Success: TRUE
+Workspace: 1440748280
+Qtd_robots: 10
+Qtd_obstacles: 20
+Qtd_collisions: 0
+Qtd_steps: 265
+
+Success: TRUE
+Workspace: 1440748378
+Qtd_robots: 6
+Qtd_obstacles: 19
+Qtd_collisions: 1
+Qtd_steps: 273
+
+Success: TRUE
+Workspace: 1440748460
+Qtd_robots: 8
+Qtd_obstacles: 8
+Qtd_collisions: 0
+Qtd_steps: 292
+
+Success: TRUE
+Workspace: 1440748522
+Qtd_robots: 7
+Qtd_obstacles: 91
+Qtd_collisions: 3
+Qtd_steps: 406
+
+Success: TRUE
+Workspace: 1440748774
+Qtd_robots: 9
+Qtd_obstacles: 62
+Qtd_collisions: 2
+Qtd_steps: 392
+
+Success: TRUE
+Workspace: 1440748972
+Qtd_robots: 6
+Qtd_obstacles: 86
+Qtd_collisions: 1
+Qtd_steps: 510
+
+Success: TRUE
+Workspace: 1440749199
+Qtd_robots: 8
+Qtd_obstacles: 95
+Qtd_collisions: 3
+Qtd_steps: 437
+
+Success: TRUE
+Workspace: 1440749479
+Qtd_robots: 6
+Qtd_obstacles: 17
+Qtd_collisions: 0
+Qtd_steps: 329
+
+Success: TRUE
+Workspace: 1440749551
+Qtd_robots: 5
+Qtd_obstacles: 40
+Qtd_collisions: 0
+Qtd_steps: 219
+
+Success: TRUE
+Workspace: 1440749681
+Qtd_robots: 8
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 331
+
+Success: TRUE
+Workspace: 1440749765
+Qtd_robots: 10
+Qtd_obstacles: 31
+Qtd_collisions: 0
+Qtd_steps: 259
+
+Success: TRUE
+Workspace: 1440749883
+Qtd_robots: 8
+Qtd_obstacles: 77
+Qtd_collisions: 3
+Qtd_steps: 453
+
+Success: TRUE
+Workspace: 1440750107
+Qtd_robots: 9
+Qtd_obstacles: 62
+Qtd_collisions: 0
+Qtd_steps: 326
+
+Success: TRUE
+Workspace: 1440750315
+Qtd_robots: 5
+Qtd_obstacles: 91
+Qtd_collisions: 1
+Qtd_steps: 497
+
+Success: TRUE
+Workspace: 1440750547
+Qtd_robots: 5
+Qtd_obstacles: 37
+Qtd_collisions: 0
+Qtd_steps: 247
+
+Success: TRUE
+Workspace: 1440750661
+Qtd_robots: 5
+Qtd_obstacles: 73
+Qtd_collisions: 0
+Qtd_steps: 293
+
+Success: TRUE
+Workspace: 1440750859
+Qtd_robots: 6
+Qtd_obstacles: 26
+Qtd_collisions: 0
+Qtd_steps: 296
+
+Success: TRUE
+Workspace: 1440750957
+Qtd_robots: 9
+Qtd_obstacles: 93
+Qtd_collisions: 0
+Qtd_steps: 367
+
+Success: TRUE
+Workspace: 1440751235
+Qtd_robots: 9
+Qtd_obstacles: 67
+Qtd_collisions: 0
+Qtd_steps: 398
+
+Success: TRUE
+Workspace: 1440751437
+Qtd_robots: 10
+Qtd_obstacles: 58
+Qtd_collisions: 4
+Qtd_steps: 487
+
+Success: TRUE
+Workspace: 1440751629
+Qtd_robots: 7
+Qtd_obstacles: 20
+Qtd_collisions: 0
+Qtd_steps: 245
+
+Success: TRUE
+Workspace: 1440751715
+Qtd_robots: 10
+Qtd_obstacles: 72
+Qtd_collisions: 1
+Qtd_steps: 322
+
+Success: TRUE
+Workspace: 1440751943
+Qtd_robots: 10
+Qtd_obstacles: 51
+Qtd_collisions: 2
+Qtd_steps: 347
+
+Success: TRUE
+Workspace: 1440752125
+Qtd_robots: 5
+Qtd_obstacles: 98
+Qtd_collisions: 1
+Qtd_steps: 375
+
+Success: TRUE
+Workspace: 1440752375
+Qtd_robots: 5
+Qtd_obstacles: 35
+Qtd_collisions: 0
+Qtd_steps: 263
+
+Success: TRUE
+Workspace: 1440752487
+Qtd_robots: 9
+Qtd_obstacles: 79
+Qtd_collisions: 1
+Qtd_steps: 336
+
+Success: TRUE
+Workspace: 1440752719
+Qtd_robots: 6
+Qtd_obstacles: 28
+Qtd_collisions: 0
+Qtd_steps: 378
+
+Success: TRUE
+Workspace: 1440752819
+Qtd_robots: 7
+Qtd_obstacles: 46
+Qtd_collisions: 0
+Qtd_steps: 313
+
+Success: TRUE
+Workspace: 1440752957
+Qtd_robots: 7
+Qtd_obstacles: 77
+Qtd_collisions: 2
+Qtd_steps: 480
+
+Success: TRUE
+Workspace: 1440753173
+Qtd_robots: 8
+Qtd_obstacles: 87
+Qtd_collisions: 1
+Qtd_steps: 270
+
+Success: TRUE
+Workspace: 1440753425
+Qtd_robots: 7
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 246
+
+Success: TRUE
+Workspace: 1440753483
+Qtd_robots: 9
+Qtd_obstacles: 88
+Qtd_collisions: 4
+Qtd_steps: 373
+
+Success: TRUE
+Workspace: 1440753751
+Qtd_robots: 5
+Qtd_obstacles: 77
+Qtd_collisions: 2
+Qtd_steps: 287
+
+Success: TRUE
+Workspace: 1440753947
+Qtd_robots: 6
+Qtd_obstacles: 70
+Qtd_collisions: 2
+Qtd_steps: 402
+
+Success: TRUE
+Workspace: 1440754133
+Qtd_robots: 10
+Qtd_obstacles: 89
+Qtd_collisions: 4
+Qtd_steps: 570
+
+Success: TRUE
+Workspace: 1440754415
+Qtd_robots: 8
+Qtd_obstacles: 90
+Qtd_collisions: 2
+Qtd_steps: 434
+
+Success: TRUE
+Workspace: 1440754675
+Qtd_robots: 7
+Qtd_obstacles: 31
+Qtd_collisions: 2
+Qtd_steps: 195
+
+Success: TRUE
+Workspace: 1440754789
+Qtd_robots: 6
+Qtd_obstacles: 88
+Qtd_collisions: 0
+Qtd_steps: 444
+
+Success: TRUE
+Workspace: 1440755027
+Qtd_robots: 10
+Qtd_obstacles: 96
+Qtd_collisions: 4
+Qtd_steps: 443
+
+Success: TRUE
+Workspace: 1440755323
+Qtd_robots: 9
+Qtd_obstacles: 11
+Qtd_collisions: 0
+Qtd_steps: 278
+
+Success: TRUE
+Workspace: 1440755403
+Qtd_robots: 10
+Qtd_obstacles: 25
+Qtd_collisions: 0
+Qtd_steps: 223
+
+Success: TRUE
+Workspace: 1440755513
+Qtd_robots: 9
+Qtd_obstacles: 18
+Qtd_collisions: 0
+Qtd_steps: 268
+
+Success: TRUE
+Workspace: 1440755605
+Qtd_robots: 8
+Qtd_obstacles: 56
+Qtd_collisions: 3
+Qtd_steps: 356
+
+Success: TRUE
+Workspace: 1440755791
+Qtd_robots: 8
+Qtd_obstacles: 21
+Qtd_collisions: 1
+Qtd_steps: 421
+
+Success: TRUE
+Workspace: 1440755891
+Qtd_robots: 5
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 493
+
+Success: TRUE
+Workspace: 1440755975
+Qtd_robots: 5
+Qtd_obstacles: 84
+Qtd_collisions: 0
+Qtd_steps: 388
+
+Success: TRUE
+Workspace: 1440756187
+Qtd_robots: 8
+Qtd_obstacles: 74
+Qtd_collisions: 1
+Qtd_steps: 468
+
+Success: TRUE
+Workspace: 1440756411
+Qtd_robots: 9
+Qtd_obstacles: 36
+Qtd_collisions: 2
+Qtd_steps: 397
+
+Success: TRUE
+Workspace: 1440756543
+Qtd_robots: 10
+Qtd_obstacles: 65
+Qtd_collisions: 3
+Qtd_steps: 530
+
+Success: TRUE
+Workspace: 1440756753
+Qtd_robots: 6
+Qtd_obstacles: 84
+Qtd_collisions: 4
+Qtd_steps: 568
+
+Success: TRUE
+Workspace: 1440756983
+Qtd_robots: 8
+Qtd_obstacles: 63
+Qtd_collisions: 2
+Qtd_steps: 290
+
+Success: TRUE
+Workspace: 1440757179
+Qtd_robots: 7
+Qtd_obstacles: 19
+Qtd_collisions: 3
+Qtd_steps: 222
+
+Success: TRUE
+Workspace: 1440757263
+Qtd_robots: 10
+Qtd_obstacles: 89
+Qtd_collisions: 3
+Qtd_steps: 457
+
+Success: TRUE
+Workspace: 1440757545
+Qtd_robots: 5
+Qtd_obstacles: 53
+Qtd_collisions: 0
+Qtd_steps: 420
+
+Success: TRUE
+Workspace: 1440757699
+Qtd_robots: 10
+Qtd_obstacles: 36
+Qtd_collisions: 3
+Qtd_steps: 464
+
+Success: TRUE
+Workspace: 1440757839
+Qtd_robots: 8
+Qtd_obstacles: 18
+Qtd_collisions: 1
+Qtd_steps: 265
+
+Success: TRUE
+Workspace: 1440757929
+Qtd_robots: 8
+Qtd_obstacles: 68
+Qtd_collisions: 2
+Qtd_steps: 598
+
+Success: TRUE
+Workspace: 1440758125
+Qtd_robots: 8
+Qtd_obstacles: 62
+Qtd_collisions: 3
+Qtd_steps: 493
+
+Success: TRUE
+Workspace: 1440758313
+Qtd_robots: 8
+Qtd_obstacles: 97
+Qtd_collisions: 6
+Qtd_steps: 544
+
+Success: TRUE
+Workspace: 1440758577
+Qtd_robots: 7
+Qtd_obstacles: 54
+Qtd_collisions: 1
+Qtd_steps: 650
+
+Success: TRUE
+Workspace: 1440758737
+Qtd_robots: 9
+Qtd_obstacles: 3
+Qtd_collisions: 0
+Qtd_steps: 253
+
+Success: TRUE
+Workspace: 1440758793
+Qtd_robots: 5
+Qtd_obstacles: 20
+Qtd_collisions: 1
+Qtd_steps: 223
+
+Success: TRUE
+Workspace: 1440758877
+Qtd_robots: 7
+Qtd_obstacles: 38
+Qtd_collisions: 2
+Qtd_steps: 383
+
+Success: TRUE
+Workspace: 1440759009
+Qtd_robots: 6
+Qtd_obstacles: 11
+Qtd_collisions: 0
+Qtd_steps: 234
+
+Success: FALSE
+Workspace: 1440759071
+Qtd_robots: 7
+Qtd_obstacles: 23
+Qtd_collisions: 1
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440759161
+Qtd_robots: 6
+Qtd_obstacles: 75
+Qtd_collisions: 1
+Qtd_steps: 648
+
+Success: TRUE
+Workspace: 1440759365
+Qtd_robots: 8
+Qtd_obstacles: 11
+Qtd_collisions: 0
+Qtd_steps: 304
+
+Success: TRUE
+Workspace: 1440759433
+Qtd_robots: 8
+Qtd_obstacles: 85
+Qtd_collisions: 1
+Qtd_steps: 309
+
+Success: TRUE
+Workspace: 1440759683
+Qtd_robots: 8
+Qtd_obstacles: 73
+Qtd_collisions: 3
+Qtd_steps: 313
+
+Success: TRUE
+Workspace: 1440759887
+Qtd_robots: 7
+Qtd_obstacles: 57
+Qtd_collisions: 1
+Qtd_steps: 437
+
+Success: TRUE
+Workspace: 1440760067
+Qtd_robots: 8
+Qtd_obstacles: 89
+Qtd_collisions: 3
+Qtd_steps: 356
+
+Success: TRUE
+Workspace: 1440760335
+Qtd_robots: 7
+Qtd_obstacles: 49
+Qtd_collisions: 1
+Qtd_steps: 380
+
+Success: TRUE
+Workspace: 1440760487
+Qtd_robots: 10
+Qtd_obstacles: 23
+Qtd_collisions: 0
+Qtd_steps: 289
+
+Success: TRUE
+Workspace: 1440760597
+Qtd_robots: 8
+Qtd_obstacles: 76
+Qtd_collisions: 1
+Qtd_steps: 405
+
+Success: TRUE
+Workspace: 1440760841
+Qtd_robots: 10
+Qtd_obstacles: 37
+Qtd_collisions: 0
+Qtd_steps: 452
+
+Success: TRUE
+Workspace: 1440760981
+Qtd_robots: 5
+Qtd_obstacles: 13
+Qtd_collisions: 0
+Qtd_steps: 261
+
+Success: TRUE
+Workspace: 1440761047
+Qtd_robots: 7
+Qtd_obstacles: 83
+Qtd_collisions: 4
+Qtd_steps: 244
+
+Success: TRUE
+Workspace: 1440761277
+Qtd_robots: 5
+Qtd_obstacles: 95
+Qtd_collisions: 2
+Qtd_steps: 329
+
+Success: TRUE
+Workspace: 1440761523
+Qtd_robots: 6
+Qtd_obstacles: 72
+Qtd_collisions: 1
+Qtd_steps: 473
+
+Success: TRUE
+Workspace: 1440761717
+Qtd_robots: 6
+Qtd_obstacles: 24
+Qtd_collisions: 0
+Qtd_steps: 203
+
+Success: TRUE
+Workspace: 1440761813
+Qtd_robots: 5
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 255
+
+Success: TRUE
+Workspace: 1440761849
+Qtd_robots: 10
+Qtd_obstacles: 85
+Qtd_collisions: 1
+Qtd_steps: 271
+
+Success: TRUE
+Workspace: 1440762107
+Qtd_robots: 9
+Qtd_obstacles: 91
+Qtd_collisions: 4
+Qtd_steps: 385
+
+Success: TRUE
+Workspace: 1440762363
+Qtd_robots: 9
+Qtd_obstacles: 98
+Qtd_collisions: 3
+Qtd_steps: 358
+
+Success: TRUE
+Workspace: 1440762653
+Qtd_robots: 8
+Qtd_obstacles: 12
+Qtd_collisions: 0
+Qtd_steps: 263
+
+Success: TRUE
+Workspace: 1440762727
+Qtd_robots: 10
+Qtd_obstacles: 7
+Qtd_collisions: 0
+Qtd_steps: 277
+
+Success: TRUE
+Workspace: 1440762797
+Qtd_robots: 7
+Qtd_obstacles: 25
+Qtd_collisions: 2
+Qtd_steps: 405
+
+Success: TRUE
+Workspace: 1440762895
+Qtd_robots: 10
+Qtd_obstacles: 4
+Qtd_collisions: 1
+Qtd_steps: 304
+
+Success: TRUE
+Workspace: 1440762959
+Qtd_robots: 7
+Qtd_obstacles: 69
+Qtd_collisions: 0
+Qtd_steps: 353
+
+Success: TRUE
+Workspace: 1440763167
+Qtd_robots: 5
+Qtd_obstacles: 31
+Qtd_collisions: 1
+Qtd_steps: 368
+
+Success: TRUE
+Workspace: 1440763267
+Qtd_robots: 10
+Qtd_obstacles: 50
+Qtd_collisions: 1
+Qtd_steps: 294
+
+Success: TRUE
+Workspace: 1440763437
+Qtd_robots: 5
+Qtd_obstacles: 92
+Qtd_collisions: 0
+Qtd_steps: 264
+
+Success: TRUE
+Workspace: 1440763665
+Qtd_robots: 5
+Qtd_obstacles: 49
+Qtd_collisions: 0
+Qtd_steps: 386
+
+Success: TRUE
+Workspace: 1440763805
+Qtd_robots: 8
+Qtd_obstacles: 59
+Qtd_collisions: 3
+Qtd_steps: 360
+
+Success: TRUE
+Workspace: 1440763985
+Qtd_robots: 8
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 283
+
+Success: TRUE
+Workspace: 1440764033
+Qtd_robots: 10
+Qtd_obstacles: 15
+Qtd_collisions: 0
+Qtd_steps: 341
+
+Success: TRUE
+Workspace: 1440764125
+Qtd_robots: 8
+Qtd_obstacles: 33
+Qtd_collisions: 1
+Qtd_steps: 266
+
+Success: FALSE
+Workspace: 1440764247
+Qtd_robots: 8
+Qtd_obstacles: 66
+Qtd_collisions: 3
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440764437
+Qtd_robots: 5
+Qtd_obstacles: 49
+Qtd_collisions: 0
+Qtd_steps: 280
+
+Success: TRUE
+Workspace: 1440764579
+Qtd_robots: 7
+Qtd_obstacles: 61
+Qtd_collisions: 3
+Qtd_steps: 429
+
+Success: TRUE
+Workspace: 1440764765
+Qtd_robots: 6
+Qtd_obstacles: 80
+Qtd_collisions: 0
+Qtd_steps: 276
+
+Success: TRUE
+Workspace: 1440764979
+Qtd_robots: 5
+Qtd_obstacles: 60
+Qtd_collisions: 1
+Qtd_steps: 233
+
+Success: TRUE
+Workspace: 1440765145
+Qtd_robots: 9
+Qtd_obstacles: 31
+Qtd_collisions: 0
+Qtd_steps: 255
+
+Success: TRUE
+Workspace: 1440765269
+Qtd_robots: 6
+Qtd_obstacles: 61
+Qtd_collisions: 1
+Qtd_steps: 281
+
+Success: TRUE
+Workspace: 1440765443
+Qtd_robots: 7
+Qtd_obstacles: 75
+Qtd_collisions: 2
+Qtd_steps: 332
+
+Success: FALSE
+Workspace: 1440765649
+Qtd_robots: 9
+Qtd_obstacles: 37
+Qtd_collisions: 1
+Qtd_steps: 1000
+
+Success: TRUE
+Workspace: 1440765785
+Qtd_robots: 8
+Qtd_obstacles: 95
+Qtd_collisions: 3
+Qtd_steps: 333
+
+Success: TRUE
+Workspace: 1440766051
+Qtd_robots: 7
+Qtd_obstacles: 38
+Qtd_collisions: 2
+Qtd_steps: 324
+
+Success: TRUE
+Workspace: 1440766179
+Qtd_robots: 7
+Qtd_obstacles: 1
+Qtd_collisions: 0
+Qtd_steps: 265
+
