@@ -19,15 +19,34 @@ MPP::MPP(int argc, char** argv){
 	this->argc = argc;
 	this->argv = argv;
 
+	finish = false;
 	simulation_on();
 	//grsim_on();
-	pathWorkspace = "src/data/workspaces/1466354511";
+	
+	stringstream secure;
+	secure << argv[1];
+	
+	report_name_of_workspace = secure.str();
+	cout << report_name_of_workspace << endl;
+	report_num_robots = report_num_obstacles = report_num_collisions = report_num_steps = 0;
+	report_success = false;
+
+	stringstream ss;
+	ss << "src/data/workspaces/" << report_name_of_workspace;
+
+	pathWorkspace = ss.str();;
 }
 
 void MPP::init(){
 	findPaths();
 
 	goodrich.setWorkspace(&workspace);
+	report_num_robots = workspace.start.size()+1;
+	report_num_obstacles = workspace.objects.size()+1;
+
+	for(int i = 0 ; i < workspace.start.size() ; i++){
+		done.push_back(false);
+	}
 
 	for(int i = 0 ; i < workspace.start.size() ; i++){
 		Path p;
@@ -46,21 +65,20 @@ void MPP::init(){
 void MPP::init_threads(){
 	if(simulation){
 		thread_simulation = new thread(bind(&MPP::simulation_thread, this));
-		thread_draw = new thread(bind(&MPP::draw_thread, this));
 	}else{
 		thread_net = new thread(bind(&MPP::net_thread, this));
-		thread_draw = new thread(bind(&MPP::draw_thread, this));
 	}
+
+	//thread_draw = new thread(bind(&MPP::draw_thread, this));
 }
 
 void MPP::finalize_threads(){
 	if(simulation){
-		thread_simulation->join();
-		thread_draw->join();
+		thread_simulation->join();	
 	}else{
 		thread_net->join();
-		thread_draw->join();
 	}
+	//thread_draw->join();
 }
 
 void MPP::findPaths(){
@@ -103,6 +121,7 @@ void MPP::draw_thread(){
     draw.allocateRuntimePaths(&runtimePaths);
     draw.setObjects(&workspace.objects);
     draw.setSize(1000.0, 1000.0); // pode dar problema
+    draw.allocateFinish(&finish);
     draw.init(argc, argv);
 }
 
@@ -197,7 +216,8 @@ void MPP::net_thread(){
 }
 
 void MPP::simulation_thread(){
-    while(1){
+    while(!finish){
+    	moveObstacles();
     	for(int i = 0 ; i < runtimePaths.size() ; i++){
     		Pose result;
     		float dist = distance(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), offlinePaths.at(i).path.at(idDone.at(i)));
@@ -219,10 +239,72 @@ void MPP::simulation_thread(){
     			//cout << offlinePaths.at(i).path.size() << endl;
     			if(idDone.at(i) < offlinePaths.at(i).path.size()-1){
     				idDone.at(i)++;
+    			}else
+    			if(idDone.at(i) == offlinePaths.at(i).path.size()-1){
+    				done.at(i) = true;
     			}
+    			
+    		}
+
+    		//cout << "i: " << i << ", id: " << idDone.at(i) << ", size: " << offlinePaths.at(i).path.size() << endl;
+
+    		for(int j = 0 ; j < workspace.objects.size() ; j++){
+    			float dist = checkCollision( runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), workspace.objects.at(j) );
+    			if(dist < 0.0){
+    				bool repeated = false;
+    				for(int k = 0; k < collisions.size() ; k++){
+    					float dist_col = distance(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), collisions.at(k));
+    					if(dist_col < 100){
+    						repeated = true;
+    						//cout << "i: " << i << " col " << dist_col << endl;
+    					}
+    				}
+    				if(!repeated){
+    					collisions.push_back(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1));
+	    				report_num_collisions++;
+	    				//cout << "robot: " << i << " COLLISION: " << report_num_collisions << endl;
+	    			}
+	    		}
     		}
     	}
-    	usleep(40000);
+
+    	bool todos_chegaram = true;
+
+
+    	for(int i = 0 ; i < done.size() ; i++){
+    		if(!done.at(i)){
+    			todos_chegaram = false;
+    		}
+    	}
+
+    	if(todos_chegaram){
+    		report_success = true;
+    		finish = true;
+    	}else
+    	if(report_num_steps > 999){
+    		finish = true;
+    		report_success = false;
+    	}
+
+    	if(finish){
+    		cout << endl;
+    		cout << "Success: ";
+		    if(report_success){
+				cout << "TRUE" << endl;
+			}else{
+				cout << "FALSE" << endl;
+			}
+
+			cout << "Workspace: " << report_name_of_workspace << endl;
+			cout << "Qtd_robots: " << report_num_robots << endl;
+			cout << "Qtd_obstacles: " << report_num_obstacles << endl;
+			cout << "Qtd_collisions: " << report_num_collisions << endl;
+			cout << "Qtd_steps: " << report_num_steps << endl;
+    	}
+
+    	//usleep(40000);
+    	report_num_steps++;
+    	//cout << report_num_steps << endl;
     }
 }
 
@@ -301,3 +383,31 @@ float MPP::angulation(Pose a, Pose b){
 float MPP::distance(Pose a, Pose b){
 	return sqrt(((a.x - b.x)*(a.x - b.x)) + ((a.y - b.y)*(a.y - b.y)));
 }
+
+float MPP::checkCollision(Pose pose, Object obj){
+	//return sqrt((pose.x-obj.x)*(pose.x-obj.x) + (pose.y-obj.y)*(pose.y-obj.y)) - obj.radius;
+	return distance(pose, Pose(obj.x, obj.y, 0)) - obj.radius;
+}
+
+void MPP::moveObstacles(){
+ 	int helperTime = 0;
+ 	srand(time(NULL)+helperTime);
+ 
+ 	for(int i = 0 ; i < workspace.objects.size() ; i++){
+ 		int moveX, moveY;
+ 		int direX, direY;
+ 
+ 		if(rand() % 2 == 0)	direX = 1;
+ 		else				direX = -1;
+ 
+ 		helperTime++;
+ 
+ 		if(rand() % 2 == 0)	direY = 1;
+ 		else				direY = -1;
+ 
+ 		helperTime++;
+ 
+ 		workspace.objects.at(i).x += (rand()%5)*direX;
+ 		workspace.objects.at(i).y += (rand()%5)*direY;
+ 	}
+ }

@@ -47,13 +47,19 @@ private:
 	vector<Path> offlinePaths;
 	vector<Path> runtimePaths;
 	vector<int> idDone;
+	vector<bool> done;
+	vector<Pose> collisions;
 	
 	Workspace workspace;
 	grSim_Packet packet_grSim;
 	Command command;
 
-	bool simulation, grsim;
+	bool simulation, grsim, finish;
 	string pathWorkspace;
+
+	string report_name_of_workspace;
+	int report_num_robots, report_num_obstacles, report_num_collisions, report_num_steps;
+	bool report_success;
 
 	int argc;
 	char **argv;
@@ -69,6 +75,8 @@ private:
 	Pose handlePosition(Pose poseGR);
 	Object handlePosition(Object objectGR);
 	void findPaths();
+	float checkCollision(Pose pose, Object obj);
+	void moveObstacles();
 
 public:
 	MPP(int argc, char** argv);

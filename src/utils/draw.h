@@ -33,6 +33,7 @@ private:
 	vector<Path> *runtimePaths;
 	vector<Object> *objects;
 	float width, height;
+	 bool *finish;
 
 	static void drawSquare(float, float);
 	static void drawSphere(float, float, float);
@@ -52,6 +53,7 @@ public:
 	void allocateRuntimePaths(vector<Path>*);
 	void setObjects(vector<Object>*);
 	void setSize(float, float);
+	void allocateFinish(bool*);
 };
 
 #endif

@@ -19,6 +19,7 @@ vector<Path> pathsStatic;
 vector<Object> *objectsStaticDraw;
 vector<Path> *runtimePathsStatic;
 float widthStatic, heightStatic;
+bool *staticFinish = false;
 
 Draw::Draw(){
 
@@ -176,6 +177,10 @@ void Draw::Desenha(void){
 	drawPaths();
 
 	usleep(33333);
+	if(*staticFinish){
+		exit(0);
+		//break;
+	}
 	glutSwapBuffers();
 }
 
@@ -218,4 +223,9 @@ void Draw::setSize(float width, float height){
 void Draw::allocateRuntimePaths(vector<Path> *runtimePaths){
 	this->runtimePaths = runtimePaths;
 	runtimePathsStatic = runtimePaths;
+}
+
+void Draw::allocateFinish(bool *finish){
+	this->finish = finish;
+	staticFinish = finish;
 }

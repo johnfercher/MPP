@@ -59,7 +59,7 @@ vector<ob::PathPtr> Offline_planning::solvePaths(){
         pdef->setStartAndGoalStates(start, goal);
         ob::PlannerPtr planner(new og::RRTConnect(si));
         planner->setProblemDefinition(pdef);
-        planner->setup();
+        //planner->setup();
         //si->printSettings(std::cout);
         //pdef->print(std::cout);
         ob::PlannerStatus solved = planner->solve(timeToResolve);

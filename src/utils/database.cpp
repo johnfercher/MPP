@@ -172,7 +172,7 @@ void Database::makeRandomWorkspace(){
     qtdObjects = rand()%100;
     timeHelper += 10;
 
-    cout << ss.str() << endl;
+    //cout << ss.str() << endl;
 
     write.open(ss.str().c_str());
         for(int i = 0 ; i < qtdRobots ; i++){
