@@ -15,6 +15,7 @@ copies or substantial portions of the Software.
 
 #include "iostream"
 #include "mpp.h"
+#include "unistd.h"
 
 using namespace std;
 using namespace common;
@@ -24,6 +25,11 @@ using namespace common;
 int main(int argc, char** argv){
     MPP mpp(argc, argv);
     mpp.init();
-
+    /*for(int i = 0 ; i < 5 ; i++){
+    	cout << i << endl;
+    	usleep(100000);
+    	Database db;
+    	db.makeRandomWorkspace();
+    }*/
     return 0;   
 }

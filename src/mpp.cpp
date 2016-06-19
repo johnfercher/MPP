@@ -19,9 +19,9 @@ MPP::MPP(int argc, char** argv){
 	this->argc = argc;
 	this->argv = argv;
 
-	//simulation_on();
-	grsim_on();
-	pathWorkspace = "src/data/workspaces/random1";
+	simulation_on();
+	//grsim_on();
+	pathWorkspace = "src/data/workspaces/1466354511";
 }
 
 void MPP::init(){

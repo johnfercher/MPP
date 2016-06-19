@@ -34,6 +34,7 @@ public:
 	void transform3in2();
 	Workspace loadWorkspace(string path = "data/workspaces/default");
 	void makeRandomWorkspace();
+	float distance(Pose a, Pose b);
 };
 
 #endif

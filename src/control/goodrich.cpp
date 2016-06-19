@@ -68,7 +68,7 @@ void Goodrich::attractiveForce(){
 			result.y += -alpha*areaRobot*sin(theta/180.0*M_PI);
 		}
 	}else{
-		cout << "ntudo" << endl;
+		//cout << "ntudo" << endl;
 		result.x += -alpha*areaRobot*cos(theta/180.0*M_PI); 
 		result.y += -alpha*areaRobot*sin(theta/180.0*M_PI);
 	}

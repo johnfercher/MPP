@@ -156,14 +156,17 @@ void Database::makeRandomWorkspace(){
     int qtdRobots;
     int qtdObjects;
 
-    float xInit, yInit, yawInit;
-    float xGoal, yGoal, yawGoal;
+    vector<float> xInit, yInit, yawInit;
+    vector<float> xGoal, yGoal, yawGoal;
+
+    //float xInit, yInit, yawInit;
+    //float xGoal, yGoal, yawGoal;
 
     srand(time(NULL)+timeHelper);
  
-    ss << (time(NULL)+timeHelper);
+    ss << "src/data/workspaces/" << (time(NULL)+timeHelper);
 
-    qtdRobots = rand()%5;
+    qtdRobots = 4+rand()%6;
     timeHelper += 10;
 
     qtdObjects = rand()%100;
@@ -173,21 +176,21 @@ void Database::makeRandomWorkspace(){
 
     write.open(ss.str().c_str());
         for(int i = 0 ; i < qtdRobots ; i++){
-            xInit = rand()%1000;
+            xInit.push_back(rand()%1000);
             timeHelper++;
-            yInit = rand()%1000;
+            yInit.push_back(rand()%1000);
             timeHelper++;
-            yawInit = rand()%3;
-            write << xInit << " " << yInit << " " << yawInit << endl;
+            yawInit.push_back(rand()%3);
+            write << xInit.at(i) << " " << yInit.at(i) << " " << yawInit.at(i) << endl;
         }
         write << endl;
         for(int i = 0 ; i < qtdRobots ; i++){
-            xGoal = rand()%1000;
+            xGoal.push_back(rand()%1000);
             timeHelper++;
-            yGoal = rand()%1000;
+            yGoal.push_back(rand()%1000);
             timeHelper++;
-            yawGoal = rand()%3;
-            write << xGoal << " " << yGoal << " " << yawGoal << endl;
+            yawGoal.push_back(rand()%3);
+            write << xGoal.at(i) << " " << yGoal.at(i) << " " << yawGoal.at(i) << endl;
         }
         write << endl;
         for(int i = 0 ; i < qtdObjects ; i++){
@@ -196,7 +199,18 @@ void Database::makeRandomWorkspace(){
             float y = rand()%1000;
             timeHelper++;
             float radius = rand()%50;
-            if(x != xInit && x != xGoal && y != yInit && y != yGoal){
+
+            bool ok = true;
+            for(int i = 0 ; i < qtdRobots ; i++){
+                float distGoal = distance(Pose(x, y, 0), Pose(xGoal.at(i), yGoal.at(i), 0));
+                float distInit = distance(Pose(x, y, 0), Pose(xInit.at(i), yInit.at(i), 0));
+
+                if(distGoal < 60 || distInit < 60){
+                    ok = false;
+                }
+            }
+
+            if(ok){
                 write << x << " " << y << " " << radius << endl;
             }else{
                 i--;
@@ -207,4 +221,8 @@ void Database::makeRandomWorkspace(){
    // ofstream write;
 
     //write.open();
+}
+
+float Database::distance(Pose a, Pose b){
+    return sqrt(((a.x - b.x)*(a.x - b.x)) + ((a.y - b.y)*(a.y - b.y)));
 }

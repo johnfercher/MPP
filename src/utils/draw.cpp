@@ -99,6 +99,9 @@ void Draw::drawPaths(){
 			case 3:{
 				glColor3f(0.5, 0.0, 0.5);
 			}break;
+			default:{
+				glColor3f(0.5, 0.5, 0.5);
+			}break;
 		}
 
 		for(int i = 0 ; i < pathsStatic.size() ; i++){
@@ -129,7 +132,7 @@ void Draw::drawPaths(){
 
 		for(int i = 0 ; i < runtimePathsStatic->size() ; i++){
 			Pose anterior = runtimePathsStatic->at(i).path.at(0);
-				switch(i){
+			switch(i){
 				case 0:{
 					glColor3f(1.0, 0.0, 0.0);
 				}break;
@@ -141,6 +144,9 @@ void Draw::drawPaths(){
 				}break;
 				case 3:{
 					glColor3f(1.0, 0.0, 1.0);
+				}break;
+				default:{
+					glColor3f(0.7, 0.7, 0.7);
 				}break;
 			}
 			drawSphere(anterior.x, anterior.y, 15);
