@@ -216,8 +216,10 @@ void MPP::net_thread(){
 }
 
 void MPP::simulation_thread(){
+	int control = 0;
     while(!finish){
-    	moveObstacles();
+    	control++;
+    	if(control % 2 == 0)	moveObstacles();
     	for(int i = 0 ; i < runtimePaths.size() ; i++){
     		Pose result;
     		float dist = distance(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), offlinePaths.at(i).path.at(idDone.at(i)));
@@ -249,21 +251,23 @@ void MPP::simulation_thread(){
     		//cout << "i: " << i << ", id: " << idDone.at(i) << ", size: " << offlinePaths.at(i).path.size() << endl;
 
     		for(int j = 0 ; j < workspace.objects.size() ; j++){
-    			float dist = checkCollision( runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), workspace.objects.at(j) );
-    			if(dist < 0.0){
-    				bool repeated = false;
-    				for(int k = 0; k < collisions.size() ; k++){
-    					float dist_col = distance(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), collisions.at(k));
-    					if(dist_col < 100){
-    						repeated = true;
-    						//cout << "i: " << i << " col " << dist_col << endl;
-    					}
-    				}
-    				if(!repeated){
-    					collisions.push_back(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1));
-	    				report_num_collisions++;
-	    				//cout << "robot: " << i << " COLLISION: " << report_num_collisions << endl;
-	    			}
+    			if(done.at(i)){
+	    			float dist = checkCollision( runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), workspace.objects.at(j) );
+	    			if(dist < 0.0){
+	    				bool repeated = false;
+	    				for(int k = 0; k < collisions.size() ; k++){
+	    					float dist_col = distance(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1), collisions.at(k));
+	    					if(dist_col < 100){
+	    						repeated = true;
+	    						//cout << "i: " << i << " col " << dist_col << endl;
+	    					}
+	    				}
+	    				if(!repeated){
+	    					collisions.push_back(runtimePaths.at(i).path.at(runtimePaths.at(i).path.size()-1));
+		    				report_num_collisions++;
+		    				//cout << "robot: " << i << " COLLISION: " << report_num_collisions << endl;
+		    			}
+		    		}
 	    		}
     		}
     	}
@@ -407,7 +411,7 @@ void MPP::moveObstacles(){
  
  		helperTime++;
  
- 		workspace.objects.at(i).x += (rand()%5)*direX;
- 		workspace.objects.at(i).y += (rand()%5)*direY;
+ 		workspace.objects.at(i).x += (rand()%4)*direX;
+ 		workspace.objects.at(i).y += (rand()%4)*direY;
  	}
  }

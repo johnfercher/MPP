@@ -25,7 +25,7 @@ using namespace common;
 int main(int argc, char** argv){
     MPP mpp(argc, argv);
     mpp.init();
-    /*for(int i = 0 ; i < 1000 ; i++){
+    /*for(int i = 0 ; i < 5000 ; i++){
     	cout << i << endl;
     	Database db;
     	db.makeRandomWorkspace();

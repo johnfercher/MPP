@@ -48,11 +48,13 @@ public:
 	int min_qtd_collisions();
 	int max_qtd_collisions();
 
+	int total_workspaces_qtd_robots(int);						// 5 a 10
 	int total_workspaces_success_qtd_robots(int);				// 5 a 10
 	int total_workspaces_collisions_qtd_robots(int);			// 5 a 10
-	                                              
-	int total_workspaces_success_rage_obstacles(int, int); 		// 1 a 100
-	int total_workspaces_collisions_rage_obstacles(int, int); 	// 1 a 100
+	     
+	int total_workspaces_range_obstacles(int, int);    			// 1 a 100                                    
+	int total_workspaces_success_range_obstacles(int, int); 		// 1 a 100
+	int total_workspaces_collisions_range_obstacles(int, int); 	// 1 a 100
 };
 
 #endif // _SQLite_H_

@@ -198,7 +198,7 @@ void Database::makeRandomWorkspace(){
             timeHelper++;
             float y = rand()%1000;
             timeHelper++;
-            float radius = rand()%50;
+            float radius = 2+rand()%25;
 
             bool ok = true;
             for(int i = 0 ; i < qtdRobots ; i++){

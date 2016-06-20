@@ -135,19 +135,69 @@ void do_benchmark(string save){
 
 void get_info(){
     SQLite db("sqlite/mpp.db", "passwd");
+
+    int total_workspaces;
+    int total_workspaces_success;
+    
+    float media_qtd_robots;
+    int min_qtd_robots;
+    int max_qtd_robots;
+
+    float media_qtd_obstacles;
+    int min_qtd_obstacles;
+    int max_qtd_obstacles;
+
+    float media_qtd_collisions;
+    int min_qtd_collisions;
+    int max_qtd_collisions;
+
+    int total_workspaces_qtd_robots[6];                    // 5 a 10
+    int total_workspaces_success_qtd_robots[6];            // 5 a 10
+    int total_workspaces_collisions_qtd_robots[6];         // 5 a 10
+     
+    int total_workspaces_range_obstacles[5];                 // 1 a 100                                         
+    int total_workspaces_success_range_obstacles[5];        // 1 a 100
+    int total_workspaces_collisions_range_obstacles[5];     // 1 a 100
+                                                            // 
     db.open(); 
 
+        total_workspaces = db.total_workspaces();
+        total_workspaces_success = db.total_workspaces_success();
 
+        media_qtd_robots = db.media_qtd_robots();
+        min_qtd_robots = db.min_qtd_robots();
+        max_qtd_robots = db.max_qtd_robots();
+
+        media_qtd_obstacles = db.media_qtd_obstacles();
+        min_qtd_obstacles = db.min_qtd_obstacles();
+        max_qtd_obstacles = db.max_qtd_obstacles();
+
+        media_qtd_collisions = db.media_qtd_collisions();
+        min_qtd_collisions = db.min_qtd_collisions();
+        max_qtd_collisions = db.max_qtd_collisions();
+
+        for(int i = 0 ; i < 6 ; i++){
+            total_workspaces_qtd_robots[i] = db.total_workspaces_qtd_robots(i+5); 
+            total_workspaces_success_qtd_robots[i] = db.total_workspaces_success_qtd_robots(i+5);
+            total_workspaces_collisions_qtd_robots[i] = db.total_workspaces_collisions_qtd_robots(i+5);
+        }
+        
+        for(int i = 0 ; i < 5 ; i++){
+            total_workspaces_range_obstacles[i] = db.total_workspaces_range_obstacles(i*20, (i+1)*20); 
+            total_workspaces_success_range_obstacles[i] = db.total_workspaces_success_range_obstacles(i, (i+1)*20);
+            total_workspaces_collisions_range_obstacles[i] = db.total_workspaces_collisions_range_obstacles(i, (i+1)*20);
+        }
 
     db.close();
 }
 
 int main(int argc, char** argv){
-    if(argc > 1){
-        //do_benchmark(ss.str());
-    }else{
+    /*if(argc > 1){
+        stringstream ss;
+        do_benchmark(ss.str());
+    }else{*/
         get_info();
-    }
+    //}
 
 	return 0;
 }

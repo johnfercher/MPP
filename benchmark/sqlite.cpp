@@ -68,92 +68,310 @@ void SQLite::read_workspace(){
 	}*/
 }
 
-int total_workspaces(){
+int SQLite::total_workspaces(){
+	clean_query();
 	int total;
+
+	query << "SELECT count(*) FROM workspace;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return total;
 }
 
-int total_workspaces_success(){
+int SQLite::total_workspaces_success(){
+	clean_query();
 	int total;
+
+	query << "SELECT count(*) FROM workspace where success=1;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return total;
 }
 
-float media_qtd_robots(){
+float SQLite::media_qtd_robots(){
+	clean_query();
 	float media;
+
+	query << "SELECT avg(qtd_robots) FROM workspace;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return media;
 }
 
-int min_qtd_robots(){
+int SQLite::min_qtd_robots(){
+	clean_query();
 	int min;
+
+	query << "SELECT min(qtd_robots) FROM workspace;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return min;
 }
 
-int max_qtd_robots(){
+int SQLite::max_qtd_robots(){
+	clean_query();
 	int max;
+
+	query << "SELECT max(qtd_robots) FROM workspace;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return max;
 }
 
-float media_qtd_obstacles(){
+float SQLite::media_qtd_obstacles(){
+	clean_query();
 	float media;
+
+	query << "SELECT avg(qtd_obstacles) FROM workspace;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return media;
 }
 
-int min_qtd_obstacles(){
+int SQLite::min_qtd_obstacles(){
+	clean_query();
 	int min;
+
+	query << "SELECT min(qtd_obstacles) FROM workspace;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return min;
 }
 
-int max_qtd_obstacles(){
+int SQLite::max_qtd_obstacles(){
+	clean_query();
 	int max;
+
+	query << "SELECT max(qtd_obstacles) FROM workspace;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return max;
 }
 
-float media_qtd_collisions(){
+float SQLite::media_qtd_collisions(){
+	clean_query();
 	float media;
+
+	query << "SELECT avg(qtd_collisions) FROM workspace;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return media;
 }
 
-int min_qtd_collisions(){
+int SQLite::min_qtd_collisions(){
+	clean_query();
 	int min;
+
+	query << "SELECT min(qtd_collisions) FROM workspace;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return min;
 }
 
-int max_qtd_collisions(){
+int SQLite::max_qtd_collisions(){
+	clean_query();
 	int max;
+
+	query << "SELECT max(qtd_collisions) FROM workspace;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return max;
 }
 
-int total_workspaces_success_qtd_robots(int){
+
+int SQLite::total_workspaces_qtd_robots(int qtd){
+	clean_query();
 	int total;
+
+	query << "SELECT count(*) FROM workspace where qtd_robots=" << qtd << ";";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return total;
 }	
 
-int total_workspaces_collisions_qtd_robots(int){
+int SQLite::total_workspaces_success_qtd_robots(int qtd){
+	clean_query();
 	int total;
+
+	query << "SELECT count(*) FROM workspace where qtd_robots=" << qtd << " AND success=1;";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
+
+	return total;
+}	
+
+int SQLite::total_workspaces_collisions_qtd_robots(int qtd){
+	clean_query();
+	int total;
+
+	query << "SELECT sum(qtd_collisions) FROM workspace where qtd_robots=" << qtd << ";";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return total;
 }			
-                                              
-int total_workspaces_success_rage_obstacles(int, int){
+          
+
+int SQLite::total_workspaces_range_obstacles(int min, int max){
+	clean_query();
 	int total;
+
+	query << "SELECT count(*) FROM workspace where qtd_obstacles between " << min << " and " << max << ";";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return total;
 }	
 
-int total_workspaces_collisions_rage_obstacles(int, int){
+int SQLite::total_workspaces_success_range_obstacles(int min, int max){
+	clean_query();
 	int total;
+
+	query << "SELECT count(*) FROM workspace where success=1 and qtd_obstacles between " << min << " and " << max << ";";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
+
+	return total;
+}	
+
+int SQLite::total_workspaces_collisions_range_obstacles(int min, int max){
+	clean_query();
+	int total;
+
+	query << "SELECT sum(qtd_collisions) FROM workspace where qtd_obstacles between " << min << " and " << max << ";";
+
+	status_db = sqlite3_exec(db, query.str().c_str(), callback, (void*)data, &error_query);
+	
+	if(status_db != SQLITE_OK){
+		fprintf(stderr, "SQL error: %s\n", error_query);
+		sqlite3_free(error_query);
+	}else{
+		fprintf(stdout, "Operation done successfully\n");
+	}
 
 	return total;
 }	
