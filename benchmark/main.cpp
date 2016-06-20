@@ -103,6 +103,25 @@ void get_info(string save){
     float qtd_collisions_rate = 0;
     float qtd_steps_rate = 0;
 
+    vector< vector<int> > id_robots; 
+    vector< vector<int> > id_objects;
+
+    for(int i = 0 ; i < 7 ; i++){
+        vector<int> id_robot;
+        
+        id_robot.push_back(-1);
+
+        id_robots.push_back(id_robot);
+    }
+
+    for(int i = 0 ; i < 5 ; i++){
+        vector<int> id_object;
+        
+        id_object.push_back(-1);
+
+        id_objects.push_back(id_object);
+    }
+
     aux[0] << "benchmark/results/" << save << ".txt";
     read.open(aux[0].str());
 
@@ -146,6 +165,8 @@ void get_info(string save){
         getline(read, line);
     }
 
+    read.close(); 
+
     for(int i = 0 ; i < success.size() ; i++){
         success_rate += success.at(i);
         qtd_robots_rate += qtd_robots.at(i);
@@ -154,7 +175,58 @@ void get_info(string save){
         qtd_steps_rate += qtd_steps.at(i);
     }
 
-    read.close();    
+    for(int i = 0 ; i < success.size() ; i++){
+        switch(qtd_robots.at(i)){
+            case 4:{
+                id_robots.at(0).push_back(i);
+            }break;
+            case 5:{
+                id_robots.at(1).push_back(i);
+            }break;
+            case 6:{
+                id_robots.at(2).push_back(i);
+            }break;
+            case 7:{
+                id_robots.at(3).push_back(i);
+            }break;
+            case 8:{
+                id_robots.at(4).push_back(i);
+            }break;
+            case 9:{
+                id_robots.at(5).push_back(i);
+            }break;
+            case 10:{
+                id_robots.at(6).push_back(i);
+            }break; 
+        }
+
+
+        if(qtd_objects.at(i) >= 0 && qtd_objects.at(i) < 20){
+            id_objects.at(0).push_back(i);
+        }else
+        if(qtd_objects.at(i) >= 20 && qtd_objects.at(i) < 40){
+            id_objects.at(1).push_back(i);
+        }else
+        if(qtd_objects.at(i) >= 40 && qtd_objects.at(i) < 60){
+            id_objects.at(2).push_back(i);
+        }else
+        if(qtd_objects.at(i) >= 60 && qtd_objects.at(i) < 80){
+            id_objects.at(3).push_back(i);
+        }else
+        if(qtd_objects.at(i) >= 80 && qtd_objects.at(i) <= 100){
+            id_objects.at(4).push_back(i);
+        }
+    }
+
+    /*for(int i = 0 ; i < id_robots.at(1).size() ; i++){
+        cout << id_robots.at(1).at(i) << endl;
+    }*/
+
+    /*for(int i = 0 ; i < id_objects.at(1).size() ; i++){
+        cout << id_objects.at(1).at(i) << endl;
+    }8/
+
+       
 
     success_rate = success_rate/success.size()*100.0;
     qtd_robots_rate = qtd_robots_rate/qtd_robots.size();
