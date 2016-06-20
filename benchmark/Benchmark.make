@@ -23,7 +23,7 @@ INCLUDES = -I -Iresults
 
 
 #LIBRARIES = $(LIBRARIES_OMPL) $(LIBRARIES_BOOST) $(LIBRARIES_PROTO) $(LIBRARIES_GLUT) $(LIBRARIES_QT) -pthread -lm -w
-LIBRARIES = -pthread -lm -w
+LIBRARIES = -pthread -lm -w -l sqlite3
 
 
 SRC := $(shell find -name '*.cpp')
