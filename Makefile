@@ -20,9 +20,11 @@ all: mpp bench
 mpp:
 	cd src && make -f MPP.make
 
-bench:
-	cd benchmark && make -f Benchmark.make
+#bench:
+#	cd benchmark && make -f Benchmark.make
 
+new_bench:
+	cd new_benchmark && make -f Benchmark.make
 
 run:
 	./Benchmark
