@@ -2,7 +2,7 @@ Multiple Path Planning
 ----------------------
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)][mit]
-
+[![Visits Badge](https://badges.pufler.dev/visits/johnfercher/MPP)](https://badges.pufler.dev)
 
 Installation
 ------------------------------
